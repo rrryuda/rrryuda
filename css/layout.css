@@ -167,7 +167,7 @@ footer .copyright {
 	top: 0;
 	left: 0;
 	height: 100%;
-	padding: var(--margin-default);
+	padding: var(--margin-default) var(--margin-default) 4rem;
 	/* filter */
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) calc(100% - 4rem), rgba(0, 0, 0, 0) calc(100% - 1rem));
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) calc(100% - 4rem), rgba(0, 0, 0, 0) calc(100% - 1rem));
@@ -366,7 +366,7 @@ footer .copyright {
 	overflow: hidden;
 	width: 48px;
 	height: 48px;
-	margin: 4px 0;
+	margin: 2px 0;
 }
 
 .portrait div {
@@ -414,7 +414,7 @@ footer .copyright {
 	flex-shrink: 0;
 	align-items: center;
 	justify-content: center;
-	height: 56px;
+	height: 52px;
 }
 
 .node-dot span {
@@ -493,6 +493,7 @@ footer .copyright {
 	display: block;
 	max-width: var(--width-stretch);
 	height: auto;
+	border-radius: 0;
 }
 
 /* media query */

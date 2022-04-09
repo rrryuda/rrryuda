@@ -229,7 +229,7 @@ a {
 .label {
 	font-size: 20px;
 	font-weight: 600;
-	line-height: 28px;
+	line-height: 24px;
 }
 
 #dday {
@@ -241,7 +241,7 @@ a {
 .nail {
 	font-size: 18px;
 	font-weight: 600;
-	line-height: 28px;
+	line-height: 24px;
 	display: block;
 	color: var(--color-fg-box);
 }
@@ -256,7 +256,7 @@ a {
 
 .lashes {
 	font-size: 15px;
-	line-height: 24px;
+	line-height: 20px;
 	color: var(--color-fg-muted);
 }
 

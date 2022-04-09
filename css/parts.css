@@ -52,11 +52,6 @@
 	margin: 0 auto;
 }
 
-/* padding */
-.skirt {
-	padding-bottom: 4rem;
-}
-
 /* margin */
 .float {
 	margin-top: var(--gap-atom);
