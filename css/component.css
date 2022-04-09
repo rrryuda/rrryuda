@@ -1,0 +1,161 @@
+/* component */
+/* row */
+.flex,
+.inline,
+.row {
+	display: flex;
+	align-items: center;
+}
+
+.inline {
+	gap: 4px;
+}
+
+.row {
+	gap: var(--gap-atom);
+}
+
+/* column */
+.column,
+.desc,
+.book {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.column {
+	gap: 4px;
+}
+
+.desc {
+	gap: var(--gap-atom);
+}
+
+.book {
+	gap: var(--gap-default);
+}
+
+/* image */
+svg {
+	flex-shrink: 0;
+	fill: var(--color-fg);
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+video {
+	display: block;
+	width: 100%;
+}
+
+div img,
+div video {
+	border-radius: 8px;
+}
+
+/* iframe - youtube */
+iframe {
+	display: block;
+	width: 100%;
+}
+
+/* button */
+button {
+	text-align: left;
+	border: none;
+	background: none;
+}
+
+/* button link */
+.link {
+	font-size: 16px;
+	line-height: 24px;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: var(--color-fg-muted);
+}
+
+.link svg {
+	fill: var(--color-fg-subtle);
+}
+
+/* tag */
+.badge {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	padding: 3px 12px 5px;
+	margin-top: 4px;
+	border-radius: 12px;
+	border: 1px solid var(--color-fg-thin);
+	color: var(--color-darkgray);
+	background: var(--color-white);
+}
+
+.tag {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 1px 12px 3px;
+	border-radius: 12px;
+	color: var(--color-white);
+	background: var(--color-tag-bg);
+}
+
+/* scroll up */
+.scroll {
+	position: sticky;
+	z-index: 99;
+	display: block;
+	bottom: 0;
+}
+
+#scrollTop {
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	top: -64px;
+	right: var(--margin-atom);
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+
+#scrollTop svg {
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 10px);
+	left: calc(50% - 12px);
+	fill: var(--color-white);
+}
+
+#scrollTop div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: .3;
+	background: var(--color-fg);
+}
+
+#scrollTop:hover div {
+	opacity: .2;
+}
+
+.darken {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	width: 100%;
+	height: 8rem;
+	background: linear-gradient(to top, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
+}

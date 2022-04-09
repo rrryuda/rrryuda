@@ -1,0 +1,59 @@
+/* color-palette */
+.color-palette {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+.color-name {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px;
+}
+
+.color-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.color-info span {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.color-palette-blue,
+.color-palette-black,
+.color-palette-white {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-atom);
+	padding: var(--margin-default);
+}
+
+/* blue */
+.color-palette-blue {
+	background: #5a46fa;
+}
+
+.color-palette-blue span {
+	color: var(--color-white);
+}
+
+/* black */
+.color-palette-black {
+	background: #000;
+}
+
+.color-palette-black span {
+	color: var(--color-white);
+}
+
+/* white */
+.color-palette-white {
+	background: #fff;
+}
+
+.color-palette-white span {
+	color: var(--color-black);
+}

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<!-- designed & coded by seunghyun-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f2f2f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="msapplication-TileColor" content="#3282ff">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../source/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../source/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../source/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../source/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../source/favicon/safari-pinned-tab.svg" color="#3282ff">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/layout.css">
+
+    <!-- component -->
+    <link rel="stylesheet" type="text/css" href="../../css/component.css">
+    <link rel="stylesheet" type="text/css" href="../../css/parts.css">
+
+    <!-- font face -->
+    <link rel="stylesheet" href="https://use.typekit.net/jop1oag.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+
+    <title>Seunghyun &#124; TAP! 0.1</title>
+</head>
+
+<body class="loading">
+
+    <!-- header -->
+    <header include-html="../../layout/header_sub.html"></header>
+
+    <!-- contents container -->
+    <main class="project fadein">
+
+        <!-- cover -->
+        <div class="cover" id="c-tap">
+            <div class="glass"></div>
+            <div class="dim"></div>
+        </div>
+
+        <!-- contents -->
+        <section class="content">
+
+            <!-- brief -->
+            <article class="desc narrow">
+                <div class="row wrap toe">
+                    <h4>TAP! Robo-taxi 0.1</h4>
+                    <span class="badge">Alpha</span>
+                </div>
+                <p>TAP! 로보택시는 포티투닷의 자율주행용 이미지 학습 차량으로 시작되었습니다. 자율주행 기술 투자에 대한 가시적인 성과를 목표로
+                    서비스와 결합되어 자율주행 택시 서비스로 확장되었습니다. Niro EV 차량을 개조해 자율 주행 학습을 위한 이미지와 정밀 지도 데이터를 수집하고 탑승
+                    환경을 고려한 차량 인테리어로 발전해 최적화된 승객 탑승 경험을 제공합니다. TAP! 로보택시는 21년 3월 자율주행 자동차 시범운행 지구인 상암동에서
+                    시범 운행을 시작했습니다.</p>
+                <p>TAP! 로보택시의 호출에서 탑승, 하차 경험까지의 전체 과정의 UXUI 디자인을 진행했습니다. 차량에서 제공되는 In-vehicle UX, 외장 디자인
+                    등 서비스에 필요한 모든 디자인 과정과 디자인 시스템 제작에 참여했습니다.</p>
+                <div class="column">
+                    <span class="brow">Company</span>
+                    <span class="nail">42dot</span>
+                </div>
+                <div class="column">
+                    <span class="brow">Cooperation</span>
+                    <span class="nail">VLAND</span>
+                </div>
+                <div class="column">
+                    <span class="brow">Members</span>
+                    <span class="nail">PM &#183; Service planner &#183; Space designer &#183; UI designer</span>
+                </div>
+                <div class="column">
+                    <span class="brow">My role</span>
+                    <span class="nail">UXUI 70% &#183; BX 30%</span>
+                </div>
+                <div class="column">
+                    <span class="brow">Period</span>
+                    <span class="nail">2019. 12 - 2021. 3</span>
+                </div>
+            </article>
+
+            <!-- image -->
+            <div class="image stretch">
+                <video src="source/overview.mp4" autoplay loop muted playsinline></video>
+                <img class="modal" src="source/overview.jpg" alt="">
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Background</h6>
+                <p>TAP! 로보택시는 실시간으로 자율주행 기술을 고도화하고 자율주행 경험을 사용자에게 선제적으로 제공할 수 있는 계기가 되고자
+                    했습니다. 따라서 자율주행 차량을 승객 친화적인 인테리어로 개조해 기존 택시 서비스에서 불만족스러운 고객 경험을 해소하는 대안을 제안하고자 했습니다.
+                    기존 택시 서비스에서의 불필요한 커뮤니케이션 지점을 예방하는 RSI(후석 디스플레이 단말기, Rear Seat Infotainment)와
+                    ‘Untact & Cozy’란 콘셉트가 더해져 자율 주행 1인 택시가 되었습니다.</p>
+                <div>
+                    <span class="nail toe">Core mission</span>
+                    <p>일반 승객들이 느끼는 자율주행 경험은 굉장히 생소하고 불안합니다. 따라서 자율주행 택시가 제공하는 생소한 경험들이 3가지 미션 아래 승객에게
+                        아늑하고 쉬운, 안전한 경험으로 제공될 수 있도록 진행했습니다.</p>
+                </div>
+                <ul class="bullet desc">
+                    <li>
+                        <span class="nail toe">Cozy</span>
+                        불필요한 커뮤니케이션을 예방하고 안락한 여정 경험을 제공합니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Easy</span>
+                        생소한 환경에서 제공되는 인터페이스는 더욱 생소하기에 배울 필요 없는 직관적인 UX를 제공합니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Trusty</span>
+                        자율주행에서 느끼는 승객의 불안함을 예방하기 위해 고객 경험 접점에 걸쳐 신뢰감을 제공합니다.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- image -->
+            <div class="insert">
+                <img class="modal" src="source/mission.png" alt="">
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Space Experience</h6>
+                <p>TAP! 로보택시는 다가올 자율주행 시대의 경험을 미리 제공하고, 이동 간에 느낄 수 있는 코로나에 대한 불안감을 해소시키는 대안을 제시합니다.
+                    여유로운 탑승 환경을 위해 조수석을 탈거해 승객의 레그룸을 확보하고 승객과 기사를 구분짓는 디바이더를 설치해 안락한 공간 경험을 제공합니다.</p>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <div class="desc fit">
+                    <img class="modal" src="source/interior-01.jpg" alt="">
+                    <span class="lashes ellipsis">Interior view</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/interior-02.jpg" alt="">
+                    <span class="lashes ellipsis">Divider</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/interior-03.jpg" alt="">
+                    <span class="lashes ellipsis">Extra devices</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>TAP! Rider App</h6>
+                <p>TAP! 로보택시를 호출하는 용도로 사용되는 승객용 앱의 인터페이스는 가장 우선되는 기능을 효과적으로 제공할 수 있는 UX를 제공하는 데 초점을 두었습니다.
+                    지도 정보를 상시로 노출해 지도와 연결된 정보를 하단 인터페이스에서 보조하는 사용성을 갖습니다. 앱을 사용하는 주요 기능들을 가장 접근성이 높은 위치에
+                    배치하여 간편하고 빠르게 택시를 호출할 수 있는 UX를 제공합니다.</p>
+            </article>
+
+            <!-- image -->
+            <div class="book insert">
+                <span class="brow">TAP! Rider app flow</span>
+                <div class="desc">
+                    <img class="modal" src="source/app-01.jpg" alt="">
+                    <span class="lashes ellipsis">01. Login &rarr; From</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/app-02.jpg" alt="">
+                    <span class="lashes ellipsis">02. From &rarr; Dispatching</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/app-03.jpg" alt="">
+                    <span class="lashes ellipsis">03. Trip &rarr; Pull over</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>User-centered UX</h6>
+                <p>TAP! 로보택시는 승객 위치가 기준점이 되는 콘셉트를 갖습니다. 정해진 노선의 기점과 종점이 없이, 승객이 선택한 위치가 전체 노선의 시작점이 됩니다.
+                    처음 앱을 실행한 위치를 기준으로 추천된 정류장이 전체 노선 리스트의 시작점 되지만, 승객이 임의로 출발지를 변경 시 마지막으로 직접 선택한 정류장을
+                    기준으로 노선 리스트가 변경됩니다.</p>
+            </article>
+
+            <!-- image -->
+            <div class="insert">
+                <video src="source/app-flow.mp4" autoplay loop muted playsinline></video>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>A/B Testing</h6>
+                <div>
+                    <span class="nail toe">A - Static</span>
+                    <p>정해진 기점을 기준으로 위에서 아래로 정류장의 방향을 안내하면서 리스트의 시작과 끝이 연결되지 않는 케이스가 발생했습니다. 승객이 자신의 이동경로를
+                        파악하기 위해서 두 가지의 행동이 필요한 것이 개선 필요 지점으로 판단할 수 있었습니다.</p>
+                </div>
+                <div>
+                    <span class="nail toe">B - Flexible</span>
+                    <p>사용자의 위치가 기점이 되는 사용자 중심의 UX를 적용하면서 기존 고정된 리스트와 다르게 이동경로 파악에 있어 아래로 스크롤 하는 하나의 행동으로
+                        목적지를 설정할 수 있도록 사용성을 개선했습니다.</p>
+                </div>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <div class="desc">
+                    <img class="modal" src="source/app-list-01.jpg" alt="">
+                    <span class="lashes ellipsis">A - Static</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/app-list-02.jpg" alt="">
+                    <span class="lashes ellipsis">B - Flexible</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>TAP! Onboard UX</h6>
+                <div>
+                    <span class="nail toe">RSI Display</span>
+                    <p>RSI(후석 디스플레이 단말기, Rear Seat Infotainment)는 디바이더에 설치되어 기존 기사의 역할을 수행합니다.
+                        기사와의 불필요한 커뮤니케이션 지점을 예방하고 점진적으로 확대될 자율주행 차량 환경을 승객의 선택에 따라 저장하고 개인화할
+                        수 있습니다.</p>
+                </div>
+            </article>
+
+            <!-- image -->
+            <div class="insert">
+                <img class="modal" src="source/rsi.jpg" alt="">
+            </div>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <span class="brow fit">TAP! Robo-taxi flow</span>
+                <div class="desc">
+                    <img class="modal" src="source/flow-01.jpg" alt="">
+                    <span class="lashes ellipsis">01. Dispatching - Vacant</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/flow-02.jpg" alt="">
+                    <span class="lashes ellipsis">02. Onboard - Reserved</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/flow-03.jpg" alt="">
+                    <span class="lashes ellipsis">03. Trip - Onboard</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/flow-03.jpg" alt="">
+                    <span class="lashes ellipsis">04. Pull over</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>RSI UX Prototyping</h6>
+                <p>RSI의 인터페이스는 가장 중립적인 성격을 가지며 가독성과 사용성에 초점을 두었습니다. 화면별로 제공하는 정보 속성에 따라 와이어 프레임을 나누고
+                    승객에게 제공하고자 하는 안내를 가장 신속하고 정확하게 전달하고자 했습니다. 안내를 보조하는 속성에 따라 애니메이션을 적용했고 생소할 수 있는
+                    환경에 대한 대응책으로 ‘배울 필요 없는 UX’ 콘셉트로 진행했습니다.
+                </p>
+            </article>
+
+            <!-- image -->
+            <div class="book stretch">
+                <span class="brow">RSI Screens</span>
+                <div class="image">
+                    <div class="desc">
+                        <img class="modal outline" src="source/rsi-01.png" alt="">
+                        <span class="lashes ellipsis">Confirmation</span>
+                    </div>
+                    <div class="desc">
+                        <img class="modal outline" src="source/rsi-02.png" alt="">
+                        <span class="lashes ellipsis">Check - Seat belt</span>
+                    </div>
+                    <div class="desc">
+                        <img class="modal outline" src="source/rsi-03.png" alt="">
+                        <span class="lashes ellipsis">Trip - Overview</span>
+                    </div>
+                    <div class="desc">
+                        <img class="modal outline" src="source/rsi-04.png" alt="">
+                        <span class="lashes ellipsis">Trip - Heading-up view</span>
+                    </div>
+                    <div class="desc">
+                        <img class="modal outline" src="source/rsi-05.png" alt="">
+                        <span class="lashes ellipsis">Pull over</span>
+                    </div>
+                    <div class="desc">
+                        <img class="modal outline" src="source/rsi-06.png" alt="">
+                        <span class="lashes ellipsis">Check - Lost article</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Visual Guidance</h6>
+                <div>
+                    <span class="nail toe">안전벨트 착용 안내</span>
+                    <p>안전벨트 체결 유무는 RSI 디스플레이와 연동이 어려웠습니다. 따라서 승객의 안전벨트 착용을 의무화하는 장치로 애니메이션 이미지로 신속하게
+                        전달합니다.</p>
+                </div>
+                <div>
+                    <span class="nail toe">분실물 촬영 안내</span>
+                    <p>운행 완료 이후 승객석 문이 열리면 후석을 촬영합니다. 카메라를 보고 승객이 불쾌감을 느낄 수 있기 때문에, 분실물 촬영 안내와 함께
+                        승객이 다시 한번 분실물을 확인할 수 있도록 합니다.</p>
+                </div>
+            </article>
+
+            <!-- image -->
+            <div class="book insert">
+                <video class="outline" src="source/seatbelt.mp4" autoplay loop muted playsinline></video>
+                <video class="outline" src="source/lostproperty.mp4" autoplay loop muted playsinline></video>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Notification</h6>
+                <p>지속적인 정보 노출 영역으로 사용되던 상단 영역을 활용해서 적재적소에 제공되는 똑똑한 안내 메시지로 적용했습니다. 승객의 여정 환경을 해치지 않고
+                    ‘출발’, ‘도착’, ‘안전벨트 착용’과 같은 안내를 제공합니다. 안전벨트 착용 유무는 현재 차량에서 착용 유무에 대한 데이터를 제공하지 않아
+                    텍스트로 주기적으로 안내하며 안전사고를 예방하고자 했습니다.</p>
+            </article>
+
+            <!-- image -->
+            <div class="insert">
+                <video class="outline" src="source/notification.mp4" autoplay loop muted playsinline></video>
+            </div>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <span class="brow fit">A/B Testing</span>
+                <div class="desc">
+                    <img class="modal" src="source/noti-01.png" alt="">
+                    <span class="lashes ellipsis">A - On map</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/noti-02.png" alt="">
+                    <span class="lashes ellipsis">B - On status bar</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Cartography</h6>
+                <div>
+                    <span class="nail toe">App ver.</span>
+                    <p>아이나비 시스템즈에서 제공받는 지도 데이터와 스타일을 재구성하여 TAP! 로보택시에 특화된 사용성을 갖도록 스타일을 개선했습니다. 기본 주기 정보들이 가지는
+                        속성의 시각적 우선순위 조정하여 서비스의 핵심 정보인 정류장, 노선, 차량의 위치 정보들이 보다 효과적으로 승객에게 전달이 될 수 있도록 개선했습니다. 기본 지도의
+                        배색 채도를 전반적으로 조절해 사용자 속성 정보의 구분감을 강화하고 POI 표시수준을 조절해 지도 정보의 양을 줄여 경로 정보에 집중할 수 있도록 정의했습니다.</p>
+                </div>
+                <div>
+                    <span class="nail toe">RSI ver.</span>
+                    <p>일정 상 초기 테스트 버전에서 일출, 일몰 시간에 따른 테마 개발이 어려워 주, 야간을 모두 고려한 테마 선택이 필요했습니다. 차량 내 설치된 디바이더의 영향으로
+                        차량을 더 어두는 환경이 조성되며 승객에게 편안한 여정 경험을 제공하기 위해 차량 내 인테리어 환경을 고려한 다크 모드를 적용해 승객의 눈부심을 방지하고
+                        주변 지도에 대한 주기 정보가 명확하게 전달될 수 있도록 적용했습니다.</p>
+                </div>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <span class="brow fit">App ver.</span>
+                <div class="desc">
+                    <img class="modal" src="source/app-carto-01.jpg" alt="">
+                    <span class="lashes ellipsis">Before</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/app-carto-02.jpg" alt="">
+                    <span class="lashes ellipsis">After</span>
+                </div>
+                <span class="brow fit">RSI ver.</span>
+                <div class="desc">
+                    <img class="modal" src="source/rsi-carto-01.jpg" alt="">
+                    <span class="lashes ellipsis">Before</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/rsi-carto-02.jpg" alt="">
+                    <span class="lashes ellipsis">After</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>POI Display Testing</h6>
+                <p>POI 시인성 개선 과정에서 텍스트 간의 충돌이 일어났으며, 일부 주기는 우선순위에 따라 자동으로 숨김 처리되었습니다. 승객 친화적인 POI 데이터를 가공하고
+                    우선순위를 조정해 지도의 표시 수준을 개선했습니다. </p>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <div class="desc">
+                    <img class="modal" src="source/poi-01.jpg" alt="">
+                    <span class="lashes ellipsis">Before</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/poi-02.jpg" alt="">
+                    <span class="lashes ellipsis">After</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>TAP! Indicator</h6>
+                <p>TAP! Robotaxi의 인디케이터(갓등)는 운행 상황을 알리는 목적과 함께 내장 카메라로 주변 사물을 인지해 차선 정보를 취득하는 역할을 합니다.
+                    80x16 총 1280개의 LED 모듈에 효과적인 국문과 영문 타이포그라피를 적용했습니다.</p>
+                <ul class="bullet column">
+                    <li>빈차 / Vacant</li>
+                    <li>예약 / Reserved</li>
+                    <li>탑승 / On board</li>
+                    <li>휴무 / Off board</li>
+                    <li>SOS / Help</li>
+                </ul>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <img class="modal fit" src="source/indicator.png" alt="">
+                <img class="modal" src="source/indicator-01.png" alt="">
+                <img class="modal" src="source/indicator-02.png" alt="">
+            </div>
+
+            <!-- project behind start -->
+            <div class="divider column stretch">
+                <span>Project Behind</span>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Design Process</h6>
+                <ul class="bullet desc">
+                    <li>
+                        <span class="nail toe">Research</span>
+                        사용자의 니즈를 파악해 기능으로 구현될 항목들을 조사했습니다. 승객 여정에 필수적인 항목이 아니더라도 TAP! 미션에 부합하는 기능을 추가로
+                        제안해 제품에 반영될 수 있도록 고도화했습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Mock-up</span>
+                        정의된 화면 구조와 기능에 따라 제품 컨셉에 맞는 비주얼, 명확한 피드백을 위한 인터랙티브 포인트를 고민했고 인테리어 환경을 함께 고려한
+                        인터페이스 테마를 적용했습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Review</span>
+                        동일한 기능과 구성을 각 특징이 다른 구조로 반복 설계하여 지속해서 리뷰를 진행했습니다. 화면 구조를 테스트하며 승객에게 제공되는
+                        음성 안내 경험을 함께 테스트했습니다.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- image -->
+            <div class="insert">
+                <img class="modal" src="source/process.png" alt="">
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Visual Identity</h6>
+                <p>브랜드 마크, TAP! 로고의 직선적인 형태를 활용한 UI 아이콘입니다. 아이콘은 서비스의 기능을 보다 쉽고 명료하게 하는 장치이자, 브랜드 아이덴티티
+                    시스템을 구축하는 역할을 합니다.</p>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <img class="modal" src="source/icon-01.jpg" alt="">
+                <img class="modal" src="source/icon-02.jpg" alt="">
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>3D Iconic Design</h6>
+                <p>승객의 자율주행 택시 호출 경험에서 고도화된 자율주행 이미지를 전달하기 위해 차량 이미지를 가공했습니다. 2D 목업 테스트 후 3D 모델링 담당자와
+                    함께 협업하여 앱의 시각적 요소와 조화로운 수준의 3D 디자인을 적용했습니다. 실제 운행중인 차량인 '기아 니로'차량을 Retopology(리토폴로지,
+                    제작된 폴리곤을 재구성해 배열하는 방법) 방법으로 모델링해 연결성이 높은 비주얼을 만들었습니다.</p>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <div class="desc">
+                    <img class="modal" src="source/visual-01.jpg" alt="">
+                    <span class="lashes ellipsis">Concept</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/visual-02.jpg" alt="">
+                    <span class="lashes ellipsis">Final design</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Design System</h6>
+                <p>브랜드 아이덴티티를 강화하고 디자인 과정에서의 일관된 경험을 제공하기 위해 디자인 시스템을 설계했습니다. UI를 이루는 요소를 크게
+                    3가지로 구분하고 각 요소 특성에 맞게 디자인을 미리 정의해 사용자 행동 유형, 기능에 따른 디자인을 구분했습니다. 디자인 시스템은 디자인 과정의 공수를 줄이고
+                    개발 부서와의 커뮤니케이션 비용을 절감하는 데 중점을 두었습니다.</p>
+                <ul class="bullet desc">
+                    <li>
+                        <span class="nail toe">Atom</span>
+                        컴포넌트를 구성하는 최소 단위입니다. 이미지 적용 여부, 옵션 등 추가 기능들을 토글 버튼을 통해 추가하고 삭제할 수 있습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Component</span>
+                        Atom 단위를 조합해 만든 하나의 규칙으로 컴포넌트를 조합해 기능과 행동을 정의했습니다. 완전하게 수행될 수 있는 기능으로 구성되며
+                        컴포넌트들을 조합해 새로운 템플릿으로 사용할 수 있습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Template</span>
+                        Component 단위가 조합되어 만들어지며 앱 서비스 UI를 구성하는 최대 컴포넌트 단위입니다. 필요한 기능에 따라 템플릿을 불러와 화면을
+                        구성하고 설계할 수 있습니다. 템플릿을 구성하는 요소들은 각각의 기준점이 있으며 해상도별로 대응이 가능해 다양한 디바이스 환경에서 테스트할 수 있습니다.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <div class="desc">
+                    <img class="modal" src="source/component-01.jpg" alt="">
+                    <span class="lashes ellipsis">01. Atom</span>
+                </div>
+                <div class="desc">
+                    <img class="modal" src="source/component-02.jpg" alt="">
+                    <span class="lashes ellipsis">02. Component</span>
+                </div>
+                <div class="desc fit">
+                    <img class="modal" src="source/component-03.jpg" alt="">
+                    <span class="lashes ellipsis">03. Template</span>
+                </div>
+                <div class="desc fit">
+                    <img class="modal" src="source/inspect.jpg" alt="">
+                    <span class="lashes ellipsis">Property</span>
+                </div>
+            </div>
+
+            <!-- description -->
+            <article class="desc narrow">
+                <h6>Figma Library</h6>
+                <p>피그마 라이브러리를 적극 활용해 디자인 공수를 줄이고 개발 부서와의 커뮤니케이션 비용을 아낄 수 있었습니다. 피그마 라이브러리 업데이트는
+                    디자인 관리자의 승인을 통해 컴포넌트를 업데이트하고 신규 디자인을 추가할 수 있도록 규칙을 정해 임의로 디자인 시스템이 변경되는 일이 없도록 예방했습니다.</p>
+            </article>
+
+            <!-- image -->
+            <div class="insert">
+                <img class="modal" src="source/figma.jpg" alt="">
+            </div>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <span class="brow fit">2020 Demo day</span>
+                <img class="modal" src="source/predemo-01.jpg" alt="">
+                <img class="modal" src="source/predemo-02.jpg" alt="">
+                <img class="modal" src="source/predemo-03.jpg" alt="">
+                <img class="modal" src="source/predemo-04.jpg" alt="">
+            </div>
+
+            <!-- image -->
+            <div class="gallery insert">
+                <span class="brow fit">2021 Demo day</span>
+                <img class="modal fit" src="source/demo-01.jpg" alt="">
+                <img class="modal" src="source/demo-02.jpg" alt="">
+                <img class="modal" src="source/demo-03.jpg" alt="">
+                <img class="modal" src="source/demo-04.jpg" alt="">
+                <img class="modal" src="source/demo-05.jpg" alt="">
+                <img class="modal" src="source/demo-06.jpg" alt="">
+                <img class="modal" src="source/demo-07.jpg" alt="">
+            </div>
+
+            <!-- image -->
+            <div class="book insert">
+                <span class="brow fit">2021 Seoul smart mobility expo</span>
+                <img class="modal" src="source/expo.jpg" alt="">
+            </div>
+
+            <!-- image -->
+            <div class="book insert">
+                <span class="brow">Timeline</span>
+                <img class="modal" src="source/timeline.png" alt="">
+            </div>
+
+            <!-- lesson learned -->
+            <article class="desc narrow">
+                <h6>What I Learned</h6>
+                <ul class="bullet desc">
+                    <li>
+                        <span class="nail toe">Design process</span>
+                        제품의 초기 기획 단계부터 참여해 앱 서비스가 탄생하는 과정을 디자이너로서 기여하는 경험을 쌓을 수 있었습니다. 정해진 일정에 따라 기능, 디자인 개발의
+                        우선순위를 조율하는 과정을 거치고 좋은 제품을 만들기 위해 결과물을 빠르게 만들고 검증하는 단계의 중요성을 배울 수 있었습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Design system</span>
+                        앱 서비스의 콘셉트가 정해짐에 따라 디자인 시스템을 도입했고 디자인 시스템을 통해 업무 환경을 개선하고 개발자와의 커뮤니케이션 비용을 절감하는 경험을
+                        할 수 있었습니다. 컴포넌트의 상세 스펙을 정의하며 재활용이 용이한 리소스를 만들고 개발 친화적 사고를 맛볼 수 있었습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Brand experience</span>
+                        서비스와 더불어 제품과 고객이 연결되는 지점에서 브랜드 아이덴티티를 제공하는 경험을 할 수 있었습니다. BX 담당자들과 협업하며 각 플랫폼에 최적화된
+                        디자인 사양을 정의하는 방법을 배울 수 있었습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">Ideation</span>
+                        참고 사례가 많지 않은 새로운 분야의 제품을 만들며 기획 담당자들이 어떻게 아이데이션을 하고 서로의 생각을 공유하는지 배울 수 있었습니다. 각 분야별 전문지식을
+                        살려 비즈니스 임팩트, 개발 검토 등 다양한 방면에서 아이디어가 실제 제품으로 구현되는 과정을 함께 고민하는 경험을 할 수 있었습니다.
+                    </li>
+                    <li>
+                        <span class="nail toe">App environment</span>
+                        지속적인 개발 담당자들과의 커뮤니케이션으로 앱 환경에 대한 이해를 기를 수 있었습니다. 앱 성능에 영향을 미치는 포맷, 용량 등은 고려해 본 적이 없던 제게는
+                        상당히 많은 요소에서 앱 성능에 영향을 미치고 실제 디자인이 구현되는 과정에서 개발 친화적인 디자인 리소스를 전달하는 방법들을 배울 수 있었습니다.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- epilogue -->
+            <article class="desc narrow">
+                <h6>Epilogue</h6>
+                <p>RSI 디자인은 하드웨어와 밀접하게 연결되는 만큼 일정 내 소화 가능한 개발 난이도에 따라 프로젝트 내용이 변경되는 상황이 많았습니다.
+                    다양한 기획과 환경에 따라 많은 테스트를 거쳐야 했고, 컴포넌트 라이브러리의 다양성을 통해서 테스트를 빠르게 진행해볼 수 있었습니다. 다양한 분야의 엔지니어들과
+                    긴밀하게 협업하고 승객 친화적 UX를 위해 많은 시간을 고민하는 경험을 했습니다.</p>
+                <div class="column">
+                    <span class="brow">Company</span>
+                    <span class="nail">42dot</span>
+                </div>
+                <div class="column">
+                    <span class="brow">Cooperation</span>
+                    <span class="nail">VLAND</span>
+                </div>
+                <div class="column">
+                    <span class="brow">Members</span>
+                    <span class="nail">PM &#183; Service planner &#183; Space designer &#183; UI designer</span>
+                </div>
+                <div class="column">
+                    <span class="brow">My role</span>
+                    <span class="nail">UXUI 70% &#183; BX 30%</span>
+                </div>
+                <div class="column">
+                    <span class="brow">Period</span>
+                    <span class="nail">2019. 12 - 2021. 3</span>
+                </div>
+            </article>
+
+            <!-- navigation -->
+            <div class="book insert">
+                <span class="brow">Contents</span>
+                <div class="navigation" include-html="../../layout/navigation.html"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- image modal -->
+    <div class="content-modal">
+        <div class="content-modal-overlay"></div>
+        <div class="img-modal">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!-- scroll to top -->
+    <div class="scroll" include-html="../../component/scroll.html"></div>
+
+    <!-- footer -->
+    <footer include-html="../../layout/footer.html"></footer>
+
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+</html>
