@@ -98,10 +98,10 @@ $(document).ready(function () {
 $(function () {
     $(".modal").click(function () {
         var $src = $(this).attr("src");
-        $(".content-modal").fadeIn(200);
+        $(".content-modal").fadeIn(0);
         $(".img-modal img").attr("src", $src);
     });
     $(".img-modal, .content-modal-overlay").click(function () {
-        $(".content-modal").fadeOut(200);
+        $(".content-modal").fadeOut(0);
     });
 });
