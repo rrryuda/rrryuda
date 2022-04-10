@@ -62,8 +62,12 @@
 	margin-top: 8px;
 }
 
+.heel {
+	margin-bottom: var(--gap-atom);
+}
+
 .toe {
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 }
 
 /* border */
