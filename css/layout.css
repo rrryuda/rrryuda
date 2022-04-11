@@ -141,7 +141,7 @@ footer .copyright {
 	z-index: 1;
 	overflow: hidden;
 	border: 1px solid var(--color-outline);
-	border-radius: 1rem;
+	border-radius: 16px;
 	background: var(--color-bg-box);
 	/* filter */
 	box-shadow: 0 0 24px rgba(2, 5, 10, .04);
@@ -151,7 +151,7 @@ footer .copyright {
 .balloon {
 	padding: var(--margin-default);
 	border-radius: 2.5rem;
-	border-top-left-radius: .5rem;
+	border-top-left-radius: 8px;
 }
 
 .comp {
