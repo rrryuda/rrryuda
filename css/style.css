@@ -84,18 +84,47 @@
 	background: var(--color-fg);
 }
 
-* {
+/* normalize */
+html,
+body,
+header,
+nav,
+footer,
+main,
+section,
+article,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+hr {
 	position: relative;
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+}
+
+html,
+body,
+header,
+nav,
+footer,
+main,
+section,
+article,
+div {
+	width: 100%;
 }
 
 html {
 	font-family: acumin-pro, 'Noto Sans KR', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
-	width: 100%;
 	height: 100%;
 	word-break: keep-all;
 	font-display: fallback;
@@ -113,20 +142,9 @@ html {
 }
 
 body {
-	position: relative;
-	width: 100%;
 	height: 100%;
 	color: var(--color-fg);
 	background: var(--color-bg);
-}
-
-header,
-footer,
-main,
-section,
-article,
-div {
-	width: 100%;
 }
 
 /* preload */
@@ -187,10 +205,6 @@ p {
 }
 
 /* list */
-ul {
-	list-style: none;
-}
-
 li {
 	font-size: 16px;
 	font-weight: 400;
@@ -221,7 +235,7 @@ a {
 	color: inherit;
 }
 
-/* text parts */
+/* span text */
 .label {
 	font-size: 20px;
 	font-weight: 600;
@@ -298,6 +312,16 @@ a {
 
 	li {
 		font-size: 15px;
+		line-height: 26px;
+	}
+
+	/* span text */
+	.label {
+		font-size: 19px;
+	}
+
+	.nail {
+		font-size: 17px;
 		line-height: 26px;
 	}
 
