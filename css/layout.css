@@ -215,6 +215,10 @@ footer .copyright {
 	-o-transition: none !important;
 }
 
+.oweb {
+	display: block;
+}
+
 /* project state */
 .state {
 	flex-shrink: 0;
@@ -418,7 +422,7 @@ footer .copyright {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: var(--color-fg-muted);
+	background: var(--color-fg-box);
 }
 
 .node-path {
@@ -534,6 +538,10 @@ footer .copyright {
 
 	.room {
 		padding: 28.5% 50%;
+	}
+
+	.oweb {
+		display: none;
 	}
 
 	.hook {

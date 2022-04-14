@@ -82,17 +82,3 @@
 .outline {
 	border: 2px solid var(--color-highlight);
 }
-
-@media screen and (min-width: 769px) {
-
-	.oweb {
-		display: block;
-	}
-}
-
-@media screen and (max-width: 768px) {
-
-	.oweb {
-		display: none;
-	}
-}
