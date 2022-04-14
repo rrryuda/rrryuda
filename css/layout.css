@@ -215,10 +215,6 @@ footer .copyright {
 	-o-transition: none !important;
 }
 
-.oweb {
-	display: block;
-}
-
 /* project state */
 .state {
 	flex-shrink: 0;
@@ -507,6 +503,26 @@ footer .copyright {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+
+	/* portfolio */
+	.form .room {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+	/* portfolio */
+	.form {
+		grid-column: span 2;
+	}
+
+	.intro {
+		position: relative;
+	}
+}
+
 @media screen and (max-width: 768px) {
 
 	/* header */
@@ -538,10 +554,6 @@ footer .copyright {
 
 	.room {
 		padding: 28.5% 50%;
-	}
-
-	.oweb {
-		display: none;
 	}
 
 	.hook {
