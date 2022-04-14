@@ -36,20 +36,20 @@
 		/* foreground */
 		--color-blue: rgba(70, 130, 255, 1);
 		--color-fg: rgba(2, 5, 10, .8);
-		--color-fg-muted: rgba(2, 5, 10, .45);
-		--color-fg-subtle: rgba(2, 5, 10, .3);
-		--color-fg-thin: rgba(2, 5, 10, .12);
+		--color-fg-muted: rgba(2, 5, 10, .5);
+		--color-fg-subtle: rgba(2, 5, 10, .35);
+		--color-fg-thin: rgba(2, 5, 10, .2);
 		--color-fg-box: rgba(2, 5, 10, .8);
 		/* border */
 		--color-outline: rgba(0, 0, 0, 0);
 		--color-highlight: rgba(0, 0, 0, 0);
 		/* background */
-		--color-bg: rgba(242, 242, 246, 1);
+		--color-bg: rgba(244, 244, 248, 1);
 		--color-bg-box: rgba(255, 255, 255, 1);
 		--color-tag-bg: rgba(70, 130, 255, .8);
 		/* media gradient */
-		--color-bg-to: rgba(242, 242, 246, 0);
-		--color-bg-from: rgba(242, 242, 246, .6);
+		--color-bg-to: rgba(244, 244, 248, 0);
+		--color-bg-from: rgba(244, 244, 248, .6);
 	}
 }
 
@@ -60,11 +60,11 @@
 		/* media color */
 		/* foreground */
 		--color-blue: rgba(60, 120, 235, 1);
-		--color-fg: rgba(242, 242, 246, 1);
-		--color-fg-muted: rgba(242, 242, 246, .6);
-		--color-fg-subtle: rgba(242, 242, 246, .4);
-		--color-fg-thin: rgba(242, 242, 246, .2);
-		--color-fg-box: rgba(242, 242, 246, .85);
+		--color-fg: rgba(244, 244, 248, 1);
+		--color-fg-muted: rgba(244, 244, 248, .6);
+		--color-fg-subtle: rgba(244, 244, 248, .4);
+		--color-fg-thin: rgba(244, 244, 248, .2);
+		--color-fg-box: rgba(244, 244, 248, .85);
 		/* border */
 		--color-outline: rgba(255, 255, 255, .1);
 		--color-highlight: rgba(255, 255, 255, .2);
