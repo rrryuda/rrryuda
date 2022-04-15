@@ -159,3 +159,11 @@ button {
 	height: 8rem;
 	background: linear-gradient(to top, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
 }
+
+@media screen and (max-width: 768px) {
+
+	/* button link */
+	.link {
+		font-size: 15px;
+	}
+}
