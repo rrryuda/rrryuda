@@ -4,7 +4,7 @@
 	--color-white: rgba(255, 255, 255, 1);
 	--color-gray: rgba(125, 128, 135, 1);
 	--color-darkgray: rgba(80, 80, 86, 1);
-	--color-black: rgba(2, 5, 10, 1);
+	--color-black: rgba(0, 0, 0, 1);
 	--color-overlay: rgba(0, 0, 0, .75);
 	/* gap */
 	--gap-atom: .75rem;
@@ -22,6 +22,7 @@
 	--width-insert: 960px;
 	--width-narrow: 720px;
 	--width-small: 640px;
+	--width-ant: 544px;
 	/* ease */
 	--ease: cubic-bezier(.075, .8, .165, 1);
 	--swing: cubic-bezier(.35, .4, .3, 1.6);
@@ -35,21 +36,21 @@
 		/* media color */
 		/* foreground */
 		--color-blue: rgba(70, 130, 255, 1);
-		--color-fg: rgba(2, 5, 10, .8);
-		--color-fg-muted: rgba(2, 5, 10, .5);
-		--color-fg-subtle: rgba(2, 5, 10, .35);
-		--color-fg-thin: rgba(2, 5, 10, .2);
-		--color-fg-box: rgba(2, 5, 10, .8);
+		--color-fg: rgba(0, 0, 0, .8);
+		--color-fg-muted: rgba(0, 0, 0, .5);
+		--color-fg-subtle: rgba(0, 0, 0, .35);
+		--color-fg-thin: rgba(0, 0, 0, .2);
+		--color-fg-box: rgba(0, 0, 0, .8);
 		/* border */
 		--color-outline: rgba(0, 0, 0, 0);
 		--color-highlight: rgba(0, 0, 0, 0);
 		/* background */
-		--color-bg: rgba(244, 244, 248, 1);
+		--color-bg: rgba(255, 255, 255, 1);
 		--color-bg-box: rgba(255, 255, 255, 1);
 		--color-tag-bg: rgba(70, 130, 255, .8);
 		/* media gradient */
-		--color-bg-to: rgba(244, 244, 248, 0);
-		--color-bg-from: rgba(244, 244, 248, .6);
+		--color-bg-to: rgba(255, 255, 255, 0);
+		--color-bg-from: rgba(255, 255, 255, .6);
 	}
 }
 
@@ -60,21 +61,21 @@
 		/* media color */
 		/* foreground */
 		--color-blue: rgba(60, 120, 235, 1);
-		--color-fg: rgba(244, 244, 248, 1);
-		--color-fg-muted: rgba(244, 244, 248, .6);
-		--color-fg-subtle: rgba(244, 244, 248, .4);
-		--color-fg-thin: rgba(244, 244, 248, .2);
-		--color-fg-box: rgba(244, 244, 248, .85);
+		--color-fg: rgba(255, 255, 255, 1);
+		--color-fg-muted: rgba(255, 255, 255, .6);
+		--color-fg-subtle: rgba(255, 255, 255, .4);
+		--color-fg-thin: rgba(255, 255, 255, .2);
+		--color-fg-box: rgba(255, 255, 255, .85);
 		/* border */
-		--color-outline: rgba(255, 255, 255, .1);
+		--color-outline: rgba(255, 255, 255, .15);
 		--color-highlight: rgba(255, 255, 255, .2);
 		/* background */
-		--color-bg: rgba(2, 5, 10, 1);
+		--color-bg: rgba(0, 0, 0, 1);
 		--color-bg-box: rgba(28, 32, 36, 1);
 		--color-tag-bg: rgba(255, 255, 255, .2);
 		/* media gradient */
-		--color-bg-to: rgba(2, 5, 10, 0);
-		--color-bg-from: rgba(2, 5, 10, .6);
+		--color-bg-to: rgba(0, 0, 0, 0);
+		--color-bg-from: rgba(0, 0, 0, .6);
 	}
 }
 

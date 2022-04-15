@@ -506,8 +506,22 @@ footer .copyright {
 @media screen and (max-width: 1024px) {
 
 	/* portfolio */
+	.portfolio {
+		max-width: var(--width-small);
+	}
+
 	.form .room {
 		display: none;
+	}
+
+	/* about */
+	.about {
+		max-width: var(--width-ant);
+	}
+
+	/* resume */
+	.resume {
+		max-width: var(--width-small);
 	}
 }
 
@@ -538,6 +552,7 @@ footer .copyright {
 	/* portfolio */
 	.portfolio {
 		grid-template-columns: 100%;
+		max-width: var(--width-ant);
 	}
 
 	.intro {
@@ -561,6 +576,11 @@ footer .copyright {
 		/* transition */
 		transform: rotateY(180deg);
 		-webkit-transform: rotateY(180deg);
+	}
+
+	/* resume */
+	.resume {
+		max-width: var(--width-ant);
 	}
 }
 
