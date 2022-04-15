@@ -71,10 +71,6 @@
 }
 
 /* border */
-.edge {
-	border: 0;
-}
-
 .round {
 	border-radius: 50%;
 }

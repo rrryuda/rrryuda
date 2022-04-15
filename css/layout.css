@@ -133,7 +133,6 @@ footer .copyright {
 .item {
 	z-index: 1;
 	overflow: hidden;
-	border: 1px solid var(--color-outline);
 	border-radius: 16px;
 	background: var(--color-bg-box);
 	background-position: center;
@@ -553,10 +552,6 @@ footer .copyright {
 	.portfolio {
 		grid-template-columns: 100%;
 		max-width: var(--width-ant);
-	}
-
-	.item {
-		border: 0;
 	}
 
 	.intro {
