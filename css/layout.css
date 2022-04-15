@@ -76,7 +76,7 @@ footer a {
 }
 
 footer .copyright {
-	font-weight: 400;
+	font-weight: 500;
 	color: var(--color-fg-subtle);
 }
 
@@ -383,7 +383,7 @@ footer .copyright {
 }
 
 .pdf {
-	fill: var(--color-fg-subtle);
+	fill: var(--color-fg-muted);
 }
 
 /* resume */
