@@ -45,12 +45,12 @@
 		--color-outline: rgba(0, 0, 0, 0);
 		--color-highlight: rgba(0, 0, 0, 0);
 		/* background */
-		--color-bg: rgba(255, 255, 255, 1);
+		--color-bg: rgba(246, 246, 250, 1);
 		--color-bg-box: rgba(255, 255, 255, 1);
 		--color-tag-bg: rgba(70, 130, 255, .8);
 		/* media gradient */
-		--color-bg-to: rgba(255, 255, 255, 0);
-		--color-bg-from: rgba(255, 255, 255, .6);
+		--color-bg-to: rgba(246, 246, 250, 0);
+		--color-bg-from: rgba(246, 246, 250, .6);
 	}
 }
 

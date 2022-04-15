@@ -137,8 +137,8 @@ footer .copyright {
 	border-radius: 16px;
 	background: var(--color-bg-box);
 	/* filter */
-	box-shadow: 0 0 24px rgba(2, 5, 10, .04);
-	-webkit-box-shadow: 0 0 24px rgba(2, 5, 10, .04);
+	box-shadow: 0 0 24px rgba(0, 0, 0, .02);
+	-webkit-box-shadow: 0 0 24px rgba(0, 0, 0, .02);
 }
 
 .balloon {
