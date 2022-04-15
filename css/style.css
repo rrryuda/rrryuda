@@ -70,12 +70,12 @@
 		--color-outline: rgba(255, 255, 255, .15);
 		--color-highlight: rgba(255, 255, 255, .2);
 		/* background */
-		--color-bg: rgba(0, 0, 0, 1);
+		--color-bg: rgba(10, 12, 15, 1);
 		--color-bg-box: rgba(32, 36, 40, 1);
 		--color-tag-bg: rgba(255, 255, 255, .2);
 		/* media gradient */
-		--color-bg-to: rgba(0, 0, 0, 0);
-		--color-bg-from: rgba(0, 0, 0, .6);
+		--color-bg-to: rgba(10, 12, 15, 0);
+		--color-bg-from: rgba(10, 12, 15, .6);
 	}
 }
 
