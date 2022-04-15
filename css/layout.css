@@ -136,6 +136,8 @@ footer .copyright {
 	border: 1px solid var(--color-outline);
 	border-radius: 16px;
 	background: var(--color-bg-box);
+	background-position: center;
+	background-size: cover;
 	/* filter */
 	box-shadow: 0 0 24px rgba(0, 0, 0, .02);
 	-webkit-box-shadow: 0 0 24px rgba(0, 0, 0, .02);
