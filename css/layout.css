@@ -207,8 +207,6 @@ footer .copyright {
 .room {
 	z-index: -1;
 	padding: 50%;
-	background-position: center;
-	background-size: cover;
 	/* transition */
 	transition: none !important;
 	animation: none !important;
