@@ -66,7 +66,7 @@ iframe {
 /* button */
 button {
 	text-align: left;
-	border: none;
+	border: 0;
 	background: none;
 }
 

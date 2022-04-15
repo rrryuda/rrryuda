@@ -556,7 +556,7 @@ footer .copyright {
 	}
 
 	.item {
-		border: none;
+		border: 0;
 	}
 
 	.intro {
@@ -598,7 +598,7 @@ footer .copyright {
 
 	.comp {
 		padding: 0;
-		border: none;
+		border: 0;
 		border-radius: 0;
 		background: none;
 		/* filter */
