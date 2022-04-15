@@ -133,7 +133,7 @@ footer .copyright {
 .item {
 	z-index: 1;
 	overflow: hidden;
-	border-radius: 16px;
+	border-radius: .75rem;
 	background: var(--color-bg-box);
 	background-position: center;
 	background-size: 100%;
