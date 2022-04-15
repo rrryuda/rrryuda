@@ -136,7 +136,7 @@ footer .copyright {
 	border-radius: 16px;
 	background: var(--color-bg-box);
 	background-position: center;
-	background-size: cover;
+	background-size: 100%;
 	/* filter */
 	box-shadow: 0 0 24px rgba(0, 0, 0, .02);
 	-webkit-box-shadow: 0 0 24px rgba(0, 0, 0, .02);
@@ -198,7 +198,7 @@ footer .copyright {
 }
 
 .item:hover .info {
-	bottom: -2px;
+	bottom: -1px;
 	visibility: visible;
 	opacity: 1;
 }
@@ -561,7 +561,7 @@ footer .copyright {
 	}
 
 	.info {
-		bottom: -2px;
+		bottom: -1px;
 		visibility: visible;
 		opacity: 1;
 	}
