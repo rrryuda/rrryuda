@@ -71,7 +71,7 @@
 		--color-highlight: rgba(255, 255, 255, .2);
 		/* background */
 		--color-bg: rgba(0, 0, 0, 1);
-		--color-bg-box: rgba(28, 32, 36, 1);
+		--color-bg-box: rgba(32, 36, 40, 1);
 		--color-tag-bg: rgba(255, 255, 255, .2);
 		/* media gradient */
 		--color-bg-to: rgba(0, 0, 0, 0);
@@ -318,12 +318,16 @@ a {
 
 	/* span text */
 	.label {
-		font-size: 19px;
+		font-size: 18px;
 	}
 
 	.nail {
-		font-size: 17px;
+		font-size: 16px;
 		line-height: 26px;
+	}
+
+	.brow {
+		font-size: 15px;
 	}
 
 	/* global */

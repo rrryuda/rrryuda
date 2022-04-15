@@ -555,6 +555,10 @@ footer .copyright {
 		max-width: var(--width-ant);
 	}
 
+	.item {
+		border: none;
+	}
+
 	.intro {
 		position: relative;
 		mask-image: none;
