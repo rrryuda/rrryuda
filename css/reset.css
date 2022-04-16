@@ -89,6 +89,10 @@ button {
 	vertical-align: baseline;
 }
 
+button {
+	background: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

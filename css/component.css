@@ -63,13 +63,6 @@ iframe {
 	width: 100%;
 }
 
-/* button */
-button {
-	text-align: left;
-	border: 0;
-	background: none;
-}
-
 /* button link */
 .link {
 	font-size: 16px;
@@ -142,12 +135,11 @@ button {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	opacity: .3;
-	background: var(--color-fg);
+	background: var(--color-btn);
 }
 
 #scrollTop:hover div {
-	opacity: .2;
+	background: var(--color-btn-hover);
 }
 
 .darken {

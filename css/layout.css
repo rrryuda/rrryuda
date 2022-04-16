@@ -36,13 +36,12 @@ nav div {
 	top: 0;
 	left: 0;
 	height: 100%;
-	opacity: .3;
 	border-radius: 18px;
-	background: var(--color-fg);
+	background: var(--color-btn);
 }
 
 nav a:hover div {
-	opacity: .2;
+	background: var(--color-btn-hover);
 }
 
 /* footer */
@@ -133,12 +132,10 @@ footer .copyright {
 .item {
 	z-index: 1;
 	overflow: hidden;
-	border: none;
+	outline: 2px solid var(--color-bg);
+	outline-offset: -1px;
 	border-radius: .75rem;
 	background: var(--color-bg-box);
-	/* filter */
-	box-shadow: 0 0 24px rgba(0, 0, 0, .02);
-	-webkit-box-shadow: 0 0 24px rgba(0, 0, 0, .02);
 }
 
 .balloon {
@@ -172,7 +169,7 @@ footer .copyright {
 
 .info {
 	position: absolute;
-	z-index: 1;
+	z-index: -1;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -203,7 +200,7 @@ footer .copyright {
 }
 
 .frame {
-	z-index: -1;
+	z-index: -2;
 	padding: 50%;
 	/* transition */
 	transition: none !important;
@@ -615,7 +612,7 @@ footer .copyright {
 
 	.comp {
 		padding: 0;
-		border: none;
+		border: 0;
 		border-radius: 0;
 		background: none;
 		/* filter */
