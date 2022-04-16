@@ -135,8 +135,6 @@ footer .copyright {
 	overflow: hidden;
 	border-radius: .75rem;
 	background: var(--color-bg-box);
-	background-position: center;
-	background-size: 100%;
 	/* filter */
 	box-shadow: 0 0 24px rgba(0, 0, 0, .02);
 	-webkit-box-shadow: 0 0 24px rgba(0, 0, 0, .02);
@@ -203,7 +201,7 @@ footer .copyright {
 	opacity: 1;
 }
 
-.room {
+.frame {
 	z-index: -1;
 	padding: 50%;
 	/* transition */
@@ -259,7 +257,18 @@ footer .copyright {
 }
 
 /* thumbnail */
-#gmarket {
+#smile,
+#tap,
+#map,
+#c42,
+#neon,
+#visual {
+	background: var(--color-bg);
+	background-position: center;
+	background-size: cover;
+}
+
+#smile {
 	background-image: url("../source/thumbnail/smile.jpg");
 }
 
@@ -294,6 +303,7 @@ footer .copyright {
 	background: var(--color-bg);
 }
 
+/* cover */
 .cover {
 	position: fixed;
 	z-index: -99;
@@ -302,8 +312,6 @@ footer .copyright {
 	height: var(--margin-cover);
 	padding: 0;
 	margin: 0;
-	background-position: center;
-	background-size: cover;
 }
 
 .glass {
@@ -321,6 +329,17 @@ footer .copyright {
 	height: 100%;
 	background: linear-gradient(to top, var(--color-bg-to) 0%, var(--color-bg-from) 99%);
 	-webkit-background: linear-gradient(to top, var(--color-bg-to) 0%, var(--color-bg-from) 99%);
+}
+
+#c-smile,
+#c-tap,
+#c-map,
+#c-c42,
+#c-neon,
+#c-visual {
+	background: var(--color-bg);
+	background-position: center;
+	background-size: cover;
 }
 
 #c-smile {
@@ -509,7 +528,7 @@ footer .copyright {
 		max-width: var(--width-small);
 	}
 
-	.form .room {
+	.form .frame {
 		display: none;
 	}
 
@@ -566,7 +585,7 @@ footer .copyright {
 		opacity: 1;
 	}
 
-	.room {
+	.frame {
 		padding: 28.5% 50%;
 	}
 
