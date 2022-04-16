@@ -212,14 +212,6 @@ footer .copyright {
 	-o-transition: none !important;
 }
 
-.frame img {
-	position: absolute;
-	width: calc(100% + 2px);
-	/* transform */
-	transform-origin: center;
-	transform: translate(-50%, -50%);
-}
-
 /* project state */
 .state {
 	flex-shrink: 0;
@@ -264,6 +256,42 @@ footer .copyright {
 	/* transform */
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
+}
+
+/* thumbnail */
+#smile,
+#tap,
+#map,
+#c42,
+#neon,
+#visual {
+	background: var(--color-bg);
+	background-position: center;
+	background-size: cover;
+}
+
+#smile {
+	background-image: url("../source/thumbnail/smile.jpg");
+}
+
+#tap {
+	background-image: url("../source/thumbnail/tap.jpg");
+}
+
+#map {
+	background-image: url("../source/thumbnail/map.jpg");
+}
+
+#c42 {
+	background-image: url("../source/thumbnail/42dot.jpg");
+}
+
+#neon {
+	background-image: url("../source/thumbnail/neon.jpg");
+}
+
+#visual {
+	background-image: url("../source/thumbnail/visual.jpg");
 }
 
 /* project */
