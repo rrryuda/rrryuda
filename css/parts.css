@@ -75,6 +75,10 @@
 	border-radius: 50%;
 }
 
+.edge {
+	border: 0;
+}
+
 .outline {
 	border: 2px solid var(--color-highlight);
 }
