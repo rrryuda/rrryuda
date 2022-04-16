@@ -132,8 +132,7 @@ footer .copyright {
 .item {
 	z-index: 1;
 	overflow: hidden;
-	outline: 2px solid var(--color-bg);
-	outline-offset: -1px;
+	border: 0;
 	border-radius: .75rem;
 	background: var(--color-bg-box);
 }
