@@ -133,7 +133,7 @@ footer .copyright {
 .item {
 	z-index: 1;
 	overflow: hidden;
-	border: 0;
+	border: none;
 	border-radius: .75rem;
 	background: var(--color-bg-box);
 	/* filter */
@@ -615,7 +615,7 @@ footer .copyright {
 
 	.comp {
 		padding: 0;
-		border: 0;
+		border: none;
 		border-radius: 0;
 		background: none;
 		/* filter */

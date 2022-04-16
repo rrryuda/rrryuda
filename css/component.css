@@ -63,13 +63,6 @@ iframe {
 	width: 100%;
 }
 
-/* button */
-button {
-	text-align: left;
-	border: 0;
-	background: none;
-}
-
 /* button link */
 .link {
 	font-size: 16px;
