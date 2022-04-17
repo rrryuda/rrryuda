@@ -382,12 +382,6 @@ footer .copyright {
 	margin: 2px 0;
 }
 
-.portrait div {
-	z-index: 1;
-	height: 100%;
-	border: 2px solid var(--color-outline);
-}
-
 .portrait img {
 	position: absolute;
 	top: 0;
