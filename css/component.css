@@ -85,8 +85,8 @@ iframe {
 	line-height: 16px;
 	padding: 4px 12px;
 	margin-top: 4px;
-	border-radius: 12px;
 	border: 1px solid var(--color-fg-thin);
+	border-radius: 12px;
 	color: var(--color-darkgray);
 	background: var(--color-white);
 }
