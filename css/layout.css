@@ -421,14 +421,14 @@ footer .copyright {
 	flex-shrink: 0;
 	align-items: center;
 	justify-content: center;
-	height: 48px;
+	height: 52px;
 }
 
 .node-dot span {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: var(--color-fg-box);
+	background: var(--color-fg-muted);
 }
 
 .node-path {

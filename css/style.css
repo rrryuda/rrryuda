@@ -68,7 +68,7 @@
 		--color-fg-muted: rgba(255, 255, 255, .6);
 		--color-fg-subtle: rgba(255, 255, 255, .4);
 		--color-fg-thin: rgba(255, 255, 255, .2);
-		--color-fg-box: rgba(255, 255, 255, .85);
+		--color-fg-box: rgba(255, 255, 255, .9);
 		/* button */
 		--color-btn: rgba(235, 245, 255, .3);
 		--color-btn-hover: rgba(235, 245, 255, .2);
@@ -221,7 +221,11 @@ li {
 
 .bullet {
 	list-style: disc;
-	padding-left: 24px;
+	padding-left: 20px;
+}
+
+.bullet ::marker {
+	color: var(--color-fg-muted);
 }
 
 .checklist {
@@ -257,7 +261,6 @@ a {
 
 .nail {
 	font-size: 18px;
-	font-weight: 600;
 	line-height: 28px;
 	display: block;
 	color: var(--color-fg-box);
@@ -265,7 +268,6 @@ a {
 
 .brow {
 	font-size: 16px;
-	font-weight: 600;
 	line-height: 24px;
 	display: block;
 	color: var(--color-fg-muted);
