@@ -247,16 +247,11 @@ a {
 }
 
 /* span text */
-.label {
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 24px;
-}
-
+.label,
 #dday {
 	font-size: 20px;
 	font-weight: 600;
-	line-height: 28px;
+	line-height: 24px;
 }
 
 .nail {
@@ -326,7 +321,8 @@ a {
 	}
 
 	/* span text */
-	.label {
+	.label,
+	#dday {
 		font-size: 18px;
 	}
 
