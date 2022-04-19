@@ -17,29 +17,9 @@
 	left: var(--margin-atom);
 }
 
-/* display */
-
-.block {
-	display: block;
-}
-
 /* display flex / grid */
 .start {
 	align-items: flex-start;
-}
-
-.center {
-	justify-content: center;
-	align-items: center;
-}
-
-.center h6,
-.center p,
-.center .label,
-.center .nail,
-.center .brow,
-.center .lashes {
-	text-align: center;
 }
 
 .wrap {
@@ -85,10 +65,6 @@
 }
 
 /* border */
-.round {
-	border-radius: 50%;
-}
-
 .outline {
-	border: 2px solid var(--color-highlight);
+	border: 2px solid var(--color-outline);
 }

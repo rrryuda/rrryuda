@@ -17,6 +17,7 @@
 	/* padding margin */
 	--margin-atom: 1rem;
 	--margin-default: 2rem;
+	--margin-medium: 3rem;
 	/* width */
 	--width-stretch: 1440px;
 	--width-insert: 960px;
@@ -26,32 +27,39 @@
 	/* ease */
 	--ease: cubic-bezier(.075, .8, .165, 1);
 	--swing: cubic-bezier(.35, .4, .3, 1.6);
+	/* color theme */
+	--color-blue: rgba(60, 120, 235, 1);
+	--color-fg: rgba(255, 255, 255, 1);
+	--color-fg-muted: rgba(255, 255, 255, .6);
+	--color-fg-subtle: rgba(255, 255, 255, .4);
+	--color-fg-thin: rgba(255, 255, 255, .2);
+	--color-fg-box: rgba(255, 255, 255, .9);
+	--color-btn: rgba(236, 240, 244, .3);
+	--color-btn-hover: rgba(236, 240, 244, .2);
+	--color-outline: rgba(255, 255, 255, .2);
+	--color-bg: rgba(0, 0, 0, 1);
+	--color-bg-box: rgba(28, 32, 36, 1);
+	--color-tag-bg: rgba(255, 255, 255, .2);
+	--color-bg-to: rgba(0, 0, 0, 0);
+	--color-bg-from: rgba(0, 0, 0, .6);
 }
 
-/* color theme */
+/* color theme
 @media (prefers-color-scheme: light) {
 
-	/* global */
 	:root {
-		/* media color */
-		/* foreground */
 		--color-blue: rgba(70, 130, 255, 1);
 		--color-fg: rgba(0, 0, 0, .8);
 		--color-fg-muted: rgba(0, 0, 0, .5);
 		--color-fg-subtle: rgba(0, 0, 0, .35);
 		--color-fg-thin: rgba(0, 0, 0, .2);
 		--color-fg-box: rgba(0, 0, 0, .8);
-		/* button */
 		--color-btn: rgba(36, 40, 48, .4);
 		--color-btn-hover: rgba(36, 40, 48, .6);
-		/* border */
 		--color-outline: rgba(0, 0, 0, 0);
-		--color-highlight: rgba(0, 0, 0, 0);
-		/* background */
 		--color-bg: rgba(246, 246, 250, 1);
 		--color-bg-box: rgba(255, 255, 255, 1);
 		--color-tag-bg: rgba(70, 130, 255, .8);
-		/* media gradient */
 		--color-bg-to: rgba(246, 246, 250, 0);
 		--color-bg-from: rgba(246, 246, 250, .6);
 	}
@@ -59,31 +67,23 @@
 
 @media (prefers-color-scheme: dark) {
 
-	/* global */
 	:root {
-		/* media color */
-		/* foreground */
 		--color-blue: rgba(60, 120, 235, 1);
 		--color-fg: rgba(255, 255, 255, 1);
 		--color-fg-muted: rgba(255, 255, 255, .6);
 		--color-fg-subtle: rgba(255, 255, 255, .4);
 		--color-fg-thin: rgba(255, 255, 255, .2);
 		--color-fg-box: rgba(255, 255, 255, .9);
-		/* button */
 		--color-btn: rgba(235, 245, 255, .3);
 		--color-btn-hover: rgba(235, 245, 255, .2);
-		/* border */
-		--color-outline: rgba(255, 255, 255, .15);
-		--color-highlight: rgba(255, 255, 255, .2);
-		/* background */
+		--color-outline: rgba(255, 255, 255, .2);
 		--color-bg: rgba(10, 12, 15, 1);
 		--color-bg-box: rgba(36, 40, 48, 1);
 		--color-tag-bg: rgba(255, 255, 255, .2);
-		/* media gradient */
 		--color-bg-to: rgba(10, 12, 15, 0);
 		--color-bg-from: rgba(10, 12, 15, .6);
 	}
-}
+} */
 
 /* document */
 ::selection {
@@ -408,6 +408,26 @@ a {
 	/* animation */
 	animation: 1s var(--ease) 0s 1 normal forwards slideup;
 	-webkit-animation: 1s var(--ease) 0s 1 normal forwards slideup;
+}
+
+.slideup:nth-child(2) {
+	animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+}
+
+.slideup:nth-child(3) {
+	animation-delay: .2s;
+	-webkit-animation-delay: .2s;
+}
+
+.slideup:nth-child(4) {
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+}
+
+.slideup:nth-child(5) {
+	animation-delay: .4s;
+	-webkit-animation-delay: .4s;
 }
 
 @keyframes slideup {

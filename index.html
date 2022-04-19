@@ -7,8 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f6f6fa" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0a0c0f" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#000000">
     <meta name="msapplication-TileColor" content="#3282ff">
 
     <!-- favicon -->
@@ -46,42 +45,38 @@
 <body class="loading">
 
     <!-- header -->
-    <header include-html="layout/header_main.html"></header>
+    <header include-html="layout/header.html"></header>
 
     <!-- contents container -->
     <main class="home">
 
         <!-- contents -->
-        <section class="portfolio">
+        <section class="about">
 
-            <!-- bio -->
-            <article class="item form swing">
-                <div class="intro">
-                    <div class="row">
-                        <div class="portrait round" id="profile"></div>
-                        <span class="label">Seunghyun Yoo</span>
-                    </div>
-                    <p>Seunghyun is a UX Visual designer who creates from the point of user experience view and
-                        shines the products with fine components. Currently working as a UX Designer at
+            <!-- profile -->
+            <article class="bio slideup">
+                <div class="profile" id="profile"></div>
+                <div class="name">
+                    <h6>Seunghyun Yoo</h6>
+                    <p>Seunghyun is a UX Visual designer who creates from the point of user experience view and shines
+                        the products with fine components. Currently working as a UX Designer at
                         <a href="https://www.gmarket.co.kr/" target="_blank">Gmarket</a>
                     </p>
                 </div>
-                <!-- link -->
-                <a class="link east south" href="about/">
-                    About me
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path
-                            d="M15.9998 14.9998V6.70696C15.9998 6.31643 15.6833 5.99985 15.2927 5.99985C15.1052 5.99985 14.9254 6.07435 14.7927 6.20696L11.9998 8.99985L5.70696 2.70696C5.31643 2.31643 4.68327 2.31643 4.29274 2.70696L2.70696 4.29274C2.31643 4.68327 2.31643 5.31643 2.70696 5.70695L8.99985 11.9998L6.20696 14.7927C6.07435 14.9254 5.99985 15.1052 5.99985 15.2927C5.99985 15.6833 6.31643 15.9998 6.70696 15.9998H14.9998C15.5521 15.9998 15.9998 15.5521 15.9998 14.9998Z" />
-                    </svg>
-                </a>
-                <div class="frame"></div>
             </article>
 
-            <!-- work #1 -->
-            <article class="item swing">
-                <a class="block">
-                    <div class="info">
-                        <h5>Smile Delivery</h5>
+            <div class="desc">
+
+                <!-- highlight #1 -->
+                <article class="item swing">
+                    <a>
+                        <div class="row">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5824 12.5813C13.757 13.4067 12.4468 13.4518 11.5685 12.7165L11.5576 12.7275L11.4162 12.5863C11.1875 12.3579 10.817 12.358 10.5884 12.5865L9.19349 13.9814C9.3127 14.1333 9.44232 14.2798 9.58237 14.4198C11.4708 16.3082 14.5325 16.3082 16.4209 14.4198L20.4209 10.4198C22.3092 8.53142 22.3092 5.46973 20.4209 3.58133C18.5325 1.69294 15.4708 1.69294 13.5824 3.58134L12.5022 4.66152C11.9945 5.1692 11.9945 5.99232 12.5022 6.5C13.0099 7.00768 13.833 7.00768 14.3407 6.5L15.4209 5.41981C16.2939 4.54678 17.7093 4.54678 18.5824 5.41981C19.4554 6.29284 19.4554 7.7083 18.5824 8.58133L14.5824 12.5813ZM7.58231 9.58134C9.4707 7.69294 12.5324 7.69294 14.4208 9.58133C14.5608 9.72137 14.6904 9.86779 14.8096 10.0196L13.4148 11.4144C13.1862 11.6431 12.8154 11.6431 12.5867 11.4144L12.4558 11.2835L12.4447 11.2931C11.5663 10.5491 10.2493 10.5913 9.42079 11.4198L5.42079 15.4198C4.54776 16.2928 4.54776 17.7083 5.42079 18.5813C6.29382 19.4544 7.70928 19.4544 8.58231 18.5813L9.66152 17.5021C10.1692 16.9944 10.9923 16.9944 11.5 17.5021C12.0077 18.0098 12.0077 18.8329 11.5 19.3406L10.4208 20.4198C8.5324 22.3082 5.47071 22.3082 3.58231 20.4198C1.69392 18.5314 1.69392 15.4697 3.58231 13.5813L7.58231 9.58134Z" />
+                            </svg>
+                            <span class="label">Smile Delivery UT</span>
+                        </div>
                         <!-- locked -->
                         <div class="state">
                             <svg class="locked" width="10" height="12" viewBox="0 0 10 12" fill="none">
@@ -95,16 +90,19 @@
                                     fill="white" />
                             </svg>
                         </div>
-                    </div>
-                    <div class="frame" id="smile"></div>
-                </a>
-            </article>
+                    </a>
+                </article>
 
-            <!-- work #2 -->
-            <article class="item swing">
-                <a class="block">
-                    <div class="info">
-                        <h5>TAP! 0.1</h5>
+                <!-- highlight #2 -->
+                <article class="item swing">
+                    <a>
+                        <div class="row">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5824 12.5813C13.757 13.4067 12.4468 13.4518 11.5685 12.7165L11.5576 12.7275L11.4162 12.5863C11.1875 12.3579 10.817 12.358 10.5884 12.5865L9.19349 13.9814C9.3127 14.1333 9.44232 14.2798 9.58237 14.4198C11.4708 16.3082 14.5325 16.3082 16.4209 14.4198L20.4209 10.4198C22.3092 8.53142 22.3092 5.46973 20.4209 3.58133C18.5325 1.69294 15.4708 1.69294 13.5824 3.58134L12.5022 4.66152C11.9945 5.1692 11.9945 5.99232 12.5022 6.5C13.0099 7.00768 13.833 7.00768 14.3407 6.5L15.4209 5.41981C16.2939 4.54678 17.7093 4.54678 18.5824 5.41981C19.4554 6.29284 19.4554 7.7083 18.5824 8.58133L14.5824 12.5813ZM7.58231 9.58134C9.4707 7.69294 12.5324 7.69294 14.4208 9.58133C14.5608 9.72137 14.6904 9.86779 14.8096 10.0196L13.4148 11.4144C13.1862 11.6431 12.8154 11.6431 12.5867 11.4144L12.4558 11.2835L12.4447 11.2931C11.5663 10.5491 10.2493 10.5913 9.42079 11.4198L5.42079 15.4198C4.54776 16.2928 4.54776 17.7083 5.42079 18.5813C6.29382 19.4544 7.70928 19.4544 8.58231 18.5813L9.66152 17.5021C10.1692 16.9944 10.9923 16.9944 11.5 17.5021C12.0077 18.0098 12.0077 18.8329 11.5 19.3406L10.4208 20.4198C8.5324 22.3082 5.47071 22.3082 3.58231 20.4198C1.69392 18.5314 1.69392 15.4697 3.58231 13.5813L7.58231 9.58134Z" />
+                            </svg>
+                            <span class="label">TAP! Robo-taxi 0.1</span>
+                        </div>
                         <!-- locked -->
                         <div class="state">
                             <svg class="locked" width="10" height="12" viewBox="0 0 10 12" fill="none">
@@ -118,16 +116,19 @@
                                     fill="white" />
                             </svg>
                         </div>
-                    </div>
-                    <div class="frame" id="tap"></div>
-                </a>
-            </article>
+                    </a>
+                </article>
 
-            <!-- work #3 -->
-            <article class="item swing">
-                <a class="block" href="work/maps/">
-                    <div class="info">
-                        <h5>42dot Map SDK</h5>
+                <!-- highlight #3 -->
+                <article class="item swing">
+                    <a href="work/maps/">
+                        <div class="row">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5824 12.5813C13.757 13.4067 12.4468 13.4518 11.5685 12.7165L11.5576 12.7275L11.4162 12.5863C11.1875 12.3579 10.817 12.358 10.5884 12.5865L9.19349 13.9814C9.3127 14.1333 9.44232 14.2798 9.58237 14.4198C11.4708 16.3082 14.5325 16.3082 16.4209 14.4198L20.4209 10.4198C22.3092 8.53142 22.3092 5.46973 20.4209 3.58133C18.5325 1.69294 15.4708 1.69294 13.5824 3.58134L12.5022 4.66152C11.9945 5.1692 11.9945 5.99232 12.5022 6.5C13.0099 7.00768 13.833 7.00768 14.3407 6.5L15.4209 5.41981C16.2939 4.54678 17.7093 4.54678 18.5824 5.41981C19.4554 6.29284 19.4554 7.7083 18.5824 8.58133L14.5824 12.5813ZM7.58231 9.58134C9.4707 7.69294 12.5324 7.69294 14.4208 9.58133C14.5608 9.72137 14.6904 9.86779 14.8096 10.0196L13.4148 11.4144C13.1862 11.6431 12.8154 11.6431 12.5867 11.4144L12.4558 11.2835L12.4447 11.2931C11.5663 10.5491 10.2493 10.5913 9.42079 11.4198L5.42079 15.4198C4.54776 16.2928 4.54776 17.7083 5.42079 18.5813C6.29382 19.4544 7.70928 19.4544 8.58231 18.5813L9.66152 17.5021C10.1692 16.9944 10.9923 16.9944 11.5 17.5021C12.0077 18.0098 12.0077 18.8329 11.5 19.3406L10.4208 20.4198C8.5324 22.3082 5.47071 22.3082 3.58231 20.4198C1.69392 18.5314 1.69392 15.4697 3.58231 13.5813L7.58231 9.58134Z" />
+                            </svg>
+                            <span class="label">42dot Map SDK</span>
+                        </div>
                         <!-- unlocked -->
                         <div class="state">
                             <svg class="hook" width="10" height="12" viewBox="0 0 10 12" fill="none">
@@ -141,96 +142,36 @@
                                     fill="white" />
                             </svg>
                         </div>
-                    </div>
-                    <div class="frame" id="map"></div>
-                </a>
-            </article>
+                    </a>
+                </article>
 
-            <!-- work #4 -->
-            <article class="item swing">
-                <a class="block" href="work/42dot/">
-                    <div class="info">
-                        <h5>42dot Branding</h5>
-                    </div>
-                    <div class="frame" id="c42"></div>
-                </a>
-            </article>
+                <!-- work -->
+                <article class="item swing">
+                    <a href="work/">
+                        <div class="row">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5824 12.5813C13.757 13.4067 12.4468 13.4518 11.5685 12.7165L11.5576 12.7275L11.4162 12.5863C11.1875 12.3579 10.817 12.358 10.5884 12.5865L9.19349 13.9814C9.3127 14.1333 9.44232 14.2798 9.58237 14.4198C11.4708 16.3082 14.5325 16.3082 16.4209 14.4198L20.4209 10.4198C22.3092 8.53142 22.3092 5.46973 20.4209 3.58133C18.5325 1.69294 15.4708 1.69294 13.5824 3.58134L12.5022 4.66152C11.9945 5.1692 11.9945 5.99232 12.5022 6.5C13.0099 7.00768 13.833 7.00768 14.3407 6.5L15.4209 5.41981C16.2939 4.54678 17.7093 4.54678 18.5824 5.41981C19.4554 6.29284 19.4554 7.7083 18.5824 8.58133L14.5824 12.5813ZM7.58231 9.58134C9.4707 7.69294 12.5324 7.69294 14.4208 9.58133C14.5608 9.72137 14.6904 9.86779 14.8096 10.0196L13.4148 11.4144C13.1862 11.6431 12.8154 11.6431 12.5867 11.4144L12.4558 11.2835L12.4447 11.2931C11.5663 10.5491 10.2493 10.5913 9.42079 11.4198L5.42079 15.4198C4.54776 16.2928 4.54776 17.7083 5.42079 18.5813C6.29382 19.4544 7.70928 19.4544 8.58231 18.5813L9.66152 17.5021C10.1692 16.9944 10.9923 16.9944 11.5 17.5021C12.0077 18.0098 12.0077 18.8329 11.5 19.3406L10.4208 20.4198C8.5324 22.3082 5.47071 22.3082 3.58231 20.4198C1.69392 18.5314 1.69392 15.4697 3.58231 13.5813L7.58231 9.58134Z" />
+                            </svg>
+                            <span class="label">All Projects</span>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- work #5 -->
-            <article class="item swing">
-                <a class="block" href="work/neon/">
-                    <div class="info">
-                        <h5>Neon Theme</h5>
-                    </div>
-                    <div class="frame" id="neon"></div>
-                </a>
-            </article>
+                <!-- resume -->
+                <article class="item swing">
+                    <a href="resume/">
+                        <div class="row">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5824 12.5813C13.757 13.4067 12.4468 13.4518 11.5685 12.7165L11.5576 12.7275L11.4162 12.5863C11.1875 12.3579 10.817 12.358 10.5884 12.5865L9.19349 13.9814C9.3127 14.1333 9.44232 14.2798 9.58237 14.4198C11.4708 16.3082 14.5325 16.3082 16.4209 14.4198L20.4209 10.4198C22.3092 8.53142 22.3092 5.46973 20.4209 3.58133C18.5325 1.69294 15.4708 1.69294 13.5824 3.58134L12.5022 4.66152C11.9945 5.1692 11.9945 5.99232 12.5022 6.5C13.0099 7.00768 13.833 7.00768 14.3407 6.5L15.4209 5.41981C16.2939 4.54678 17.7093 4.54678 18.5824 5.41981C19.4554 6.29284 19.4554 7.7083 18.5824 8.58133L14.5824 12.5813ZM7.58231 9.58134C9.4707 7.69294 12.5324 7.69294 14.4208 9.58133C14.5608 9.72137 14.6904 9.86779 14.8096 10.0196L13.4148 11.4144C13.1862 11.6431 12.8154 11.6431 12.5867 11.4144L12.4558 11.2835L12.4447 11.2931C11.5663 10.5491 10.2493 10.5913 9.42079 11.4198L5.42079 15.4198C4.54776 16.2928 4.54776 17.7083 5.42079 18.5813C6.29382 19.4544 7.70928 19.4544 8.58231 18.5813L9.66152 17.5021C10.1692 16.9944 10.9923 16.9944 11.5 17.5021C12.0077 18.0098 12.0077 18.8329 11.5 19.3406L10.4208 20.4198C8.5324 22.3082 5.47071 22.3082 3.58231 20.4198C1.69392 18.5314 1.69392 15.4697 3.58231 13.5813L7.58231 9.58134Z" />
+                            </svg>
+                            <span class="label">Resume</span>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- work #6 -->
-            <article class="item swing">
-                <a class="block" href="work/visual/">
-                    <div class="info">
-                        <h5>Visual Journey</h5>
-                    </div>
-                    <div class="frame" id="visual"></div>
-                </a>
-            </article>
-
-            <!-- experience -->
-            <article class="item form swing">
-                <div class="intro">
-                    <span class="brow heel">Experience</span>
-                    <div class="column">
-                        <span class="label">UX Designer</span>
-                        <span class="lashes">Gmarket • 2021. 7 - Present</span>
-                    </div>
-                    <div class="column">
-                        <span class="label">UI Designer</span>
-                        <span class="lashes">42dot • 2019. 11 - 2021. 7</span>
-                    </div>
-                    <div class="column">
-                        <span class="label">GUI Designer</span>
-                        <span class="lashes">Hyundai-Mnsoft • 2018. 5 - 2019. 11</span>
-                    </div>
-                    <div class="column">
-                        <span id="dday"></span>
-                        <span class="lashes">Digging</span>
-                    </div>
-                </div>
-                <!-- link -->
-                <a class="link east south" href="resume/">
-                    Resume
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path
-                            d="M15.9998 14.9998V6.70696C15.9998 6.31643 15.6833 5.99985 15.2927 5.99985C15.1052 5.99985 14.9254 6.07435 14.7927 6.20696L11.9998 8.99985L5.70696 2.70696C5.31643 2.31643 4.68327 2.31643 4.29274 2.70696L2.70696 4.29274C2.31643 4.68327 2.31643 5.31643 2.70696 5.70695L8.99985 11.9998L6.20696 14.7927C6.07435 14.9254 5.99985 15.1052 5.99985 15.2927C5.99985 15.6833 6.31643 15.9998 6.70696 15.9998H14.9998C15.5521 15.9998 15.9998 15.5521 15.9998 14.9998Z" />
-                    </svg>
-                </a>
-                <div class="frame"></div>
-            </article>
-
-            <!-- discover -->
-            <article class="item form swing">
-                <div class="intro">
-                    <span class="brow heel">Discovering</span>
-                    <div class="column">
-                        <span class="label">Framer</span>
-                        <span class="lashes">Hi-Fi Prototyping</span>
-                    </div>
-                    <div class="column">
-                        <span class="label">Javascript</span>
-                        <span class="lashes">Optimized website</span>
-                    </div>
-                    <div class="column">
-                        <span class="label">Flutter</span>
-                        <span class="lashes">Design system</span>
-                    </div>
-                    <div class="column">
-                        <span class="label">React</span>
-                        <span class="lashes">App environment</span>
-                    </div>
-                </div>
-                <div class="frame"></div>
-            </article>
+            </div>
 
         </section>
 
