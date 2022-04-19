@@ -28,6 +28,20 @@
 	align-items: flex-start;
 }
 
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.center h6,
+.center p,
+.center .label,
+.center .nail,
+.center .brow,
+.center .lashes {
+	text-align: center;
+}
+
 .wrap {
 	flex-wrap: wrap;
 }

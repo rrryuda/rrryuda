@@ -370,7 +370,7 @@ footer .copyright {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--gap-default);
-	max-width: var(--width-small);
+	max-width: var(--width-ant);
 	margin: 0 auto;
 }
 
@@ -380,12 +380,35 @@ footer .copyright {
 	width: 48px;
 	height: 48px;
 	margin: 2px 0;
+	border-radius: 8px;
+	background-position: center;
+	background-size: cover;
 }
 
-.portrait img {
-	position: absolute;
-	top: 0;
-	left: 0;
+.profile {
+	flex-shrink: 0;
+	overflow: hidden;
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+}
+
+#profile {
+	background-image: url("../about/source/profile.jpg");
+}
+
+#gmarket {
+	background-image: url("../resume/source/gmarket.jpg");
+}
+
+#dot42 {
+	background-image: url("../resume/source/42dot.jpg");
+}
+
+#company {
+	background-image: url("../resume/source/none.png");
 }
 
 .location {
@@ -522,11 +545,6 @@ footer .copyright {
 
 	.form .frame {
 		display: none;
-	}
-
-	/* about */
-	.about {
-		max-width: var(--width-ant);
 	}
 
 	/* resume */
