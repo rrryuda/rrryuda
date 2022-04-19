@@ -6,8 +6,8 @@ header {
 	left: 0;
 	opacity: 0;
 	/* animation */
-	animation: 1s var(--ease) 0s 1 normal forwards movein;
-	-webkit-animation: 1s var(--ease) 0s 1 normal forwards movein;
+	animation: 1.4s var(--ease) 0s 1 normal forwards movein;
+	-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards movein;
 }
 
 nav {
@@ -125,17 +125,9 @@ footer .copyright {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: var(--margin-medium);
+	gap: var(--gap-default);
 	max-width: 476px;
 	margin: 0 auto;
-}
-
-.about .bio {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: var(--gap-default);
 }
 
 .about .profile {
@@ -143,6 +135,7 @@ footer .copyright {
 	overflow: hidden;
 	width: 4.5rem;
 	height: 4.5rem;
+	margin: 0 auto;
 	border-radius: 50%;
 	background-position: center;
 	background-size: cover;
@@ -152,7 +145,7 @@ footer .copyright {
 	background-image: url("../source/profile.jpg");
 }
 
-.about .name {
+.about .bio {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -161,14 +154,36 @@ footer .copyright {
 	gap: var(--gap-atom);
 }
 
-.about .name p {
+.about .bio p {
 	color: var(--color-fg-muted);
 	margin: 0 var(--margin-default);
 }
 
-.about .name a {
+.about .bio a {
 	text-decoration: underline;
 	color: var(--color-fg);
+}
+
+.about .menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--gap-default);
+	margin-bottom: var(--gap-atom);
+}
+
+.about .menu a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	background: var(--color-bg-box);
+}
+
+.about .menu a svg {
+	fill: var(--color-fg);
 }
 
 .about .item {
@@ -182,18 +197,11 @@ footer .copyright {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1.5rem;
+	padding: 1.25rem 1.5rem;
 }
 
 .about .item a svg {
 	fill: var(--color-fg-subtle);
-}
-
-.about .item:hover .hook {
-	top: 0;
-	/* transform */
-	transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
 }
 
 /* resume */
@@ -305,6 +313,7 @@ footer .copyright {
 }
 
 .work .intro a {
+	text-decoration: underline;
 	display: inline;
 }
 
