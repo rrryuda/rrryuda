@@ -213,17 +213,18 @@ a {
 }
 
 /* span text */
-.label {
-	font-size: 20px;
-	font-weight: 600;
+.label,
+.nail {
 	line-height: 28px;
 	color: var(--color-fg);
 }
 
+.label {
+	font-size: 20px;
+}
+
 .nail {
 	font-size: 18px;
-	line-height: 28px;
-	color: var(--color-fg);
 }
 
 .brow {
@@ -284,14 +285,17 @@ a {
 	}
 
 	/* span text */
+	.label,
+	.nail {
+		line-height: 26px;
+	}
+
 	.label {
 		font-size: 18px;
-		line-height: 26px;
 	}
 
 	.nail {
 		font-size: 17px;
-		line-height: 26px;
 	}
 
 	.brow {

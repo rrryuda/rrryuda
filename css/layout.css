@@ -180,13 +180,11 @@ footer .copyright {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: var(--gap-default);
+	gap: 1rem;
 	margin: var(--margin-atom) 0;
 }
 
 .about .menu a {
-	text-align: center;
-	width: 80px;
 	/* transition */
 	transition: all .2s ease;
 	-webkit-transition: all .2s ease;
@@ -202,7 +200,7 @@ footer .copyright {
 .about .menu div {
 	flex-shrink: 0;
 	width: 2px;
-	height: 1rem;
+	height: .75rem;
 	background: var(--color-fg-subtle);
 }
 
