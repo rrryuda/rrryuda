@@ -218,6 +218,10 @@ li {
 	color: var(--color-fg-box);
 }
 
+li * {
+	display: block;
+}
+
 .bullet {
 	list-style: disc;
 	padding-left: 20px;
@@ -256,14 +260,12 @@ a {
 .nail {
 	font-size: 18px;
 	line-height: 28px;
-	display: block;
 	color: var(--color-fg);
 }
 
 .brow {
 	font-size: 16px;
 	line-height: 24px;
-	display: block;
 	color: var(--color-fg-muted);
 }
 
