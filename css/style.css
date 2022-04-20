@@ -246,19 +246,18 @@ a {
 }
 
 /* span text */
-.label,
-#dday {
+.label {
 	font-size: 20px;
 	font-weight: 600;
-	line-height: 24px;
+	line-height: 28px;
+	color: var(--color-fg);
 }
 
 .nail {
 	font-size: 18px;
-	font-weight: 600;
 	line-height: 28px;
 	display: block;
-	color: var(--color-fg-box);
+	color: var(--color-fg);
 }
 
 .brow {
@@ -320,13 +319,13 @@ a {
 	}
 
 	/* span text */
-	.label,
-	#dday {
+	.label {
 		font-size: 18px;
+		line-height: 26px;
 	}
 
 	.nail {
-		font-size: 16px;
+		font-size: 17px;
 		line-height: 26px;
 	}
 

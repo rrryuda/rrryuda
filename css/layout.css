@@ -156,7 +156,7 @@ footer .copyright {
 
 .about .bio p {
 	color: var(--color-fg-muted);
-	margin: 0 var(--margin-default);
+	margin: 0 2rem;
 }
 
 .about .bio a {
@@ -224,8 +224,8 @@ footer .copyright {
 	overflow: hidden;
 	width: 48px;
 	height: 48px;
-	margin: 2px 0;
-	border-radius: 8px;
+	margin: 4px 0;
+	border-radius: 4px;
 	background-position: center;
 	background-size: cover;
 }
@@ -322,7 +322,6 @@ footer .copyright {
 	overflow: hidden;
 	width: 48px;
 	height: 48px;
-	margin: 2px 0;
 	border-radius: 50%;
 	background-position: center;
 	background-size: cover;
