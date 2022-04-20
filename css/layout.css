@@ -38,6 +38,12 @@ nav div {
 	height: 100%;
 	border-radius: 18px;
 	background: var(--color-btn);
+	/* transition */
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
 }
 
 nav a:hover div {
@@ -72,6 +78,12 @@ footer a {
 	line-height: 20px;
 	text-transform: capitalize;
 	color: var(--color-blue);
+	/* transition */
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
 }
 
 footer .copyright {
@@ -175,6 +187,12 @@ footer .copyright {
 .about .menu a {
 	text-align: center;
 	width: 80px;
+	/* transition */
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
 }
 
 .about .menu a:hover {
