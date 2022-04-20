@@ -229,7 +229,7 @@ footer .copyright {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-default);
-	max-width: 800px;
+	max-width: var(--width-narrow);
 	margin: 0 auto;
 }
 
@@ -267,7 +267,7 @@ footer .copyright {
 }
 
 #company {
-	background-image: url("../resume/source/none.jpg");
+	background-image: url("../resume/source/mnsoft.jpg");
 }
 
 .node {
