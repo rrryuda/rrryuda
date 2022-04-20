@@ -153,10 +153,6 @@ footer .copyright {
 	background-size: cover;
 }
 
-#profile {
-	background-image: url("../source/profile.jpg");
-}
-
 .about .bio {
 	text-align: center;
 	display: flex;
@@ -254,18 +250,6 @@ footer .copyright {
 
 .resume svg {
 	fill: var(--color-fg-subtle);
-}
-
-#gmarket {
-	background-image: url("../resume/source/gmarket.jpg");
-}
-
-#dot42 {
-	background-image: url("../resume/source/42dot.jpg");
-}
-
-#company {
-	background-image: url("../resume/source/mnsoft.jpg");
 }
 
 .node {
@@ -698,7 +682,7 @@ footer .copyright {
 	}
 
 	.work .frame {
-		padding: 28.5% 50%;
+		padding: 25% 50%;
 	}
 
 	.hook {
