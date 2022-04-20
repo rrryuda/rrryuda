@@ -43,47 +43,6 @@
 	--color-bg-from: rgba(0, 0, 0, .6);
 }
 
-/* color theme
-@media (prefers-color-scheme: light) {
-
-	:root {
-		--color-blue: rgba(70, 130, 255, 1);
-		--color-fg: rgba(0, 0, 0, .8);
-		--color-fg-muted: rgba(0, 0, 0, .5);
-		--color-fg-subtle: rgba(0, 0, 0, .35);
-		--color-fg-thin: rgba(0, 0, 0, .2);
-		--color-fg-box: rgba(0, 0, 0, .8);
-		--color-btn: rgba(36, 40, 48, .4);
-		--color-btn-hover: rgba(36, 40, 48, .6);
-		--color-outline: rgba(0, 0, 0, 0);
-		--color-bg: rgba(246, 246, 250, 1);
-		--color-bg-box: rgba(255, 255, 255, 1);
-		--color-tag-bg: rgba(70, 130, 255, .8);
-		--color-bg-to: rgba(246, 246, 250, 0);
-		--color-bg-from: rgba(246, 246, 250, .6);
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-
-	:root {
-		--color-blue: rgba(60, 120, 235, 1);
-		--color-fg: rgba(255, 255, 255, 1);
-		--color-fg-muted: rgba(255, 255, 255, .6);
-		--color-fg-subtle: rgba(255, 255, 255, .4);
-		--color-fg-thin: rgba(255, 255, 255, .2);
-		--color-fg-box: rgba(255, 255, 255, .9);
-		--color-btn: rgba(235, 245, 255, .3);
-		--color-btn-hover: rgba(235, 245, 255, .2);
-		--color-outline: rgba(255, 255, 255, .2);
-		--color-bg: rgba(10, 12, 15, 1);
-		--color-bg-box: rgba(36, 40, 48, 1);
-		--color-tag-bg: rgba(255, 255, 255, .2);
-		--color-bg-to: rgba(10, 12, 15, 0);
-		--color-bg-from: rgba(10, 12, 15, .6);
-	}
-} */
-
 /* document */
 ::selection {
 	color: var(--color-bg);
@@ -434,6 +393,31 @@ a {
 	-webkit-animation-delay: .4s;
 }
 
+.up:nth-child(6) {
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+}
+
+.up:nth-child(7) {
+	animation-delay: .6s;
+	-webkit-animation-delay: .6s;
+}
+
+.up:nth-child(8) {
+	animation-delay: .7s;
+	-webkit-animation-delay: .7s;
+}
+
+.up:nth-child(9) {
+	animation-delay: .8s;
+	-webkit-animation-delay: .8s;
+}
+
+.up:nth-child(10) {
+	animation-delay: .9s;
+	-webkit-animation-delay: .9s;
+}
+
 @keyframes up {
 	0% {
 		opacity: 0;
@@ -466,8 +450,8 @@ a {
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	/* animation */
-	animation: 1.4s var(--ease) 0s 1 normal forwards swing;
-	-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards swing;
+	animation: 1.2s var(--ease) 0s 1 normal forwards swing;
+	-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 }
 
 .swing:nth-child(2) {
