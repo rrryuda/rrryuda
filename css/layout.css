@@ -169,21 +169,23 @@ footer .copyright {
 	align-items: center;
 	justify-content: center;
 	gap: var(--gap-default);
-	margin-bottom: var(--gap-atom);
+	margin: var(--margin-atom) 0;
 }
 
 .about .menu a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 3.5rem;
-	height: 3.5rem;
-	border-radius: 50%;
-	background: var(--color-bg-box);
+	text-align: center;
+	width: 80px;
 }
 
-.about .menu a svg {
-	fill: var(--color-fg);
+.about .menu a:hover {
+	opacity: .6;
+}
+
+.about .menu div {
+	flex-shrink: 0;
+	width: 2px;
+	height: 1rem;
+	background: var(--color-fg-subtle);
 }
 
 .about .item {

@@ -54,7 +54,9 @@
         <section class="about">
 
             <!-- profile -->
-            <div class="profile up" id="profile"></div>
+            <div class="profile up" id="profile">
+                <span class="hidden">profile image</span>
+            </div>
 
             <!-- bio -->
             <article class="bio up">
@@ -65,23 +67,22 @@
                 </p>
             </article>
 
+            <!-- menu -->
+            <article class="menu up">
+                <a href="work/">
+                    <span class="label">Projects</span>
+                </a>
+                <div></div>
+                <a href="resume/">
+                    <span class="label">Resume</span>
+                </a>
+            </article>
+
             <div class="desc up">
 
-                <!-- menu -->
-                <article class="menu">
-                    <a href="work/">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4 3C3.44772 3 3 3.44772 3 4V9.5C3 10.0523 3.44772 10.5 4 10.5H9.5C10.0523 10.5 10.5 10.0523 10.5 9.5V4C10.5 3.44772 10.0523 3 9.5 3H4ZM4 13.5C3.44772 13.5 3 13.9477 3 14.5V20C3 20.5523 3.44772 21 4 21H9.5C10.0523 21 10.5 20.5523 10.5 20V14.5C10.5 13.9477 10.0523 13.5 9.5 13.5H4ZM13.5 4C13.5 3.44772 13.9477 3 14.5 3H20C20.5523 3 21 3.44772 21 4V9.5C21 10.0523 20.5523 10.5 20 10.5H14.5C13.9477 10.5 13.5 10.0523 13.5 9.5V4ZM14.5 13.5C13.9477 13.5 13.5 13.9477 13.5 14.5V20C13.5 20.5523 13.9477 21 14.5 21H20C20.5523 21 21 20.5523 21 20V14.5C21 13.9477 20.5523 13.5 20 13.5H14.5Z" />
-                        </svg>
-                    </a>
-                    <a href="resume/">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M9.5 22V13.5C9.5 12.9477 9.94772 12.5 10.5 12.5H19V4C19 3.17157 18.3284 2.5 17.5 2.5H6.5C5.67157 2.5 5 3.17157 5 4V20.5C5 21.3284 5.67157 22 6.5 22H9.5ZM12 22V15H19L12 22Z" />
-                        </svg>
-                    </a>
-                </article>
+                <!-- null class for animation duration -->
+                <div class="hidden swing"></div>
+                <div class="hidden swing"></div>
 
                 <!-- highlight #1 -->
                 <article class="item swing">

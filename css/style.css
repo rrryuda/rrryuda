@@ -127,6 +127,10 @@ div {
 	width: 100%;
 }
 
+.hidden {
+	display: none !important;
+}
+
 html {
 	font-family: 'Inter', 'Noto Sans KR', sans-serif;
 	font-size: 20px;
