@@ -655,7 +655,7 @@ footer .copyright {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
 	/* work */
-	.form {
+	.work .form {
 		grid-column: span 2;
 	}
 
@@ -719,19 +719,22 @@ footer .copyright {
 		gap: var(--gap-atom);
 	}
 
-	.resume .item {
-		padding: 0;
-		border-radius: 0;
-		background: none;
+	/* gallery */
+	.content .image {
+		grid-template-columns: 100%;
 	}
+}
+
+@media screen and (max-width: 425px) {
 
 	/* resume */
 	.resume {
 		gap: var(--margin-row);
 	}
 
-	/* gallery */
-	.content .image {
-		grid-template-columns: 100%;
+	.resume .item {
+		padding: 0;
+		border-radius: 0;
+		background: none;
 	}
 }
