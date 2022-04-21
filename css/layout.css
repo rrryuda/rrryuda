@@ -113,7 +113,7 @@ footer .copyright {
 	-webkit-transform: rotateY(180deg);
 }
 
-.navigation .info {
+.navigation .item .info {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -121,7 +121,7 @@ footer .copyright {
 	background: rgba(0, 0, 0, .5);
 }
 
-.navigation .info span {
+.navigation .item .info span {
 	margin-right: 8px;
 	color: var(--color-white);
 }
@@ -246,8 +246,8 @@ footer .copyright {
 	background: var(--color-bg-box);
 }
 
-.resume .portrait,
-.work .portrait {
+.resume .item .portrait,
+.work .item .portrait {
 	flex-shrink: 0;
 	overflow: hidden;
 	width: 48px;
@@ -257,11 +257,11 @@ footer .copyright {
 	background-size: cover;
 }
 
-.resume svg {
+.resume .item svg {
 	fill: var(--color-fg-subtle);
 }
 
-.node {
+.resume .item .node {
 	position: absolute;
 	display: flex;
 	flex-shrink: 0;
@@ -272,7 +272,7 @@ footer .copyright {
 	height: 100%;
 }
 
-.node-dot {
+.resume .item .node-dot {
 	display: flex;
 	flex-shrink: 0;
 	align-items: center;
@@ -280,14 +280,14 @@ footer .copyright {
 	height: 52px;
 }
 
-.node-dot span {
+.resume .item .node-dot span {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
 	background: var(--color-fg-muted);
 }
 
-.node-path {
+.resume .item .node-path {
 	width: 2px;
 	height: 100%;
 	background: var(--color-fg-thin);
@@ -312,7 +312,7 @@ footer .copyright {
 	display: block;
 }
 
-.work .intro {
+.work .item .intro {
 	position: absolute;
 	z-index: 1;
 	display: flex;
@@ -327,12 +327,12 @@ footer .copyright {
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) calc(100% - 4rem), rgba(0, 0, 0, 0) calc(100% - 1rem));
 }
 
-.work .intro a {
+.work .item .intro a {
 	text-decoration: underline;
 	display: inline;
 }
 
-.work .info {
+.work .item .info {
 	position: absolute;
 	z-index: -1;
 	display: flex;
@@ -355,7 +355,7 @@ footer .copyright {
 	-o-transition: all .4s ease;
 }
 
-.work .info h5 {
+.work .item .info h5 {
 	margin-right: 8px;
 	color: var(--color-white);
 }
@@ -365,7 +365,7 @@ footer .copyright {
 	opacity: 1;
 }
 
-.work .frame {
+.work .item .frame {
 	z-index: -2;
 	padding: 50%;
 	/* transition */
@@ -635,7 +635,7 @@ footer .copyright {
 		grid-column: span 2;
 	}
 
-	.work .intro {
+	.work .item .intro {
 		position: relative;
 	}
 }
@@ -663,18 +663,18 @@ footer .copyright {
 		max-width: var(--width-ant);
 	}
 
-	.work .intro {
+	.work .item .intro {
 		position: relative;
 		mask-image: none;
 		-webkit-mask-image: none;
 	}
 
-	.work .info {
+	.work .item .info {
 		visibility: visible;
 		opacity: 1;
 	}
 
-	.work .frame {
+	.work .item .frame {
 		padding: 25% 50%;
 	}
 
