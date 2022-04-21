@@ -40,25 +40,31 @@ function includeHTML(callback) {
     }, 0);
 }
 
-/* load */
+/* page load */
 window.onload = function () {
     $("body").removeClass("loading");
     $("body").addClass("loaded");
 };
 
 /* scroll to top */
-window.onscroll = function () {
-    scrollFunction()
-};
+window.onscroll = function () { scrollFunction(), myFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         $("#scrollTop").fadeIn();
+        $("#title").fadeIn();
     } else {
         $("#scrollTop").fadeOut();
+        $("#title").fadeOut();
     }
 }
 function topFunction() {
     $("html,body").animate({ scrollTop: 0 }, 0);
+}
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
 }
 
 /* date calculator */
@@ -87,6 +93,13 @@ function counter() {
 counter();
 
 /* jquery */
+/* header */
+$(document).ready(function () {
+    $(window).scroll(function () {
+        $('#navBg').css("opacity", 0 + $(window).scrollTop() / 400)
+    })
+})
+
 /* cover */
 $(document).ready(function () {
     $(window).scroll(function () {

@@ -132,7 +132,6 @@ iframe {
 	display: none;
 	outline: none;
 	cursor: pointer;
-	text-align: center;
 	top: -64px;
 	right: var(--margin-atom);
 	width: 48px;
@@ -150,7 +149,6 @@ iframe {
 
 #scrollTop div {
 	position: relative;
-	width: 100%;
 	height: 100%;
 	background: var(--color-btn);
 	/* transition */
@@ -170,7 +168,6 @@ iframe {
 	position: absolute;
 	z-index: -1;
 	bottom: 0;
-	width: 100%;
 	height: 8rem;
 	background: linear-gradient(to top, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
 }

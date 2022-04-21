@@ -17,20 +17,26 @@ nav {
 }
 
 nav a {
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 24px;
-	text-transform: capitalize;
 	position: absolute;
 	z-index: 99;
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	gap: 6px;
 	padding: 4px 14px;
+}
+
+nav a span {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 24px;
 	color: var(--color-white);
 }
 
-nav div {
+nav a svg {
+	fill: var(--color-white);
+}
+
+nav a div {
 	position: absolute;
 	z-index: -1;
 	top: 0;
@@ -48,6 +54,66 @@ nav div {
 
 nav a:hover div {
 	background: var(--color-btn-hover);
+}
+
+header .blog a {
+	padding: 4px;
+	/* transition */
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+}
+
+header .blog a:hover {
+	opacity: .6;
+}
+
+header .blog .bg {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	height: var(--margin-nav);
+	opacity: 0;
+	background: var(--color-bg);
+}
+
+header .progress {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	height: 2px;
+	background: rgba(255, 255, 255, .12);
+}
+
+header .progress .bar {
+	width: 0%;
+	height: 2px;
+	background: var(--color-fg-muted);
+}
+
+#title {
+	position: fixed;
+	z-index: 999;
+	display: none;
+	top: 0;
+	left: calc(50% - 120px);
+	width: 240px;
+	height: var(--margin-nav);
+}
+
+#title span {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	position: absolute;
+	display: block;
+	top: calc(50% - 12px);
+	width: 100%;
 }
 
 /* footer */
@@ -643,8 +709,17 @@ footer .copyright {
 @media screen and (max-width: 768px) {
 
 	/* header */
-	nav {
-		background: linear-gradient(to bottom, var(--color-bg-from) 0%, var(--color-bg-to) 99%);
+	header .main {
+		background: linear-gradient(to bottom, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
+	}
+
+	#title {
+		left: calc(50% - 100px);
+		width: 200px;
+	}
+
+	#title span {
+		font-size: 18px;
 	}
 
 	/* navigation */
@@ -687,6 +762,11 @@ footer .copyright {
 }
 
 @media screen and (max-width: 544px) {
+
+	/* header */
+	header .blog a span {
+		display: none;
+	}
 
 	/* navigation */
 	.navigation {
