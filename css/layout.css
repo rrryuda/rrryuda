@@ -95,7 +95,7 @@ header .blog .title .progress {
 	bottom: 0;
 	height: 100%;
 	height: 1px;
-	background: rgba(255, 255, 255, .12);
+	background: var(--color-fg-thin);
 }
 
 header .blog .title .progress .bar {
