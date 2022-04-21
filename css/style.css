@@ -301,6 +301,8 @@ a {
 
 	/* global */
 	:root {
+		/* gap */
+		--gap-default: 1.25rem;
 		/* margin template */
 		--margin-column: 3rem;
 		--margin-row: 4rem;
@@ -335,7 +337,7 @@ a {
 	/* global */
 	:root {
 		/* margin template */
-		--margin-column: 1.25rem;
+		--margin-column: 1.5rem;
 		--margin-row: 2.5rem;
 	}
 }
