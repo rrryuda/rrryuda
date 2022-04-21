@@ -41,6 +41,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../js/script.js"></script>
+    <script src="../../js/work.js"></script>
 
     <title>Seunghyun &#124; 42dot Brand Identity</title>
 </head>
@@ -48,8 +49,23 @@
 <body class="loading">
 
     <!-- header -->
-    <header include-html="../../layout/header_blog.html"></header>
-    <div id="title"><span>42dot Brand Identity</span></div>
+    <header>
+        <nav class="blog">
+            <a class="west" href="../">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M10.2774 19.3222L3.36477 12.8416C3.13204 12.6234 3 12.3186 3 11.9996C3 11.6806 3.13204 11.3758 3.36477 11.1577L10.2774 4.67706C10.6802 4.29944 11.31 4.3096 11.7004 4.70001C11.8922 4.89185 12 5.15204 12 5.42335V8.99963H20C20.5523 8.99963 21 9.44734 21 9.99963V13.9996C21 14.5519 20.5523 14.9996 20 14.9996H12V18.5759C12 18.8472 11.8922 19.1074 11.7004 19.2992C11.31 19.6897 10.6802 19.6998 10.2774 19.3222Z" />
+                </svg>
+                <span>Work</span>
+            </a>
+            <div class="title is-hidden">
+                <span>42dot Brand Identity</span>
+                <div class="progress">
+                    <div class="bar" id="progressBar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- contents container -->
     <main class="project fadein">

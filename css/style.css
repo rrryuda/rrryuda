@@ -87,16 +87,13 @@ div {
 	width: 100%;
 }
 
-.hidden {
-	display: none !important;
-}
-
 html {
 	font-family: 'Inter', 'Noto Sans KR', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 	height: 100%;
 	word-break: keep-all;
+	background: var(--color-bg);
 	font-display: fallback;
 	-webkit-font-display: fallback;
 	-webkit-font-smoothing: antialiased;
@@ -108,13 +105,46 @@ html {
 	-o-font-smoothing: antialiased;
 	-o-text-size-adjust: none;
 	-moz-osx-font-smoothing: grayscale;
-	background: var(--color-bg);
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 body {
 	height: 100%;
 	color: var(--color-fg);
 	background: var(--color-bg);
+}
+
+/* scroll hidden */
+::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
+	-webkit-appearance: none;
+}
+
+/* hidden */
+.hidden {
+	display: none !important;
+}
+
+.is-hidden,
+.is-shown {
+	/* transition */
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+}
+
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.is-shown {
+	visibility: visible;
+	opacity: 1;
 }
 
 /* preload */

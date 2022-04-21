@@ -46,27 +46,6 @@ window.onload = function () {
     $("body").addClass("loaded");
 };
 
-/* scroll to top */
-window.onscroll = function () { scrollFunction(), myFunction() };
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        $("#scrollTop").fadeIn();
-        $("#title").fadeIn();
-    } else {
-        $("#scrollTop").fadeOut();
-        $("#title").fadeOut();
-    }
-}
-function topFunction() {
-    $("html,body").animate({ scrollTop: 0 }, 0);
-}
-function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-}
-
 /* date calculator */
 function counter() {
     var dday = new Date("May 28, 2018, 00:00:00").getTime();
@@ -91,30 +70,3 @@ function counter() {
     }, 1000);
 }
 counter();
-
-/* jquery */
-/* header */
-$(document).ready(function () {
-    $(window).scroll(function () {
-        $('#navBg').css("opacity", 0 + $(window).scrollTop() / 400)
-    })
-})
-
-/* cover */
-$(document).ready(function () {
-    $(window).scroll(function () {
-        $('.glass').css("opacity", 0 + $(window).scrollTop() / 400)
-    })
-})
-
-/* image modal */
-$(function () {
-    $(".modal").click(function () {
-        var $src = $(this).attr("src");
-        $(".content-modal").fadeIn(0);
-        $(".img-modal img").attr("src", $src);
-    });
-    $(".img-modal, .content-modal-overlay").click(function () {
-        $(".content-modal").fadeOut(0);
-    });
-});

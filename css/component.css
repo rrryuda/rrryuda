@@ -118,7 +118,7 @@ iframe {
 	background: var(--color-tag-bg);
 }
 
-/* scroll up */
+/* scroll indicator */
 .scroll {
 	position: sticky;
 	z-index: 99;
@@ -126,10 +126,9 @@ iframe {
 	bottom: 0;
 }
 
-#scrollTop {
+.scroll .top {
 	position: absolute;
 	overflow: hidden;
-	display: none;
 	outline: none;
 	cursor: pointer;
 	top: -64px;
@@ -139,7 +138,7 @@ iframe {
 	border-radius: 50%;
 }
 
-#scrollTop svg {
+.scroll .top svg {
 	position: absolute;
 	z-index: 1;
 	top: calc(50% - 10px);
@@ -147,7 +146,7 @@ iframe {
 	fill: var(--color-white);
 }
 
-#scrollTop div {
+.scroll .top div {
 	position: relative;
 	height: 100%;
 	background: var(--color-btn);
@@ -159,11 +158,11 @@ iframe {
 	-o-transition: all .2s ease;
 }
 
-#scrollTop:hover div {
+.scroll .top:hover div {
 	background: var(--color-btn-hover);
 }
 
-.darken {
+.scroll .darken {
 	pointer-events: none;
 	position: absolute;
 	z-index: -1;
