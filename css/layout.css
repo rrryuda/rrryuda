@@ -106,6 +106,13 @@ footer .copyright {
 	background-size: 100%;
 }
 
+.navigation .item:hover .hook {
+	top: 0;
+	/* transform */
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+}
+
 .navigation .info {
 	display: flex;
 	align-items: center;
@@ -117,13 +124,6 @@ footer .copyright {
 .navigation .info span {
 	margin-right: 8px;
 	color: var(--color-white);
-}
-
-.navigation .item:hover .hook {
-	top: 0;
-	/* transform */
-	transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
 }
 
 /* main */
@@ -200,18 +200,27 @@ footer .copyright {
 	background: var(--color-fg-subtle);
 }
 
-.about .item {
-	position: relative;
-	left: 0;
-	border-radius: .75rem;
-	background: var(--color-bg-box);
-}
-
 .about .item a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 1.25rem 1.5rem;
+	border-radius: .75rem;
+	background: var(--color-bg-box);
+	/* transition */
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+}
+
+.about .item a:hover {
+	background: var(--color-bg-box-hover);
+	/* transform */
+	-webkit-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	transform: scale(1.03);
 }
 
 .about .item a svg {
@@ -330,7 +339,7 @@ footer .copyright {
 	align-items: center;
 	justify-content: space-between;
 	left: -1px;
-	bottom: -1rem;
+	bottom: -1px;
 	width: calc(100% + 2px);
 	padding: var(--margin-row) var(--margin-default) var(--margin-default);
 	visibility: hidden;
@@ -352,7 +361,6 @@ footer .copyright {
 }
 
 .work .item:hover .info {
-	bottom: -1px;
 	visibility: visible;
 	opacity: 1;
 }
@@ -393,7 +401,10 @@ footer .copyright {
 	-ms-transition: all .6s var(--swing);
 	-o-transition: all .6s var(--swing);
 	/* transform */
+	-webkit-transform-origin: 9px 11px;
+	-ms-transform-origin: 9px 11px;
 	transform-origin: 9px 11px;
+	-webkit-transform: rotateY(0);
 	transform: rotateY(0);
 }
 
@@ -659,7 +670,6 @@ footer .copyright {
 	}
 
 	.work .info {
-		bottom: -1px;
 		visibility: visible;
 		opacity: 1;
 	}

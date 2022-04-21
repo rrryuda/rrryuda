@@ -38,6 +38,7 @@
 	--color-outline: rgba(255, 255, 255, .2);
 	--color-bg: rgba(0, 0, 0, 1);
 	--color-bg-box: rgba(28, 32, 36, 1);
+	--color-bg-box-hover: rgba(44, 48, 52, 1);
 	--color-tag-bg: rgba(255, 255, 255, .2);
 	--color-bg-to: rgba(0, 0, 0, 0);
 	--color-bg-from: rgba(0, 0, 0, .6);
