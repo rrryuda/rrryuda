@@ -202,6 +202,8 @@ footer {
 		margin: var(--margin-atom) 0;
 
 		a {
+			display: inline-block;
+			width: 80px;
 			/* transition */
 			transition: all .2s ease;
 			-webkit-transition: all .2s ease;
@@ -209,13 +211,22 @@ footer {
 			-ms-transition: all .2s ease;
 			-o-transition: all .2s ease;
 
+			span {
+				display: inline-block;
+				width: 100%;
+			}
+
+			.i1 {
+				text-align: right;
+			}
+
+			.i2 {
+				text-align: left;
+			}
+
 			&:hover {
 				opacity: .6;
 			}
-		}
-
-		span {
-			text-align: center;
 		}
 
 		div {
