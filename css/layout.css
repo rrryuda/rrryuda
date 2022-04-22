@@ -74,9 +74,9 @@ header .blog .title {
 	position: absolute;
 	z-index: -1;
 	display: none;
-	top: -1px;
+	top: 0;
 	left: 0;
-	height: var(--margin-nav);
+	height: calc(var(--margin-nav) + 1px);
 	background: var(--color-bg);
 }
 
@@ -94,14 +94,13 @@ header .blog .title .progress {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	height: 100%;
 	height: 1px;
 	background: var(--color-fg-thin);
 }
 
 header .blog .title .progress .bar {
 	width: 0%;
-	height: 1px;
+	height: 100%;
 	background: var(--color-fg-muted);
 }
 
@@ -131,7 +130,6 @@ footer a {
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 20px;
-	text-transform: capitalize;
 	color: var(--color-blue);
 	/* transition */
 	transition: all .2s ease;
