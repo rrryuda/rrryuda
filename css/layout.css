@@ -246,6 +246,10 @@ footer .copyright {
 	opacity: .6;
 }
 
+.about .menu span {
+	text-align: center;
+}
+
 .about .menu div {
 	flex-shrink: 0;
 	width: 2px;
