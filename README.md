@@ -3,7 +3,7 @@
 Seunghyun is a UX / Visual designer who creates from the point of user experience view and shines the products with fine components. 
 Currently working as a UX Designer at <a href="https://www.gmarket.co.kr/" target="_blank">Gmarket Global</a>.
 
-![main](https://user-images.githubusercontent.com/83178344/162564198-bf18e357-e62e-4a7b-82af-3c79d5dff864.png)
+![main](https://user-images.githubusercontent.com/83178344/164612289-84bce912-6694-4992-81c3-f996c7e50dd2.png)
 
 <a href="https://seunghyun.design" target="_blank">View on web</a>
 
