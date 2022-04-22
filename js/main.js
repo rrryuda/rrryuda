@@ -46,6 +46,19 @@ window.onload = function () {
     $("body").addClass("loaded");
 };
 
+/* scroll indicator */
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        $("#scrollTop").fadeIn(200);
+    } else {
+        $("#scrollTop").fadeOut(200);
+    }
+}
+function topFunction() {
+    $("html,body").animate({ scrollTop: 0 }, 300);
+}
+
 /* date calculator */
 function counter() {
     var dday = new Date("May 28, 2018, 00:00:00").getTime();
