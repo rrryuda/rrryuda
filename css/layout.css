@@ -73,6 +73,7 @@ header .blog a:hover {
 header .blog .title {
 	position: absolute;
 	z-index: -1;
+	display: none;
 	top: -1px;
 	left: 0;
 	height: var(--margin-nav);

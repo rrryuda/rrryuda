@@ -3,11 +3,13 @@
 window.onscroll = function () { scrollFunction(), myFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        $(".title, .top").removeClass("is-hidden");
-        $(".title, .top").addClass("is-shown");
+        /* add, remove class
+        $("id").removeClass("class"); */
+        $("#pageTitle").fadeIn(200);
+        $("#scrollTop").fadeIn(200);
     } else {
-        $(".title, .top").removeClass("is-shown");
-        $(".title, .top").addClass("is-hidden");
+        $("#pageTitle").fadeOut(200);
+        $("#scrollTop").fadeOut(200);
     }
 }
 function myFunction() {

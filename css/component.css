@@ -127,14 +127,15 @@ iframe {
 }
 
 .scroll .top {
+	cursor: pointer;
 	position: absolute;
 	overflow: hidden;
-	outline: none;
-	cursor: pointer;
+	display: none;
 	top: -64px;
 	right: var(--margin-atom);
 	width: 48px;
 	height: 48px;
+	outline: none;
 	border-radius: 50%;
 }
 
