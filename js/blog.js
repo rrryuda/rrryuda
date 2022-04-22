@@ -3,6 +3,37 @@
 history.scrollRestoration = "manual"
 document.oncontextmenu = function () { return false; }
 
+/* page load */
+window.onload = function () {
+    $("body").removeClass("loading");
+    $("body").addClass("loaded");
+};
+
+/* scroll indicator */
+window.onscroll = function () { scrollFunction(), myFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        $("#pageTitle").fadeIn(200);
+        $("#scrollTop").fadeIn(200);
+    } else {
+        $("#pageTitle").fadeOut(200);
+        $("#scrollTop").fadeOut(200);
+    }
+}
+
+/* scroll to top */
+function topFunction() {
+    $("html,body").animate({ scrollTop: 0 }, 300);
+}
+
+/* progress bar */
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
 /* includeHTML */
 function includeHTML(callback) {
     var z, i, elmnt, file, xhr;
@@ -38,35 +69,6 @@ function includeHTML(callback) {
     setTimeout(function () {
         //callback();
     }, 0);
-}
-
-/* page load */
-window.onload = function () {
-    $("body").removeClass("loading");
-    $("body").addClass("loaded");
-};
-
-/* scroll indicator */
-window.onscroll = function () { scrollFunction(), myFunction() };
-function scrollFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        /* add, remove class
-        $("id").removeClass("class"); */
-        $("#pageTitle").fadeIn(200);
-        $("#scrollTop").fadeIn(200);
-    } else {
-        $("#pageTitle").fadeOut(200);
-        $("#scrollTop").fadeOut(200);
-    }
-}
-function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-}
-function topFunction() {
-    $("html,body").animate({ scrollTop: 0 }, 300);
 }
 
 /* jquery */

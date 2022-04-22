@@ -3,6 +3,27 @@
 history.scrollRestoration = "manual"
 document.oncontextmenu = function () { return false; }
 
+/* page load */
+window.onload = function () {
+    $("body").removeClass("loading");
+    $("body").addClass("loaded");
+};
+
+/* scroll indicator */
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        $("#scrollTop").fadeIn(200);
+    } else {
+        $("#scrollTop").fadeOut(200);
+    }
+}
+
+/* scroll to top */
+function topFunction() {
+    $("html,body").animate({ scrollTop: 0 }, 300);
+}
+
 /* includeHTML */
 function includeHTML(callback) {
     var z, i, elmnt, file, xhr;
@@ -38,25 +59,6 @@ function includeHTML(callback) {
     setTimeout(function () {
         //callback();
     }, 0);
-}
-
-/* page load */
-window.onload = function () {
-    $("body").removeClass("loading");
-    $("body").addClass("loaded");
-};
-
-/* scroll indicator */
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        $("#scrollTop").fadeIn(200);
-    } else {
-        $("#scrollTop").fadeOut(200);
-    }
-}
-function topFunction() {
-    $("html,body").animate({ scrollTop: 0 }, 300);
 }
 
 /* date calculator */

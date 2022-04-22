@@ -71,7 +71,10 @@
 /* animation delay */
 @for $i from 1 through 20 {
 
-	.swing:nth-child(#{$i}n),
+	.swing:nth-child(#{$i}n) {
+		animation-delay: #{$i * 0.12}s;
+	}
+
 	.up:nth-child(#{$i}n) {
 		animation-delay: #{$i * 0.15}s;
 	}

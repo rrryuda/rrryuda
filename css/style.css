@@ -45,12 +45,6 @@
 }
 
 /* document */
-::selection {
-	color: var(--color-bg);
-	background: var(--color-fg);
-}
-
-/* normalize */
 html,
 body,
 header,
@@ -113,6 +107,11 @@ body {
 	height: 100%;
 	color: var(--color-fg);
 	background: var(--color-bg);
+}
+
+::selection {
+	color: var(--color-bg);
+	background: var(--color-fg);
 }
 
 /* scroll hidden */
