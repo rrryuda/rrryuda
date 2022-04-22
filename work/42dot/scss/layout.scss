@@ -1,0 +1,53 @@
+/* color-palette */
+.color-palette {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+
+	.info {
+		display: flex;
+		flex-direction: column;
+
+		span {
+			font-size: 15px;
+			line-height: 24px;
+		}
+	}
+
+	.blue {
+		display: flex;
+		flex-direction: column;
+		gap: var(--gap-atom);
+		padding: var(--margin-default);
+		background: #5A46FA;
+
+		span {
+			color: var(--color-white);
+		}
+	}
+
+	.black {
+		display: flex;
+		flex-direction: column;
+		gap: var(--gap-atom);
+		padding: var(--margin-default);
+		background: #000000;
+
+		span {
+			color: var(--color-white);
+		}
+	}
+
+	.white {
+		display: flex;
+		flex-direction: column;
+		gap: var(--gap-atom);
+		padding: var(--margin-default);
+		background: #FFFFFF;
+
+		span {
+			color: var(--color-black);
+		}
+	}
+}

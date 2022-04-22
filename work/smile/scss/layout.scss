@@ -1,0 +1,51 @@
+/* graph-container */
+.graph-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-default);
+	margin: var(--gap-atom) 0;
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		gap: var(--gap-atom);
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+
+			.graph {
+				display: grid;
+				grid-template-columns: 60px 80px auto;
+				gap: var(--gap-atom);
+
+				span {
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 28px;
+					white-space: nowrap;
+					width: 100%;
+					color: var(--color-fg-box);
+				}
+
+				.rate {
+					width: 100%;
+					margin: 4px 0;
+
+					div {
+						height: 100%;
+					}
+
+					.blue {
+						background: #367BF4;
+					}
+
+					.gray {
+						background: #7d7d7d;
+					}
+				}
+			}
+		}
+	}
+}
