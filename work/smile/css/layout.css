@@ -6,25 +6,25 @@
 	margin: var(--gap-atom) 0;
 }
 
-.graph-item {
+.graph-container .graph-item {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-atom);
 }
 
-.graph-item ul {
+.graph-container .graph-item ul {
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
 }
 
-.graph {
+.graph-container .graph {
 	display: grid;
 	grid-template-columns: 60px 80px auto;
 	gap: var(--gap-atom);
 }
 
-.graph span {
+.graph-container .graph span {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 28px;
@@ -33,21 +33,21 @@
 	color: var(--color-fg-box);
 }
 
-.rate {
+.graph-container .rate {
 	width: 100%;
 	margin: 4px 0;
 }
 
-.rate div {
+.graph-container .rate div {
 	height: 100%;
 	border-radius: 0 4px 4px 0;
 }
 
 /* graph color */
-.smile-blue {
+.graph-container .smile-blue {
 	background: #367BF4;
 }
 
-.smile-gray {
+.graph-container .smile-gray {
 	background: #7d7d7d;
 }
