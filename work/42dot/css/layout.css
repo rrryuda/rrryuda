@@ -6,26 +6,20 @@
 	border-radius: 8px;
 }
 
-.color-palette .color-name {
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 28px;
-}
-
-.color-palette .color-info {
+.color-palette .info {
 	display: flex;
 	flex-direction: column;
 }
 
-.color-palette .color-info span {
+.color-palette .info span {
 	font-size: 15px;
 	line-height: 24px;
 }
 
 /* color */
-.color-palette-blue,
-.color-palette-black,
-.color-palette-white {
+.color-palette .blue,
+.color-palette .black,
+.color-palette .white {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-atom);
@@ -33,28 +27,28 @@
 }
 
 /* blue */
-.color-palette .color-palette-blue {
-	background: #5a46fa;
+.color-palette .blue {
+	background: #5A46FA;
 }
 
-.color-palette .color-palette-blue span {
+.color-palette .blue span {
 	color: var(--color-white);
 }
 
 /* black */
-.color-palette .color-palette-black {
-	background: #000;
+.color-palette .black {
+	background: #000000;
 }
 
-.color-palette .color-palette-black span {
+.color-palette .black span {
 	color: var(--color-white);
 }
 
 /* white */
-.color-palette .color-palette-white {
-	background: #fff;
+.color-palette .white {
+	background: #FFFFFF;
 }
 
-.color-palette .color-palette-white span {
+.color-palette .white span {
 	color: var(--color-black);
 }
