@@ -1,0 +1,103 @@
+/* keyframe animation */
+/* movein */
+@keyframes movein {
+	0% {
+		opacity: 0;
+		-webkit-opacity: 0;
+		transform: translateY(-4rem);
+		-webkit-transform: translateY(-4rem);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-opacity: 1;
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+	}
+}
+
+/* slideup */
+.up {
+	opacity: 0;
+	/* animation */
+	animation: 1.4s var(--ease) 0s 1 normal forwards up;
+	-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
+}
+
+@keyframes up {
+	0% {
+		opacity: 0;
+		-webkit-opacity: 0;
+		transform: translateY(2rem);
+		-webkit-transform: translateY(2rem);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-opacity: 1;
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+	}
+}
+
+/* swing */
+.swing {
+	opacity: 0;
+	/* transition */
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	/* animation */
+	animation: 1.2s var(--ease) 0s 1 normal forwards swing;
+	-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
+}
+
+@keyframes swing {
+	0% {
+		opacity: 0;
+		-webkit-opacity: 0;
+		transform: scale(.75);
+		-webkit-transform: scale(.75);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-opacity: 1;
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+/* animation delay */
+@for $i from 1 through 20 {
+
+	.swing:nth-child(#{$i}n),
+	.up:nth-child(#{$i}n) {
+		animation-delay: #{$i * 0.15}s;
+	}
+}
+
+/* fadein */
+.fadein {
+	opacity: 0;
+	/* animation */
+	animation: 2s ease 0s 1 normal forwards fadein;
+	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		-webkit-opacity: 0;
+	}
+
+	30% {
+		opacity: 0;
+		-webkit-opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-opacity: 1;
+	}
+}
