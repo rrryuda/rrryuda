@@ -6,13 +6,13 @@
 	margin: var(--gap-atom) 0;
 }
 
-.graph-container .graph-item {
+.graph-container .item {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-atom);
 }
 
-.graph-container .graph-item ul {
+.graph-container .item ul {
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
@@ -44,10 +44,10 @@
 }
 
 /* graph color */
-.graph-container .smile-blue {
+.graph-container .blue {
 	background: #367BF4;
 }
 
-.graph-container .smile-gray {
+.graph-container .gray {
 	background: #7d7d7d;
 }
