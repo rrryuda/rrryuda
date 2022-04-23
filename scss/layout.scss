@@ -403,6 +403,17 @@ footer {
 			}
 		}
 
+		.frame {
+			z-index: -2;
+			padding: 50%;
+			/* transition */
+			transition: none !important;
+			animation: none !important;
+			-webkit-transition: none !important;
+			-webkit-animation: none !important;
+			-o-transition: none !important;
+		}
+
 		&:hover {
 			.info {
 				visibility: visible;
@@ -418,17 +429,6 @@ footer {
 				transform: rotateY(180deg);
 				-webkit-transform: rotateY(180deg);
 			}
-		}
-
-		.frame {
-			z-index: -2;
-			padding: 50%;
-			/* transition */
-			transition: none !important;
-			animation: none !important;
-			-webkit-transition: none !important;
-			-webkit-animation: none !important;
-			-o-transition: none !important;
 		}
 	}
 
