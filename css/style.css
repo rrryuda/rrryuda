@@ -350,11 +350,6 @@ a {
 
 @media screen and (max-width: 425px) {
 
-	/* document */
-	html {
-		font-size: 15px;
-	}
-
 	/* global */
 	:root {
 		/* margin template */
