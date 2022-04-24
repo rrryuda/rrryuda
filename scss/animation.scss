@@ -17,13 +17,6 @@
 }
 
 /* slideup */
-.up {
-	opacity: 0;
-	/* animation */
-	animation: 1.4s var(--ease) 0s 1 normal forwards up;
-	-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
-}
-
 @keyframes up {
 	0% {
 		opacity: 0;
@@ -41,23 +34,12 @@
 }
 
 /* swing */
-.swing {
-	opacity: 0;
-	/* transition */
-	transform-origin: center;
-	-webkit-transform-origin: center;
-	-ms-transform-origin: center;
-	/* animation */
-	animation: 1.2s var(--ease) 0s 1 normal forwards swing;
-	-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
-}
-
 @keyframes swing {
 	0% {
 		opacity: 0;
 		-webkit-opacity: 0;
-		transform: scale(.75);
-		-webkit-transform: scale(.75);
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
 	}
 
 	100% {
@@ -68,26 +50,7 @@
 	}
 }
 
-/* animation delay */
-@for $i from 1 through 20 {
-
-	.swing:nth-child(#{$i}n) {
-		animation-delay: #{$i * 0.12}s;
-	}
-
-	.up:nth-child(#{$i}n) {
-		animation-delay: #{$i * 0.15}s;
-	}
-}
-
 /* fadein */
-.fadein {
-	opacity: 0;
-	/* animation */
-	animation: 2s ease 0s 1 normal forwards fadein;
-	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
-}
-
 @keyframes fadein {
 	0% {
 		opacity: 0;
