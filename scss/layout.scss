@@ -179,13 +179,6 @@ footer {
 	max-width: 480px;
 	margin: 0 auto;
 
-	/* animation delay */
-	@for $i from 1 through 20 {
-		:nth-child(#{$i}n) {
-			animation-delay: #{$i * 0.15}s;
-		}
-	}
-
 	.portrait {
 		flex-shrink: 0;
 		overflow: hidden;
@@ -276,13 +269,6 @@ footer {
 		animation: 1.4s var(--ease) 0s 1 normal forwards up;
 		-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
-		/* animation delay */
-		@for $i from 1 through 20 {
-			.item:nth-child(#{$i}n) {
-				animation-delay: #{$i * 0.12}s;
-			}
-		}
-
 		.item {
 			opacity: 0;
 			/* transition */
@@ -319,6 +305,20 @@ footer {
 				}
 			}
 		}
+
+		/* animation delay */
+		@for $i from 1 through 20 {
+			:nth-child(#{$i}n) {
+				animation-delay: #{$i * 0.12}s;
+			}
+		}
+	}
+
+	/* animation delay */
+	@for $i from 1 through 20 {
+		:nth-child(#{$i}n) {
+			animation-delay: #{$i * 0.15}s;
+		}
 	}
 }
 
@@ -329,13 +329,6 @@ footer {
 	gap: var(--gap-default);
 	max-width: var(--width-narrow);
 	margin: 0 auto;
-
-	/* animation delay */
-	@for $i from 1 through 20 {
-		.item:nth-child(#{$i}n) {
-			animation-delay: #{$i * 0.15}s;
-		}
-	}
 
 	.item {
 		display: flex;
@@ -410,6 +403,13 @@ footer {
 			}
 		}
 	}
+
+	/* animation delay */
+	@for $i from 1 through 20 {
+		:nth-child(#{$i}n) {
+			animation-delay: #{$i * 0.15}s;
+		}
+	}
 }
 
 /* work status */
@@ -457,13 +457,6 @@ footer {
 	gap: var(--gap-default);
 	max-width: var(--width-stretch);
 	margin: 0 auto;
-
-	/* animation delay */
-	@for $i from 1 through 20 {
-		.item:nth-child(#{$i}n) {
-			animation-delay: #{$i * 0.12}s;
-		}
-	}
 
 	.item {
 		overflow: hidden;
@@ -570,6 +563,13 @@ footer {
 				transform: rotateY(180deg);
 				-webkit-transform: rotateY(180deg);
 			}
+		}
+	}
+
+	/* animation delay */
+	@for $i from 1 through 20 {
+		:nth-child(#{$i}n) {
+			animation-delay: #{$i * 0.12}s;
 		}
 	}
 }
@@ -825,16 +825,16 @@ footer {
 	.work {
 		max-width: var(--width-small);
 
-		/* animation delay */
-		@for $i from 1 through 20 {
-			.item:nth-child(#{$i}n) {
-				animation-delay: #{$i * 0.15}s;
-			}
-		}
-
 		.form {
 			.frame {
 				display: none;
+			}
+		}
+
+		/* animation delay */
+		@for $i from 1 through 20 {
+			:nth-child(#{$i}n) {
+				animation-delay: #{$i * 0.15}s;
 			}
 		}
 	}
@@ -896,13 +896,6 @@ footer {
 		grid-template-columns: 100%;
 		max-width: var(--width-ant);
 
-		/* animation delay */
-		@for $i from 1 through 20 {
-			.item:nth-child(#{$i}n) {
-				animation-delay: #{$i * 0.2}s;
-			}
-		}
-
 		.item {
 			.intro {
 				position: relative;
@@ -917,6 +910,13 @@ footer {
 
 			.frame {
 				padding: 25% 50%;
+			}
+		}
+
+		/* animation delay */
+		@for $i from 1 through 20 {
+			:nth-child(#{$i}n) {
+				animation-delay: #{$i * 0.2}s;
 			}
 		}
 	}
