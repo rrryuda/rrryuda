@@ -821,6 +821,19 @@ footer {
 
 @media screen and (max-width: 1024px) {
 
+	/* home */
+	.about {
+		.linker {
+
+			/* animation delay */
+			@for $i from 1 through 20 {
+				:nth-child(#{$i}n) {
+					animation-delay: #{$i * 0.15}s;
+				}
+			}
+		}
+	}
+
 	/* work */
 	.work {
 		max-width: var(--width-small);
