@@ -540,6 +540,9 @@ footer {
 		.frame {
 			z-index: -2;
 			padding: 50%;
+			background: var(--color-bg-box);
+			background-position: center;
+			background-size: cover;
 			/* transition */
 			transition: none !important;
 			animation: none !important;
@@ -576,44 +579,26 @@ footer {
 
 /* work thumbnail */
 #smile {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/source/smile.jpg");
 }
 
 #tap {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/source/tap.jpg");
 }
 
 #map {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/source/map.jpg");
 }
 
 #c42 {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/source/42dot.jpg");
 }
 
 #neon {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/source/neon.jpg");
 }
 
 #visual {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/source/visual.jpg");
 }
 
@@ -633,6 +618,9 @@ footer {
 	height: var(--margin-cover);
 	padding: 0;
 	margin: 0;
+	background: var(--color-bg);
+	background-position: center;
+	background-size: cover;
 
 	.glass {
 		position: absolute;
@@ -653,44 +641,26 @@ footer {
 
 /* project cover */
 #c-smile {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/smile/source/cover.jpg");
 }
 
 #c-tap {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/tap/source/cover.jpg");
 }
 
 #c-map {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/maps/source/cover.jpg");
 }
 
 #c-c42 {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/42dot/source/cover.jpg");
 }
 
 #c-neon {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/neon/source/cover.jpg");
 }
 
 #c-visual {
-	background: var(--color-bg);
-	background-position: center;
-	background-size: cover;
 	background-image: url("../work/visual/source/cover.jpg");
 }
 
@@ -719,6 +689,9 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--gap-default);
+		background: var(--color-bg);
+		background-position: center;
+		background-size: cover;
 
 		.item {
 			overflow: hidden;
