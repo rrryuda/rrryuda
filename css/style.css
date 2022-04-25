@@ -125,16 +125,6 @@ body {
 	display: none !important;
 }
 
-.is-hidden {
-	visibility: hidden;
-	opacity: 0;
-}
-
-.is-shown {
-	visibility: visible;
-	opacity: 1;
-}
-
 /* preload */
 .loading * {
 	transition: none !important;
@@ -147,6 +137,27 @@ body {
 	-ms-animation: none !important;
 	-o-transition: none !important;
 	-o-animation: none !important;
+}
+
+/* image */
+svg {
+	flex-shrink: 0;
+	fill: var(--color-fg);
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+video {
+	display: block;
+	width: 100%;
+}
+
+iframe {
+	display: block;
+	width: 100%;
 }
 
 /* typography */

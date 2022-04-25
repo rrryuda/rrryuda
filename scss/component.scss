@@ -90,21 +90,6 @@
 }
 
 /* image */
-svg {
-	flex-shrink: 0;
-	fill: var(--color-fg);
-}
-
-img {
-	display: block;
-	width: 100%;
-}
-
-video {
-	display: block;
-	width: 100%;
-}
-
 div {
 	img {
 		border-radius: 8px;
@@ -113,12 +98,6 @@ div {
 	video {
 		border-radius: 8px;
 	}
-}
-
-/* iframe - youtube */
-iframe {
-	display: block;
-	width: 100%;
 }
 
 /* button link */
@@ -154,7 +133,7 @@ iframe {
 	margin-top: 4px;
 	border: 1px solid var(--color-fg-muted);
 	border-radius: 12px;
-	color: var(--color-fg-muted);
+	color: var(--color-fg-box);
 }
 
 .tag {
@@ -168,9 +147,9 @@ iframe {
 		font-weight: 500;
 		line-height: 20px;
 		padding: 2px 12px;
-		border: 1px solid var(--color-fg-subtle);
 		border-radius: 12px;
-		color: var(--color-fg-muted);
+		color: var(--color-fg-box);
+		background: var(--color-fg-thin);
 	}
 }
 
