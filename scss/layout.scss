@@ -165,9 +165,18 @@ footer {
 }
 
 /* main */
+/* main home */
 .home {
 	padding: var(--margin-row) var(--margin-column) 8rem;
 	margin-top: var(--margin-nav);
+}
+
+/* main project */
+.project {
+	opacity: 0;
+	/* animation */
+	animation: 2s ease 0s 1 normal forwards fadein;
+	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
 }
 
 /* home */
@@ -182,8 +191,8 @@ footer {
 	.portrait {
 		flex-shrink: 0;
 		overflow: hidden;
-		width: 6rem;
-		height: 6rem;
+		width: 4rem;
+		height: 4rem;
 		margin: 0 auto;
 		opacity: 0;
 		border-radius: 50%;
@@ -474,8 +483,8 @@ footer {
 		.portrait {
 			flex-shrink: 0;
 			overflow: hidden;
-			width: 3rem;
-			height: 3rem;
+			width: 2.5rem;
+			height: 2.5rem;
 			border-radius: 50%;
 			background: var(--color-bg-box);
 			background-position: center;
@@ -603,13 +612,6 @@ footer {
 }
 
 /* project content */
-.project {
-	opacity: 0;
-	/* animation */
-	animation: 2s ease 0s 1 normal forwards fadein;
-	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
-}
-
 .cover {
 	position: fixed;
 	z-index: -99;
