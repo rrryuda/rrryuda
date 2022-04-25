@@ -675,6 +675,11 @@ footer {
 	margin-top: var(--margin-cover);
 	background: var(--color-bg);
 
+	article {
+		max-width: var(--width-narrow);
+		margin: 0 auto;
+	}
+
 	.gallery {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
