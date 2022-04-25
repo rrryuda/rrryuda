@@ -84,9 +84,9 @@ $(function () {
     $(".modal").click(function () {
         var $src = $(this).attr("src");
         $(".content-modal").fadeIn(0);
-        $(".img-modal img").attr("src", $src);
+        $(".content-modal-image img").attr("src", $src);
     });
-    $(".img-modal, .content-modal-overlay").click(function () {
+    $(".content-modal-image, .content-modal-overlay").click(function () {
         $(".content-modal").fadeOut(0);
     });
 });
