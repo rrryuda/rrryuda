@@ -12,16 +12,16 @@ header {
 	nav {
 		display: flex;
 		align-items: center;
-		height: calc(var(--margin-nav) + 1px);
+		height: calc(var(--nav) + 1px);
 
 		.east {
 			position: absolute;
-			right: var(--margin-atom);
+			right: var(--margin-s);
 		}
 
 		.west {
 			position: absolute;
-			left: var(--margin-atom);
+			left: var(--margin-s);
 		}
 
 		a {
@@ -88,7 +88,7 @@ header {
 			display: none;
 			top: 0;
 			left: 0;
-			height: calc(var(--margin-nav) + 1px);
+			height: calc(var(--nav) + 1px);
 			background: var(--color-bg);
 
 			span {
@@ -123,8 +123,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: var(--gap-default);
-	padding: var(--margin-row) var(--margin-column);
+	gap: var(--gap-m);
+	padding: var(--floor) var(--side);
 	opacity: 0;
 	background: var(--color-bg);
 	/* animation */
@@ -136,7 +136,7 @@ footer {
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: var(--gap-atom) var(--gap-default);
+		gap: var(--gap-s) var(--gap-m);
 
 		a {
 			&:hover {
@@ -167,8 +167,8 @@ footer {
 /* main */
 /* main home */
 .home {
-	padding: var(--margin-row) var(--margin-column) 8rem;
-	margin-top: var(--margin-nav);
+	padding: var(--floor) var(--side) 8rem;
+	margin-top: var(--nav);
 }
 
 /* main project */
@@ -184,7 +184,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: var(--gap-default);
+	gap: var(--gap-m);
 	max-width: 480px;
 	margin: 0 auto;
 
@@ -210,7 +210,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: var(--gap-atom);
+		gap: var(--gap-s);
 		opacity: 0;
 		/* animation */
 		animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -227,7 +227,7 @@ footer {
 		align-items: center;
 		justify-content: center;
 		gap: 1rem;
-		margin: var(--margin-atom) 0;
+		margin: var(--margin-s) 0;
 		opacity: 0;
 		/* animation */
 		animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -272,7 +272,7 @@ footer {
 	.linker {
 		display: flex;
 		flex-direction: column;
-		gap: var(--margin-atom);
+		gap: var(--margin-s);
 		opacity: 0;
 		/* animation */
 		animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -335,16 +335,16 @@ footer {
 .resume {
 	display: flex;
 	flex-direction: column;
-	gap: var(--gap-default);
-	max-width: var(--width-narrow);
+	gap: var(--gap-m);
+	max-width: var(--width-s);
 	margin: 0 auto;
 
 	.item {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: var(--gap-atom);
-		padding: var(--margin-default);
+		gap: var(--gap-s);
+		padding: var(--margin-m);
 		opacity: 0;
 		border-radius: .75rem;
 		background: var(--color-bg-box);
@@ -372,7 +372,7 @@ footer {
 			flex-shrink: 0;
 			flex-direction: column;
 			align-items: center;
-			gap: var(--gap-atom);
+			gap: var(--gap-s);
 			width: 2.5rem;
 			height: 100%;
 
@@ -402,8 +402,8 @@ footer {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			gap: var(--gap-atom);
-			padding-left: calc(var(--gap-atom) + 2.5rem);
+			gap: var(--gap-s);
+			padding-left: calc(var(--gap-s) + 2.5rem);
 
 			a {
 				svg {
@@ -463,8 +463,8 @@ footer {
 .work {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: var(--gap-default);
-	max-width: var(--width-stretch);
+	gap: var(--gap-m);
+	max-width: var(--width-l);
 	margin: 0 auto;
 
 	.item {
@@ -500,11 +500,11 @@ footer {
 			z-index: 1;
 			display: flex;
 			flex-direction: column;
-			gap: var(--gap-atom);
+			gap: var(--gap-s);
 			top: 0;
 			left: 0;
 			height: 100%;
-			padding: var(--margin-default) var(--margin-default) 4rem;
+			padding: var(--margin-m) var(--margin-m) 4rem;
 			mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) calc(100% - 4rem), rgba(0, 0, 0, 0) calc(100% - 1rem));
 
 			a {
@@ -515,8 +515,8 @@ footer {
 
 		.link {
 			position: absolute;
-			right: var(--margin-atom);
-			bottom: var(--margin-atom);
+			right: var(--margin-s);
+			bottom: var(--margin-s);
 		}
 
 		.info {
@@ -528,7 +528,7 @@ footer {
 			left: -1px;
 			bottom: -1px;
 			width: calc(100% + 2px);
-			padding: var(--margin-row) var(--margin-default) var(--margin-default);
+			padding: var(--floor) var(--margin-m) var(--margin-m);
 			visibility: hidden;
 			opacity: 0;
 			color: var(--color-white);
@@ -617,7 +617,7 @@ footer {
 	z-index: -99;
 	top: 0;
 	left: 0;
-	height: var(--margin-cover);
+	height: var(--cover);
 	padding: 0;
 	margin: 0;
 	background: var(--color-bg);
@@ -670,32 +670,32 @@ footer {
 	z-index: 9;
 	display: flex;
 	flex-direction: column;
-	gap: var(--margin-row);
-	padding: var(--margin-row) var(--margin-column) 8rem;
-	margin-top: var(--margin-cover);
+	gap: var(--floor);
+	padding: var(--floor) var(--side) 8rem;
+	margin-top: var(--cover);
 	background: var(--color-bg);
 
 	article {
-		max-width: var(--width-narrow);
+		max-width: var(--width-s);
 		margin: 0 auto;
+	}
+
+	.table {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--gap-m);
 	}
 
 	.gallery {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: var(--gap-default);
-	}
-
-	.image {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--gap-default);
+		gap: var(--gap-m);
 	}
 
 	.navigation {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: var(--gap-default);
+		gap: var(--gap-m);
 		background: var(--color-bg);
 		background-position: center;
 		background-size: cover;
@@ -711,7 +711,7 @@ footer {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				padding: var(--margin-default) var(--margin-atom);
+				padding: var(--margin-m) var(--margin-s);
 				background: rgba(0, 0, 0, .5);
 
 				span {
@@ -746,7 +746,7 @@ footer {
 	top: 0;
 	left: 0;
 	height: 100%;
-	padding: var(--margin-nav) var(--margin-default);
+	padding: var(--nav) var(--margin-m);
 	background: none;
 
 	.content-modal-overlay {
@@ -770,7 +770,7 @@ footer {
 		img {
 			object-fit: contain;
 			display: block;
-			max-width: var(--width-stretch);
+			max-width: var(--width-l);
 			height: auto;
 			border-radius: 0;
 		}
@@ -795,7 +795,7 @@ footer {
 	/* work */
 	.work {
 		grid-template-columns: repeat(2, 1fr);
-		max-width: var(--width-insert);
+		max-width: var(--width-m);
 	}
 }
 
@@ -816,7 +816,7 @@ footer {
 
 	/* work */
 	.work {
-		max-width: var(--width-small);
+		max-width: var(--width-xs);
 
 		.form {
 			.frame {
@@ -834,7 +834,7 @@ footer {
 
 	/* resume */
 	.resume {
-		max-width: var(--width-small);
+		max-width: var(--width-xs);
 	}
 }
 
@@ -873,7 +873,7 @@ footer {
 
 	/* resume */
 	.resume {
-		max-width: var(--width-ant);
+		max-width: var(--width-xxs);
 
 		.item {
 			.node {
@@ -887,7 +887,7 @@ footer {
 	/* work */
 	.work {
 		grid-template-columns: 100%;
-		max-width: var(--width-ant);
+		max-width: var(--width-xxs);
 
 		.item {
 			.intro {
@@ -944,7 +944,7 @@ footer {
 
 	/* resume */
 	.resume {
-		gap: var(--margin-row);
+		gap: var(--floor);
 
 		.item {
 			padding: 0;
@@ -955,13 +955,13 @@ footer {
 
 	/* project content */
 	.content {
-		.image {
+		.gallery {
 			grid-template-columns: 100%;
 		}
 
 		.navigation {
 			grid-template-columns: 100%;
-			gap: var(--gap-atom);
+			gap: var(--gap-s);
 		}
 	}
 }
