@@ -67,7 +67,7 @@ header {
 		}
 	}
 
-	.blog {
+	.work {
 		a {
 			padding: 4px;
 			/* transition */
@@ -545,69 +545,6 @@ main {
 	}
 }
 
-/* work thumbnail */
-#smile {
-	background-image: url("../work/source/smile.jpg");
-}
-
-#tap {
-	background-image: url("../work/source/tap.jpg");
-}
-
-#map {
-	background-image: url("../work/source/map.jpg");
-}
-
-#c42 {
-	background-image: url("../work/source/42dot.jpg");
-}
-
-#neon {
-	background-image: url("../work/source/neon.jpg");
-}
-
-#visual {
-	background-image: url("../work/source/visual.jpg");
-}
-
-/* work status */
-.state {
-	flex-shrink: 0;
-	width: 24px;
-	height: 24px;
-}
-
-.locked {
-	position: absolute;
-	top: 2px;
-	left: 7px;
-}
-
-.hook {
-	position: absolute;
-	top: 2px;
-	left: 7px;
-	visibility: visible;
-	/* transition */
-	transition: all .6s var(--swing);
-	-webkit-transition: all .6s var(--swing);
-	-moz-transition: all .6s var(--swing);
-	-ms-transition: all .6s var(--swing);
-	-o-transition: all .6s var(--swing);
-	/* transform */
-	-webkit-transform-origin: 9px 11px;
-	-ms-transform-origin: 9px 11px;
-	transform-origin: 9px 11px;
-	-webkit-transform: rotateY(0);
-	transform: rotateY(0);
-}
-
-.rack {
-	position: absolute;
-	left: 5px;
-	bottom: 1px;
-}
-
 /* main - project */
 .project {
 	padding: 0;
@@ -721,6 +658,69 @@ main {
 	}
 }
 
+/* work thumbnail */
+#smile {
+	background-image: url("../work/source/smile.jpg");
+}
+
+#tap {
+	background-image: url("../work/source/tap.jpg");
+}
+
+#map {
+	background-image: url("../work/source/map.jpg");
+}
+
+#c42 {
+	background-image: url("../work/source/42dot.jpg");
+}
+
+#neon {
+	background-image: url("../work/source/neon.jpg");
+}
+
+#visual {
+	background-image: url("../work/source/visual.jpg");
+}
+
+/* work status */
+.state {
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.locked {
+	position: absolute;
+	top: 2px;
+	left: 7px;
+}
+
+.hook {
+	position: absolute;
+	top: 2px;
+	left: 7px;
+	visibility: visible;
+	/* transition */
+	transition: all .6s var(--swing);
+	-webkit-transition: all .6s var(--swing);
+	-moz-transition: all .6s var(--swing);
+	-ms-transition: all .6s var(--swing);
+	-o-transition: all .6s var(--swing);
+	/* transform */
+	-webkit-transform-origin: 9px 11px;
+	-ms-transform-origin: 9px 11px;
+	transform-origin: 9px 11px;
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
+
+.rack {
+	position: absolute;
+	left: 5px;
+	bottom: 1px;
+}
+
 /* project cover */
 #c-smile {
 	background-image: url("../work/smile/source/cover.jpg");
@@ -809,7 +809,6 @@ main {
 
 	/* main - home */
 	main {
-
 		.work {
 			grid-template-columns: repeat(2, 1fr);
 			max-width: var(--width-m);
@@ -821,7 +820,6 @@ main {
 
 	/* main - home */
 	main {
-
 		.home {
 			.linker {
 
@@ -861,7 +859,6 @@ main {
 
 	/* main - home */
 	main {
-
 		.work {
 			.item {
 				.intro {
@@ -880,7 +877,7 @@ main {
 
 	/* header */
 	header {
-		.blog {
+		.work {
 			.title {
 				span {
 					font-size: 18px;
@@ -891,7 +888,6 @@ main {
 
 	/* main - home */
 	main {
-
 		.work {
 			grid-template-columns: 100%;
 			max-width: var(--width-xxs);
@@ -934,13 +930,6 @@ main {
 		}
 	}
 
-	.hook {
-		top: 0;
-		/* transform */
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-	}
-
 	/* main - project */
 	.project {
 		.content {
@@ -949,13 +938,21 @@ main {
 			}
 		}
 	}
+
+	/* work status */
+	.hook {
+		top: 0;
+		/* transform */
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+	}
 }
 
 @media screen and (max-width: 544px) {
 
 	/* header */
 	header {
-		.blog {
+		.work {
 			a {
 				span {
 					display: none;
@@ -966,7 +963,6 @@ main {
 
 	/* main - home */
 	main {
-
 		.about {
 			gap: var(--floor);
 
