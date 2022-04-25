@@ -213,6 +213,17 @@ div {
 /* media query */
 @media screen and (max-width: 768px) {
 
+	/* image */
+	div {
+		img {
+			border-radius: 4px;
+		}
+
+		video {
+			border-radius: 4px;
+		}
+	}
+
 	/* button link */
 	.link {
 		font-size: 15px;
