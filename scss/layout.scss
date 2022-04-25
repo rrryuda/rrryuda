@@ -306,6 +306,15 @@ footer {
 					fill: var(--color-fg-subtle);
 				}
 
+				span {
+					display: -webkit-box;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					-webkit-line-clamp: 1;
+					-webkit-box-orient: vertical;
+					word-wrap: break-word;
+				}
+
 				&:hover {
 					background: var(--color-bg-box-hover);
 					-webkit-transform: scale(1.03);
@@ -690,6 +699,15 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--gap-m);
+	}
+
+	.lashes {
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		word-wrap: break-word;
 	}
 
 	.navigation {

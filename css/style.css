@@ -262,16 +262,6 @@ a {
 	color: var(--color-fg-muted);
 }
 
-/* text transform */
-.ellipsis {
-	display: -webkit-box;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-	word-wrap: break-word;
-}
-
 /* media query */
 @media screen and (max-width: 1440px) {
 
