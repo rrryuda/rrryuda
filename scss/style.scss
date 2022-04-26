@@ -83,7 +83,10 @@ footer,
 main,
 section,
 article,
-div {
+div,
+img,
+video,
+iframe {
 	width: 100%;
 }
 
@@ -156,19 +159,10 @@ svg {
 	fill: var(--color-fg);
 }
 
-img {
-	display: block;
-	width: 100%;
-}
-
-video {
-	display: block;
-	width: 100%;
-}
-
+img,
+video,
 iframe {
 	display: block;
-	width: 100%;
 }
 
 /* typography */
@@ -260,16 +254,16 @@ a {
 
 /* span text */
 span {
+	font-weight: 500;
+
 	&.label {
 		font-size: 20px;
-		font-weight: 500;
 		line-height: 28px;
 		color: var(--color-fg);
 	}
 
 	&.nail {
 		font-size: 18px;
-		font-weight: 500;
 		line-height: 28px;
 		color: var(--color-fg);
 	}
