@@ -139,27 +139,27 @@ footer {
 		gap: var(--gap-s) var(--gap-m);
 
 		a {
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 20px;
+			color: var(--color-blue);
+			/* transition */
+			transition: all .2s ease;
+			-webkit-transition: all .2s ease;
+			-moz-transition: all .2s ease;
+			-ms-transition: all .2s ease;
+			-o-transition: all .2s ease;
+
 			&:hover {
 				opacity: .6;
 			}
 		}
 	}
 
-	a {
+	.copyright {
 		font-size: 15px;
 		font-weight: 500;
 		line-height: 20px;
-		color: var(--color-blue);
-		/* transition */
-		transition: all .2s ease;
-		-webkit-transition: all .2s ease;
-		-moz-transition: all .2s ease;
-		-ms-transition: all .2s ease;
-		-o-transition: all .2s ease;
-	}
-
-	.copyright {
-		font-weight: 500;
 		color: var(--color-fg-subtle);
 	}
 }
