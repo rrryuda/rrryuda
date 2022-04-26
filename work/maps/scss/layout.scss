@@ -58,7 +58,7 @@
 	justify-content: center;
 	width: 100%;
 	padding: 32px 32px 64px;
-	border-radius: 8px;
+	border-radius: var(--corner-s);
 	background-image: url("../source/map-bg.jpg");
 
 	* {
@@ -83,7 +83,7 @@
 			letter-spacing: .02em;
 			padding: 6px 16px 8px;
 			opacity: 0;
-			border-radius: 8px;
+			border-radius: var(--corner-s);
 			color: var(--color-white);
 			background: var(--color-black);
 		}

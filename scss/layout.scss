@@ -49,7 +49,7 @@ header {
 				top: 0;
 				left: 0;
 				height: 100%;
-				border-radius: 18px;
+				border-radius: 16px;
 				background: var(--color-btn);
 				/* transition */
 				transition: all .2s ease;
@@ -554,13 +554,10 @@ main {
 					overflow: hidden;
 					width: 48px;
 					height: 48px;
+					border-radius: var(--corner-s);
 					background: var(--color-bg-box);
 					background-position: center;
 					background-size: cover;
-
-					img {
-						border-radius: 4px;
-					}
 				}
 
 				.node {
