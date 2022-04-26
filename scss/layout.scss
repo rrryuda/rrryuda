@@ -956,6 +956,34 @@ main {
 
 					.frame {
 						padding: 25% 50%;
+
+						@at-root {
+
+							/* work thumbnail */
+							#smile {
+								background-image: url("../work/source/smile-h.jpg");
+							}
+
+							#tap {
+								background-image: url("../work/source/tap-h.jpg");
+							}
+
+							#map {
+								background-image: url("../work/source/map-h.jpg");
+							}
+
+							#c42 {
+								background-image: url("../work/source/42dot-h.jpg");
+							}
+
+							#neon {
+								background-image: url("../work/source/neon-h.jpg");
+							}
+
+							#visual {
+								background-image: url("../work/source/visual-h.jpg");
+							}
+						}
 					}
 				}
 
