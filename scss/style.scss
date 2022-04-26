@@ -39,7 +39,8 @@
 	--width-m: 960px;
 	--width-l: 1440px;
 	/* border radius */
-	--corner: 8px;
+	--corner-s: .25rem;
+	--corner-m: .75rem;
 	/* ease */
 	--ease: cubic-bezier(.075, .8, .165, 1);
 	--swing: cubic-bezier(.35, .4, .3, 1.6);
@@ -347,8 +348,6 @@ span {
 		--cover: 16rem;
 		/* padding margin */
 		--margin-m: 1.5rem;
-		/* border radius */
-		--corner: 6px;
 	}
 }
 
@@ -364,8 +363,6 @@ span {
 		/* spacing */
 		--side: 2rem;
 		--floor: 3.5rem;
-		/* border radius */
-		--corner: 4px;
 	}
 }
 

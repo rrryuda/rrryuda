@@ -175,7 +175,7 @@ main {
 			flex-direction: column;
 			align-items: flex-start;
 			gap: var(--gap-m);
-			max-width: 480px;
+			max-width: 400px;
 			margin: 0 auto;
 
 			.portrait {
@@ -208,7 +208,7 @@ main {
 
 				p {
 					color: var(--color-fg-muted);
-					margin: 0 2rem;
+					margin: 0 var(--margin-s);
 				}
 			}
 
@@ -216,7 +216,7 @@ main {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				gap: 1rem;
+				gap: var(--gap-m);
 				margin: var(--margin-s) 0;
 				opacity: 0;
 				/* animation */
@@ -239,7 +239,7 @@ main {
 				div {
 					flex-shrink: 0;
 					width: 2px;
-					height: .75rem;
+					height: var(--gap-s);
 					background: var(--color-fg-subtle);
 				}
 			}
@@ -267,8 +267,8 @@ main {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
-						padding: 1.25rem 1.5rem;
-						border-radius: .75rem;
+						padding: var(--margin-s);
+						border-radius: var(--corner-m);
 						background: var(--color-bg-box);
 						/* transition */
 						transition: all .2s ease;
@@ -330,7 +330,7 @@ main {
 			.item {
 				overflow: hidden;
 				opacity: 0;
-				border-radius: .75rem;
+				border-radius: var(--corner-m);
 				background: var(--color-bg);
 				/* transition */
 				transform-origin: center;
@@ -543,7 +543,7 @@ main {
 				gap: var(--gap-s);
 				padding: var(--margin-m);
 				opacity: 0;
-				border-radius: .75rem;
+				border-radius: var(--corner-m);
 				background: var(--color-bg-box);
 				/* animation */
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -747,7 +747,7 @@ main {
 
 				.item {
 					overflow: hidden;
-					border-radius: var(--corner);
+					border-radius: var(--corner-s);
 					background: var(--color-bg-box);
 					background-position: center;
 					background-size: 100%;
