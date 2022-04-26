@@ -3,7 +3,7 @@
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	border-radius: 8px;
+	border-radius: var(--corner);
 
 	.info {
 		display: flex;
@@ -50,14 +50,5 @@
 		span {
 			color: var(--color-black);
 		}
-	}
-}
-
-/* media query */
-@media screen and (max-width: 768px) {
-
-	/* color-palette */
-	.color-palette {
-		border-radius: 4px;
 	}
 }

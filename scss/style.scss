@@ -38,6 +38,8 @@
 	--width-s: 720px;
 	--width-m: 960px;
 	--width-l: 1440px;
+	/* border radius */
+	--corner: 8px;
 	/* ease */
 	--ease: cubic-bezier(.075, .8, .165, 1);
 	--swing: cubic-bezier(.35, .4, .3, 1.6);
@@ -61,9 +63,14 @@ h4,
 h5,
 h6,
 p,
+ol,
 ul,
 li,
-hr {
+hr,
+svg,
+img,
+video,
+iframe {
 	position: relative;
 	box-sizing: border-box;
 }
@@ -350,6 +357,8 @@ span {
 		--cover: 16rem;
 		/* padding margin */
 		--margin-m: 1.5rem;
+		/* border radius */
+		--corner: 6px;
 	}
 }
 
@@ -365,6 +374,8 @@ span {
 		/* spacing */
 		--side: 2rem;
 		--floor: 3.5rem;
+		/* border radius */
+		--corner: 4px;
 	}
 }
 

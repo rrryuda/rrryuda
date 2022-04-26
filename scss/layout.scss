@@ -743,7 +743,7 @@ main {
 
 				.item {
 					overflow: hidden;
-					border-radius: 8px;
+					border-radius: var(--corner);
 					background: var(--color-bg-box);
 					background-position: center;
 					background-size: 100%;
@@ -986,10 +986,6 @@ main {
 			.content {
 				.navigation {
 					grid-template-columns: repeat(2, 1fr);
-
-					.item {
-						border-radius: 4px;
-					}
 				}
 			}
 		}
