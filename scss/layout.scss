@@ -124,7 +124,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	gap: var(--gap-m);
-	padding: var(--floor) var(--side);
+	padding: calc(var(--floor) / 2) var(--side) var(--floor);
 	opacity: 0;
 	background: var(--color-bg);
 	/* animation */
