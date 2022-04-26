@@ -456,10 +456,13 @@ main {
 					background-size: cover;
 					/* transition */
 					transition: none !important;
-					animation: none !important;
 					-webkit-transition: none !important;
-					-webkit-animation: none !important;
+					-moz-transition: none !important;
+					-ms-transition: none !important;
 					-o-transition: none !important;
+					/* animation */
+					animation: none !important;
+					-webkit-animation: none !important;
 
 					@at-root {
 
