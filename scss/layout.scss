@@ -366,6 +366,10 @@ main {
 					height: 100%;
 					padding: var(--margin-m) var(--margin-m) 4rem;
 					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) calc(100% - 4rem), rgba(0, 0, 0, 0) calc(100% - 1rem));
+
+					.brow {
+						margin-bottom: var(--margin-xs);
+					}
 				}
 
 				.link {
