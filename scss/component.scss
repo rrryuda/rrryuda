@@ -40,40 +40,40 @@
 
 /* component */
 /* row */
-.row-s {
+.row-xs {
 	display: flex;
 	align-items: center;
 	gap: 4px;
 }
 
-.row-m {
+.row-s {
 	display: flex;
 	align-items: center;
 	gap: var(--gap-s);
 }
 
-.row-l {
+.row-m {
 	display: flex;
 	align-items: center;
 	gap: var(--gap-m);
 }
 
 /* column */
-.column-s {
+.column-xs {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 4px;
 }
 
-.column-m {
+.column-s {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--gap-s);
 }
 
-.column-l {
+.column-m {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;

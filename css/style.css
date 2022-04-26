@@ -21,8 +21,9 @@
 	--color-bg-box: rgba(28, 32, 36, 1);
 	--color-bg-box-hover: rgba(44, 48, 52, 1);
 	/* gap */
+	--gap-xs: .5rem;
 	--gap-s: .75rem;
-	--gap-m: 1.5rem;
+	--gap-m: 1.25rem;
 	/* spacing */
 	--side: 4rem;
 	--floor: 5rem;
@@ -321,8 +322,6 @@ a {
 
 	/* global */
 	:root {
-		/* gap */
-		--gap-m: 1.25rem;
 		/* spacing */
 		--side: 3rem;
 		--floor: 4rem;
