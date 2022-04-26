@@ -8,6 +8,7 @@
 	.info {
 		display: flex;
 		flex-direction: column;
+		gap: 4px;
 
 		span {
 			font-size: 15px;
@@ -18,8 +19,8 @@
 	.blue {
 		display: flex;
 		flex-direction: column;
-		gap: var(--gap-atom);
-		padding: var(--margin-default);
+		gap: var(--gap-s);
+		padding: var(--margin-m);
 		background: #5A46FA;
 
 		span {
@@ -30,8 +31,8 @@
 	.black {
 		display: flex;
 		flex-direction: column;
-		gap: var(--gap-atom);
-		padding: var(--margin-default);
+		gap: var(--gap-s);
+		padding: var(--margin-m);
 		background: #000000;
 
 		span {
@@ -42,12 +43,21 @@
 	.white {
 		display: flex;
 		flex-direction: column;
-		gap: var(--gap-atom);
-		padding: var(--margin-default);
+		gap: var(--gap-s);
+		padding: var(--margin-m);
 		background: #FFFFFF;
 
 		span {
 			color: var(--color-black);
 		}
+	}
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+
+	/* color-palette */
+	.color-palette {
+		border-radius: 4px;
 	}
 }

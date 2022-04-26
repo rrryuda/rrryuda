@@ -986,6 +986,10 @@ main {
 			.content {
 				.navigation {
 					grid-template-columns: repeat(2, 1fr);
+
+					.item {
+						border-radius: 4px;
+					}
 				}
 			}
 		}
