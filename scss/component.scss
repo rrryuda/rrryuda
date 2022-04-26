@@ -25,8 +25,8 @@
 }
 
 /* margin */
-.heel {
-	margin-bottom: var(--gap-s);
+.toe {
+	margin-bottom: var(--margin-xs);
 }
 
 /* border */
@@ -40,7 +40,7 @@
 	&-xxs {
 		display: flex;
 		align-items: center;
-		gap: 4px;
+		gap: var(--gap-xxs);
 	}
 
 	&-xs {
@@ -68,7 +68,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 4px;
+		gap: var(--gap-xxs);
 	}
 
 	&-xs {
@@ -112,7 +112,7 @@ div {
 	z-index: 1;
 	display: flex;
 	align-items: center;
-	gap: 4px;
+	gap: var(--gap-xxs);
 	color: var(--color-fg-muted);
 	/* transition */
 	transition: all .2s ease;
@@ -146,7 +146,7 @@ div {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 8px;
+	gap: var(--gap-xs);
 
 	li {
 		font-size: 13px;

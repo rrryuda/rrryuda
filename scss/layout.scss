@@ -29,7 +29,7 @@ header {
 			z-index: 99;
 			display: flex;
 			align-items: center;
-			gap: 6px;
+			gap: var(--gap-xxs);
 			padding: 4px 14px;
 
 			span {
@@ -124,7 +124,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	gap: var(--gap-m);
-	padding: calc(var(--floor) / 2) var(--side) var(--floor);
+	padding: calc(var(--float) / 2) var(--side) var(--float);
 	opacity: 0;
 	background: var(--color-bg);
 	/* animation */
@@ -167,7 +167,7 @@ footer {
 /* main - home */
 main {
 	&.home {
-		padding: var(--floor) var(--side) 8rem;
+		padding: var(--float) var(--side) 8rem;
 		margin-top: var(--nav);
 
 		.content {
@@ -317,7 +317,7 @@ main {
 	}
 
 	&.work {
-		padding: var(--floor) var(--side) 8rem;
+		padding: var(--float) var(--side) 8rem;
 		margin-top: var(--nav);
 
 		.content {
@@ -366,11 +366,6 @@ main {
 					height: 100%;
 					padding: var(--margin-m) var(--margin-m) 4rem;
 					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) calc(100% - 4rem), rgba(0, 0, 0, 0) calc(100% - 1rem));
-
-					a {
-						text-decoration: underline;
-						display: inline;
-					}
 				}
 
 				.link {
@@ -389,7 +384,7 @@ main {
 					left: -1px;
 					bottom: -1px;
 					width: calc(100% + 2px);
-					padding: var(--floor) var(--margin-m) var(--margin-m);
+					padding: var(--float) var(--margin-m) var(--margin-m);
 					visibility: hidden;
 					opacity: 0;
 					color: var(--color-fg);
@@ -526,7 +521,7 @@ main {
 	}
 
 	&.about {
-		padding: var(--floor) var(--side) 8rem;
+		padding: var(--float) var(--side) 8rem;
 		margin-top: var(--nav);
 
 		.content {
@@ -683,8 +678,8 @@ main {
 			z-index: 9;
 			display: flex;
 			flex-direction: column;
-			gap: var(--floor);
-			padding: var(--floor) var(--side) 8rem;
+			gap: var(--float);
+			padding: var(--float) var(--side) 8rem;
 			margin-top: var(--cover);
 			background: var(--color-bg);
 
@@ -701,13 +696,13 @@ main {
 			.table {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				gap: var(--gap-m);
+				gap: var(--gap-s);
 			}
 
 			.gallery {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				gap: var(--gap-m);
+				gap: var(--gap-s);
 			}
 
 			.lashes {
@@ -737,7 +732,7 @@ main {
 			.navigation {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
-				gap: var(--gap-m);
+				gap: var(--gap-s);
 				background: var(--color-bg);
 				background-position: center;
 				background-size: cover;
@@ -1074,9 +1069,15 @@ main {
 
 	/* main - home */
 	main {
+		&.work {
+			.content {
+				gap: var(--gap-s);
+			}
+		}
+
 		&.about {
 			.content {
-				gap: var(--floor);
+				gap: var(--float);
 
 				.item {
 					padding: 0;
@@ -1094,7 +1095,6 @@ main {
 
 				.navigation {
 					grid-template-columns: 100%;
-					gap: var(--gap-s);
 				}
 			}
 		}

@@ -21,17 +21,20 @@
 	--color-bg-box: rgba(28, 32, 36, 1);
 	--color-bg-box-hover: rgba(44, 48, 52, 1);
 	/* gap */
+	--gap-xxs: .25rem;
 	--gap-xs: .5rem;
-	--gap-s: .75rem;
-	--gap-m: 1.25rem;
-	/* spacing */
-	--side: 4rem;
-	--floor: 5rem;
-	--nav: 4rem;
-	--cover: 24rem;
-	/* padding margin */
+	--gap-s: 1rem;
+	--gap-m: 1.5rem;
+	/* margin */
+	--margin-xxs: .25rem;
+	--margin-xs: .5rem;
 	--margin-s: 1rem;
 	--margin-m: 2rem;
+	/* spacing */
+	--nav: 4rem;
+	--side: 4rem;
+	--float: 5rem;
+	--cover: 24rem;
 	/* width */
 	--width-xxs: 544px;
 	--width-xs: 636px;
@@ -235,12 +238,12 @@ ul {
 	&.checklist {
 		display: flex;
 		flex-direction: column;
-		gap: 4px;
+		gap: var(--gap-xxs);
 		padding: 0;
 
 		li {
 			display: flex;
-			gap: 8px;
+			gap: var(--gap-xs);
 		}
 	}
 }
@@ -302,7 +305,7 @@ span {
 	:root {
 		/* spacing */
 		--side: 3.5rem;
-		--floor: 4.5rem;
+		--float: 4.5rem;
 		--cover: 20rem;
 	}
 }
@@ -342,12 +345,12 @@ span {
 
 	/* global */
 	:root {
+		/* margin */
+		--margin-m: 1.5rem;
 		/* spacing */
 		--side: 3rem;
-		--floor: 4rem;
+		--float: 4rem;
 		--cover: 16rem;
-		/* padding margin */
-		--margin-m: 1.5rem;
 	}
 }
 
@@ -362,7 +365,7 @@ span {
 	:root {
 		/* spacing */
 		--side: 2rem;
-		--floor: 3.5rem;
+		--float: 3.5rem;
 	}
 }
 
@@ -372,6 +375,6 @@ span {
 	:root {
 		/* spacing */
 		--side: 1.5rem;
-		--floor: 2.5rem;
+		--float: 2.5rem;
 	}
 }

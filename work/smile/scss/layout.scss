@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-m);
-	margin: var(--gap-s) 0;
+	margin: var(--margin-s) 0;
 
 	.item {
 		display: flex;
@@ -13,7 +13,7 @@
 		ul {
 			display: flex;
 			flex-direction: column;
-			gap: 4px;
+			gap: var(--gap-xxs);
 			padding: 0;
 
 			.graph {
@@ -32,7 +32,7 @@
 				}
 
 				.rate {
-					margin: 4px 0;
+					margin: var(--margin-xxs) 0;
 
 					div {
 						height: 100%;
