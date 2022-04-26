@@ -247,7 +247,7 @@ main {
 			.linker {
 				display: flex;
 				flex-direction: column;
-				gap: var(--margin-s);
+				gap: var(--gap-s);
 				opacity: 0;
 				/* animation */
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
