@@ -331,7 +331,7 @@ main {
 				overflow: hidden;
 				opacity: 0;
 				border-radius: .75rem;
-				background: var(--color-bg-box);
+				background: var(--color-bg);
 				/* transition */
 				transform-origin: center;
 				-webkit-transform-origin: center;
@@ -510,6 +510,10 @@ main {
 						-webkit-transform: rotateY(180deg);
 					}
 				}
+			}
+
+			.form {
+				background: var(--color-bg-box);
 			}
 
 			/* animation delay */
