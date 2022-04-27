@@ -1,11 +1,11 @@
-/* header */
+// header
 header {
 	position: fixed;
 	z-index: 999;
 	top: -1px;
 	left: 0;
 	opacity: 0;
-	/* animation */
+	// animation
 	animation: 1.4s var(--ease) 0s 1 normal forwards movein;
 	-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards movein;
 
@@ -51,7 +51,7 @@ header {
 				height: 100%;
 				border-radius: 16px;
 				background: var(--color-btn);
-				/* transition */
+				// transition
 				transition: all .2s ease;
 				-webkit-transition: all .2s ease;
 				-moz-transition: all .2s ease;
@@ -69,7 +69,7 @@ header {
 		&.work {
 			a {
 				padding: 4px;
-				/* transition */
+				// transition
 				transition: all .2s ease;
 				-webkit-transition: all .2s ease;
 				-moz-transition: all .2s ease;
@@ -118,7 +118,7 @@ header {
 	}
 }
 
-/* footer */
+// footer
 footer {
 	display: flex;
 	flex-direction: column;
@@ -127,7 +127,7 @@ footer {
 	padding: calc(var(--float) / 2) var(--side) var(--float);
 	opacity: 0;
 	background: var(--color-bg);
-	/* animation */
+	// animation
 	animation: 2s ease 0s 1 normal forwards fadein;
 	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
 
@@ -143,7 +143,7 @@ footer {
 			font-weight: 500;
 			line-height: 20px;
 			color: var(--color-blue);
-			/* transition */
+			// transition
 			transition: all .2s ease;
 			-webkit-transition: all .2s ease;
 			-moz-transition: all .2s ease;
@@ -164,7 +164,7 @@ footer {
 	}
 }
 
-/* main - home */
+// main - home
 main {
 	&.home {
 		padding: var(--float) var(--side) calc(var(--margin-m) * 4);
@@ -189,7 +189,7 @@ main {
 				background: var(--color-bg-box);
 				background-position: center;
 				background-size: cover;
-				/* animation */
+				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 			}
@@ -202,7 +202,7 @@ main {
 				justify-content: center;
 				gap: var(--gap-s);
 				opacity: 0;
-				/* animation */
+				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
@@ -219,12 +219,12 @@ main {
 				gap: var(--gap-m);
 				margin: var(--margin-s) 0;
 				opacity: 0;
-				/* animation */
+				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
 				a {
-					/* transition */
+					// transition
 					transition: all .2s ease;
 					-webkit-transition: all .2s ease;
 					-moz-transition: all .2s ease;
@@ -249,17 +249,17 @@ main {
 				flex-direction: column;
 				gap: var(--gap-s);
 				opacity: 0;
-				/* animation */
+				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
 				.item {
 					opacity: 0;
-					/* transform */
+					// transform
 					transform-origin: center;
 					-webkit-transform-origin: center;
 					-ms-transform-origin: center;
-					/* animation */
+					// animation
 					animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 					-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 
@@ -270,7 +270,7 @@ main {
 						padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
 						border-radius: var(--corner-m);
 						background: var(--color-bg-box);
-						/* transition */
+						// transition
 						transition: all .2s ease;
 						-webkit-transition: all .2s ease;
 						-moz-transition: all .2s ease;
@@ -301,7 +301,7 @@ main {
 					}
 				}
 
-				/* animation delay */
+				// animation delay
 				@for $i from 1 through 20 {
 					:nth-child(#{$i}n) {
 						animation-delay: #{$i * 0.12}s;
@@ -309,7 +309,7 @@ main {
 				}
 			}
 
-			/* animation delay */
+			// animation delay
 			@for $i from 1 through 20 {
 				:nth-child(#{$i}n) {
 					animation-delay: #{$i * 0.15}s;
@@ -334,11 +334,11 @@ main {
 				opacity: 0;
 				border-radius: var(--corner-m);
 				background: var(--color-bg);
-				/* transition */
+				// transition
 				transform-origin: center;
 				-webkit-transform-origin: center;
 				-ms-transform-origin: center;
-				/* animation */
+				// animation
 				animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 				-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 
@@ -394,7 +394,7 @@ main {
 					opacity: 0;
 					color: var(--color-fg);
 					background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .04) 10%, rgba(0, 0, 0, .48) 70%, rgba(0, 0, 0, .64) 100%);
-					/* transition */
+					// transition
 					transition: all .4s ease;
 					-webkit-transition: all .4s ease;
 					-moz-transition: all .4s ease;
@@ -408,7 +408,7 @@ main {
 
 					@at-root {
 
-						/* work status */
+						// work status
 						.state {
 							flex-shrink: 0;
 							width: 24px;
@@ -426,13 +426,13 @@ main {
 							top: 2px;
 							left: 7px;
 							visibility: visible;
-							/* transition */
+							// transition
 							transition: all .6s var(--swing);
 							-webkit-transition: all .6s var(--swing);
 							-moz-transition: all .6s var(--swing);
 							-ms-transition: all .6s var(--swing);
 							-o-transition: all .6s var(--swing);
-							/* transform */
+							// transform
 							-webkit-transform-origin: 9px 11px;
 							-ms-transform-origin: 9px 11px;
 							transform-origin: 9px 11px;
@@ -454,19 +454,19 @@ main {
 					background: var(--color-bg-box);
 					background-position: center;
 					background-size: cover;
-					/* transition */
+					// transition
 					transition: none !important;
 					-webkit-transition: none !important;
 					-moz-transition: none !important;
 					-ms-transition: none !important;
 					-o-transition: none !important;
-					/* animation */
+					// animation
 					animation: none !important;
 					-webkit-animation: none !important;
 
 					@at-root {
 
-						/* work thumbnail */
+						// work thumbnail
 						#smile {
 							background-image: url("../work/source/smile.jpg");
 						}
@@ -499,10 +499,10 @@ main {
 						opacity: 1;
 					}
 
-					/* work status */
+					// work status
 					.hook {
 						top: 0;
-						/* transition */
+						// transition
 						transition-delay: .25s;
 						-webkit-transition-delay: .25s;
 						-o-transition-delay: .25s;
@@ -516,7 +516,7 @@ main {
 				background: var(--color-bg-box);
 			}
 
-			/* animation delay */
+			// animation delay
 			@for $i from 1 through 20 {
 				:nth-child(#{$i}n) {
 					animation-delay: #{$i * 0.12}s;
@@ -545,7 +545,7 @@ main {
 				opacity: 0;
 				border-radius: var(--corner-m);
 				background: var(--color-bg-box);
-				/* animation */
+				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
@@ -607,7 +607,7 @@ main {
 				}
 			}
 
-			/* animation delay */
+			// animation delay
 			@for $i from 1 through 20 {
 				:nth-child(#{$i}n) {
 					animation-delay: #{$i * 0.15}s;
@@ -618,7 +618,7 @@ main {
 
 	&.project {
 		opacity: 0;
-		/* animation */
+		// animation
 		animation: 2s ease 0s 1 normal forwards fadein;
 		-webkit-animation: 2s ease 0s 1 normal forwards fadein;
 
@@ -652,7 +652,7 @@ main {
 
 			@at-root {
 
-				/* project cover */
+				// project cover
 				#c-smile {
 					background-image: url("../work/smile/source/cover.jpg");
 				}
@@ -721,7 +721,7 @@ main {
 
 			@at-root {
 
-				/* divider */
+				// divider
 				.divider {
 					margin: 8px 0;
 					border-top: 1px solid var(--color-fg-thin);
@@ -770,7 +770,7 @@ main {
 
 					&:hover {
 
-						/* work status */
+						// work status
 						.hook {
 							top: 0;
 							transform: rotateY(180deg);
@@ -781,7 +781,7 @@ main {
 
 				@at-root {
 
-					/* navigation content thumbnail */
+					// navigation content thumbnail
 					#smile-h {
 						background-image: url("../work/source/smile-h.jpg");
 					}
@@ -811,7 +811,7 @@ main {
 	}
 }
 
-/* image modal */
+// image modal
 .modal {
 	cursor: zoom-in;
 	overflow: hidden;
@@ -859,10 +859,10 @@ main {
 	}
 }
 
-/* media query */
+// media query
 @media screen and (max-width: 1440px) {
 
-	/* main - home */
+	// main - home
 	main {
 		&.work {
 			.content {
@@ -875,13 +875,13 @@ main {
 
 @media screen and (max-width: 1024px) {
 
-	/* main - home */
+	// main - home
 	main {
 		&.home {
 			.content {
 				.linker {
 
-					/* animation delay */
+					// animation delay
 					@for $i from 1 through 20 {
 						:nth-child(#{$i}n) {
 							animation-delay: #{$i * 0.15}s;
@@ -901,7 +901,7 @@ main {
 					}
 				}
 
-				/* animation delay */
+				// animation delay
 				@for $i from 1 through 20 {
 					:nth-child(#{$i}n) {
 						animation-delay: #{$i * 0.15}s;
@@ -920,7 +920,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-	/* main - home */
+	// main - home
 	main {
 		&.work {
 			.content {
@@ -940,7 +940,7 @@ main {
 
 @media screen and (max-width: 768px) {
 
-	/* header */
+	// header
 	header {
 		nav {
 			&.work {
@@ -953,7 +953,7 @@ main {
 		}
 	}
 
-	/* main - home */
+	// main - home
 	main {
 		&.work {
 			.content {
@@ -971,10 +971,10 @@ main {
 
 						@at-root {
 
-							/* work status */
+							// work status
 							.hook {
 								top: 0;
-								/* transform */
+								// transform
 								transform: rotateY(180deg);
 								-webkit-transform: rotateY(180deg);
 							}
@@ -986,7 +986,7 @@ main {
 
 						@at-root {
 
-							/* work thumbnail */
+							// work thumbnail
 							#smile {
 								background-image: url("../work/source/smile-h.jpg");
 							}
@@ -1014,7 +1014,7 @@ main {
 					}
 				}
 
-				/* animation delay */
+				// animation delay
 				@for $i from 1 through 20 {
 					:nth-child(#{$i}n) {
 						animation-delay: #{$i * 0.2}s;
@@ -1049,7 +1049,7 @@ main {
 
 @media screen and (max-width: 544px) {
 
-	/* header */
+	// header
 	header {
 		nav {
 			background: linear-gradient(to bottom, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
@@ -1070,7 +1070,7 @@ main {
 		}
 	}
 
-	/* main - home */
+	// main - home
 	main {
 		&.work {
 			.content {
