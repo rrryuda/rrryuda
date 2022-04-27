@@ -276,6 +276,15 @@ span {
 		line-height: 20px;
 		color: var(--color-fg-muted);
 	}
+
+	&.tail {
+		font-size: 12px;
+		line-height: 14px;
+		padding: 2px 8px;
+		border: 1px solid var(--color-fg-subtle);
+		border-radius: 10px;
+		color: var(--color-fg-box);
+	}
 }
 
 /* link */

@@ -60,16 +60,3 @@ function includeHTML(callback) {
         //callback();
     }, 0);
 }
-
-/* date calculator */
-function counter() {
-    var dday = new Date("May 28, 2018, 00:00:00").getTime();
-
-    setInterval(function () {
-        var now = new Date();
-        var distance = now - dday;
-        var d = Math.floor(distance / (1000 * 60 * 60 * 24));
-        $('#dday').html(d + " days")
-    }, 1000);
-}
-counter();
