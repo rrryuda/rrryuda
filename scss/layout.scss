@@ -167,7 +167,7 @@ footer {
 /* main - home */
 main {
 	&.home {
-		padding: var(--float) var(--side) 8rem;
+		padding: var(--float) var(--side) calc(var(--margin-m) * 4);
 		margin-top: var(--nav);
 
 		.content {
@@ -254,19 +254,7 @@ main {
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
 				.item {
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-					padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
 					opacity: 0;
-					border-radius: var(--corner-m);
-					background: var(--color-bg-box);
-					/* transition */
-					transition: all .2s ease;
-					-webkit-transition: all .2s ease;
-					-moz-transition: all .2s ease;
-					-ms-transition: all .2s ease;
-					-o-transition: all .2s ease;
 					/* transform */
 					transform-origin: center;
 					-webkit-transform-origin: center;
@@ -274,6 +262,21 @@ main {
 					/* animation */
 					animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 					-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
+
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
+						border-radius: var(--corner-m);
+						background: var(--color-bg-box);
+						/* transition */
+						transition: all .2s ease;
+						-webkit-transition: all .2s ease;
+						-moz-transition: all .2s ease;
+						-ms-transition: all .2s ease;
+						-o-transition: all .2s ease;
+					}
 
 					svg {
 						fill: var(--color-fg-subtle);
@@ -289,10 +292,12 @@ main {
 					}
 
 					&:hover {
-						background: var(--color-bg-box-hover);
-						-webkit-transform: scale(1.03);
-						-ms-transform: scale(1.03);
-						transform: scale(1.03);
+						a {
+							background: var(--color-bg-box-hover);
+							-webkit-transform: scale(1.03);
+							-ms-transform: scale(1.03);
+							transform: scale(1.03);
+						}
 					}
 				}
 
@@ -314,7 +319,7 @@ main {
 	}
 
 	&.work {
-		padding: var(--float) var(--side) 8rem;
+		padding: var(--float) var(--side) calc(var(--margin-m) * 4);
 		margin-top: var(--nav);
 
 		.content {
@@ -361,7 +366,7 @@ main {
 					top: 0;
 					left: 0;
 					height: 100%;
-					padding: var(--margin-m) var(--margin-m) 4rem;
+					padding: var(--margin-m) var(--margin-m) calc(var(--margin-m) * 2);
 					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) calc(100% - 4rem), rgba(0, 0, 0, 0) calc(100% - 1rem));
 
 					.brow {
@@ -522,7 +527,7 @@ main {
 	}
 
 	&.about {
-		padding: var(--float) var(--side) 8rem;
+		padding: var(--float) var(--side) calc(var(--margin-m) * 4);
 		margin-top: var(--nav);
 
 		.content {
@@ -544,10 +549,6 @@ main {
 				/* animation */
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
-
-				.tag {
-					margin-top: var(--margin-xs);
-				}
 
 				.portrait {
 					flex-shrink: 0;
@@ -684,7 +685,7 @@ main {
 			display: flex;
 			flex-direction: column;
 			gap: var(--float);
-			padding: var(--float) var(--side) 8rem;
+			padding: var(--float) var(--side) calc(var(--margin-m) * 4);
 			margin-top: var(--cover);
 			background: var(--color-bg);
 

@@ -210,7 +210,7 @@ div {
 		position: absolute;
 		z-index: -1;
 		bottom: 0;
-		height: 8rem;
+		height: calc(var(--margin-m) * 4);
 		background: linear-gradient(to top, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
 	}
 }
