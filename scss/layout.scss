@@ -175,7 +175,7 @@ main {
 			flex-direction: column;
 			align-items: flex-start;
 			gap: var(--gap-m);
-			max-width: 400px;
+			max-width: var(--width-xxxs);
 			margin: 0 auto;
 
 			.portrait {
@@ -254,8 +254,20 @@ main {
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
 				.item {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
 					opacity: 0;
+					border-radius: var(--corner-m);
+					background: var(--color-bg-box);
 					/* transition */
+					transition: all .2s ease;
+					-webkit-transition: all .2s ease;
+					-moz-transition: all .2s ease;
+					-ms-transition: all .2s ease;
+					-o-transition: all .2s ease;
+					/* transform */
 					transform-origin: center;
 					-webkit-transform-origin: center;
 					-ms-transform-origin: center;
@@ -263,39 +275,24 @@ main {
 					animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 					-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 
-					a {
-						display: flex;
-						align-items: center;
-						justify-content: space-between;
-						padding: var(--margin-s);
-						border-radius: var(--corner-m);
-						background: var(--color-bg-box);
-						/* transition */
-						transition: all .2s ease;
-						-webkit-transition: all .2s ease;
-						-moz-transition: all .2s ease;
-						-ms-transition: all .2s ease;
-						-o-transition: all .2s ease;
+					svg {
+						fill: var(--color-fg-subtle);
+					}
 
-						svg {
-							fill: var(--color-fg-subtle);
-						}
+					span {
+						display: -webkit-box;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
+						word-wrap: break-word;
+					}
 
-						span {
-							display: -webkit-box;
-							overflow: hidden;
-							text-overflow: ellipsis;
-							-webkit-line-clamp: 1;
-							-webkit-box-orient: vertical;
-							word-wrap: break-word;
-						}
-
-						&:hover {
-							background: var(--color-bg-box-hover);
-							-webkit-transform: scale(1.03);
-							-ms-transform: scale(1.03);
-							transform: scale(1.03);
-						}
+					&:hover {
+						background: var(--color-bg-box-hover);
+						-webkit-transform: scale(1.03);
+						-ms-transform: scale(1.03);
+						transform: scale(1.03);
 					}
 				}
 
@@ -548,6 +545,10 @@ main {
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
+				.tag {
+					margin-top: var(--margin-xs);
+				}
+
 				.portrait {
 					flex-shrink: 0;
 					overflow: hidden;
@@ -752,7 +753,7 @@ main {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
-						padding: var(--margin-m) var(--margin-s);
+						padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
 						background: rgba(0, 0, 0, .5);
 
 						span {

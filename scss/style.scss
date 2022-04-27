@@ -36,6 +36,7 @@
 	--float: 5rem;
 	--cover: 24rem;
 	/* width */
+	--width-xxxs: 400px;
 	--width-xxs: 544px;
 	--width-xs: 636px;
 	--width-s: 720px;
@@ -248,14 +249,6 @@ ul {
 	}
 }
 
-
-/* link */
-a {
-	display: inline-block;
-	text-decoration: none;
-	color: inherit;
-}
-
 /* span text */
 span {
 	font-weight: 500;
@@ -279,42 +272,47 @@ span {
 	}
 
 	&.lashes {
-		font-size: 15px;
+		font-size: 16px;
 		line-height: 20px;
 		color: var(--color-fg-muted);
 	}
 }
 
+/* link */
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
 /* media query */
 @media screen and (max-width: 1440px) {
 
-	/* document */
-	html {
-		font-size: 19px;
+	/* global */
+	:root {
+		/* spacing */
+		--cover: 20rem;
 	}
-}
-
-@media screen and (max-width: 1024px) {
 
 	/* document */
 	html {
 		font-size: 18px;
 	}
-
-	/* global */
-	:root {
-		/* spacing */
-		--side: 3.5rem;
-		--float: 4.5rem;
-		--cover: 20rem;
-	}
 }
 
 @media screen and (max-width: 768px) {
 
+	/* global */
+	:root {
+		/* spacing */
+		--side: 3rem;
+		--float: 4rem;
+		--cover: 16rem;
+	}
+
 	/* document */
 	html {
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	/* typography */
@@ -338,34 +336,27 @@ span {
 		}
 
 		&.nail {
-			font-size: 17px;
+			font-size: 16px;
 			line-height: 26px;
 		}
-	}
 
-	/* global */
-	:root {
-		/* margin */
-		--margin-m: 1.5rem;
-		/* spacing */
-		--side: 3rem;
-		--float: 4rem;
-		--cover: 16rem;
+		&.brow {
+			font-size: 15px;
+		}
+
+		&.lashes {
+			font-size: 15px;
+		}
 	}
 }
 
 @media screen and (max-width: 544px) {
 
-	/* document */
-	html {
-		font-size: 16px;
-	}
-
 	/* global */
 	:root {
 		/* spacing */
 		--side: 2rem;
-		--float: 3.5rem;
+		--float: 3rem;
 	}
 }
 
