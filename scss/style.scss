@@ -257,12 +257,24 @@ span {
 		font-size: 20px;
 		line-height: 28px;
 		color: var(--color-fg);
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&.nail {
 		font-size: 18px;
 		line-height: 28px;
 		color: var(--color-fg);
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&.brow {
@@ -270,12 +282,24 @@ span {
 		font-weight: 600;
 		line-height: 24px;
 		color: var(--color-fg-muted);
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&.lashes {
 		font-size: 16px;
 		line-height: 20px;
 		color: var(--color-fg-muted);
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&.tail {
