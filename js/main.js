@@ -81,7 +81,7 @@ function counter() {
         if (s < 10) {
             s = '0' + s;
         }
-        $('#dday').html(d + " days " + h + ":" + m + ":" + s)
+        $('#dday').html(d + " days " + h + ":" + m)
     }, 1000);
 }
 counter();
