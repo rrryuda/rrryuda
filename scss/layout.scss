@@ -366,7 +366,7 @@ main {
 					top: 0;
 					left: 0;
 					height: 100%;
-					padding: var(--margin-m) var(--margin-m) calc(var(--margin-m) * 2.5);
+					padding: var(--margin-m) var(--margin-m) calc(var(--margin-m) * 3);
 
 					.brow {
 						margin-bottom: var(--margin-xs);
@@ -376,8 +376,8 @@ main {
 				.link {
 					position: absolute;
 					display: flex;
-					right: var(--margin-s);
-					bottom: var(--margin-s);
+					right: calc(var(--margin-m) - var(--margin-xs));
+					bottom: calc(var(--margin-m) - var(--margin-xs));
 				}
 
 				.info {
@@ -392,7 +392,7 @@ main {
 					visibility: hidden;
 					opacity: 0;
 					color: var(--color-fg);
-					background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .04) 10%, rgba(0, 0, 0, .48) 70%, rgba(0, 0, 0, .64) 100%);
+					background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .04) 10%, rgba(0, 0, 0, .4) 70%, rgba(0, 0, 0, .6) 100%);
 					// transition
 					transition: all .4s ease;
 					-webkit-transition: all .4s ease;
@@ -403,10 +403,10 @@ main {
 					h5 {
 						white-space: nowrap;
 						width: 100%;
-						mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - 1rem), transparent 100%);
+						mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
 
 						&.with-icon {
-							mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - 1rem - 24px), transparent calc(100% - 24px));
+							mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
 						}
 					}
 
@@ -732,12 +732,14 @@ main {
 
 				// divider
 				.divider {
-					margin: 8px 0;
+					display: flex;
+					align-items: center;
+					gap: var(--gap-xxs);
 					border-top: 1px solid var(--color-fg-thin);
 
 					span {
 						font-style: italic;
-						margin-top: 8px;
+						margin-top: var(--margin-xs);
 						color: var(--color-fg-subtle);
 					}
 				}
@@ -761,20 +763,24 @@ main {
 					.info {
 						display: flex;
 						align-items: center;
-						justify-content: space-between;
 						padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
 						background: rgba(0, 0, 0, .5);
 
 						span {
-							display: -webkit-box;
-							overflow: hidden;
-							text-overflow: ellipsis;
-							-webkit-line-clamp: 1;
-							-webkit-box-orient: vertical;
-							word-wrap: break-word;
-							margin-right: 8px;
-							color: var(--color-fg);
+							white-space: nowrap;
+							width: 100%;
+							mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
+
+							&.with-icon {
+								mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
+							}
 						}
+
+						.state {
+							position: absolute;
+							right: var(--margin-m);
+						}
+
 					}
 
 					&:hover {
