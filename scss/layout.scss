@@ -895,7 +895,15 @@ main {
 			.content {
 				max-width: var(--width-xs);
 
+				.item {
+					.intro {
+						position: relative;
+					}
+				}
+
 				.form {
+					grid-column: span 2;
+
 					.frame {
 						display: none;
 					}
@@ -913,26 +921,6 @@ main {
 		&.about {
 			.content {
 				max-width: var(--width-xs);
-			}
-		}
-	}
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-	// main - home
-	main {
-		&.work {
-			.content {
-				.item {
-					.intro {
-						position: relative;
-					}
-				}
-
-				.form {
-					grid-column: span 2;
-				}
 			}
 		}
 	}
@@ -961,13 +949,19 @@ main {
 				max-width: var(--width-xxs);
 
 				.item {
-					.intro {
-						position: relative;
-					}
-
 					.info {
+						padding-top: calc(25% - 24px);
 						visibility: visible;
 						opacity: 1;
+
+						h5 {
+							display: -webkit-box;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							-webkit-line-clamp: 1;
+							-webkit-box-orient: vertical;
+							word-wrap: break-word;
+						}
 
 						@at-root {
 
@@ -1012,6 +1006,10 @@ main {
 							}
 						}
 					}
+				}
+
+				.form {
+					grid-column: inherit;
 				}
 
 				// animation delay
