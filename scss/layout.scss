@@ -385,7 +385,6 @@ main {
 					z-index: -1;
 					display: flex;
 					align-items: center;
-					justify-content: space-between;
 					left: -1px;
 					bottom: -1px;
 					width: calc(100% + 2px);
@@ -402,8 +401,18 @@ main {
 					-o-transition: all .4s ease;
 
 					h5 {
-						margin-right: 8px;
-						color: var(--color-fg);
+						white-space: nowrap;
+						width: 100%;
+						mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - 1rem), transparent 100%);
+
+						&.with-icon {
+							mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - 1rem - 24px), transparent calc(100% - 24px));
+						}
+					}
+
+					.state {
+						position: absolute;
+						right: var(--margin-m);
 					}
 
 					@at-root {
@@ -953,15 +962,6 @@ main {
 						padding-top: calc(25% - 24px);
 						visibility: visible;
 						opacity: 1;
-
-						h5 {
-							display: -webkit-box;
-							overflow: hidden;
-							text-overflow: ellipsis;
-							-webkit-line-clamp: 1;
-							-webkit-box-orient: vertical;
-							word-wrap: break-word;
-						}
 
 						@at-root {
 
