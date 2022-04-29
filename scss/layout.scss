@@ -267,7 +267,7 @@ main {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
-						padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
+						padding: var(--margin-s) var(--margin-m);
 						border-radius: var(--corner-m);
 						background: var(--color-bg-box);
 						// transition
@@ -376,8 +376,8 @@ main {
 				.link {
 					position: absolute;
 					display: flex;
-					right: calc(var(--margin-m) - var(--margin-xs));
-					bottom: calc(var(--margin-m) - var(--margin-xs));
+					right: var(--margin-s);
+					bottom: var(--margin-s);
 				}
 
 				.info {
@@ -563,10 +563,14 @@ main {
 					overflow: hidden;
 					width: 48px;
 					height: 48px;
-					border-radius: var(--corner-s);
+					border-radius: var(--corner-xs);
 					background: var(--color-bg-box);
 					background-position: center;
 					background-size: cover;
+
+					img {
+						border-radius: 0;
+					}
 				}
 
 				.node {
@@ -763,7 +767,7 @@ main {
 					.info {
 						display: flex;
 						align-items: center;
-						padding: var(--margin-s) calc(var(--margin-s) + var(--margin-xs));
+						padding: var(--margin-s) var(--margin-m);
 						background: rgba(0, 0, 0, .5);
 
 						span {
