@@ -235,7 +235,8 @@ p {
 	line-height: 28px;
 	color: var(--color-fg-box);
 
-	strong {
+	strong,
+	b {
 		font-weight: 500;
 		color: var(--color-fg);
 	}
