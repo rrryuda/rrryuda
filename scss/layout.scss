@@ -367,6 +367,7 @@ main {
 					left: 0;
 					height: 100%;
 					padding: var(--margin-m) var(--margin-m) calc(var(--margin-m) * 3);
+					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--margin-m) * 3)), transparent calc(100% - (var(--margin-m) * 2)));
 
 					.brow {
 						margin-bottom: var(--margin-xs);
@@ -403,10 +404,10 @@ main {
 					h5 {
 						white-space: nowrap;
 						width: 100%;
-						mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
+						mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
 
 						&.with-icon {
-							mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
+							mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
 						}
 					}
 
@@ -773,10 +774,10 @@ main {
 						span {
 							white-space: nowrap;
 							width: 100%;
-							mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
+							mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
 
 							&.with-icon {
-								mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
+								mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
 							}
 						}
 
@@ -879,7 +880,7 @@ main {
 }
 
 // media query
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
 
 	// main - home
 	main {
