@@ -119,6 +119,11 @@ a {
 	display: none;
 }
 
+.invisible {
+	visibility: hidden;
+	opacity: 0;
+}
+
 // document
 html {
 	font-family: 'Inter', 'Noto Sans KR', sans-serif;

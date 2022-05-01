@@ -733,6 +733,12 @@ main {
 				word-wrap: break-word;
 			}
 
+			iframe {
+				position: absolute;
+				top: 0;
+				height: 100%;
+			}
+
 			@at-root {
 
 				// divider
