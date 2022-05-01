@@ -88,11 +88,10 @@
 
 // image
 div {
-	img {
-		border-radius: var(--corner-s);
-	}
 
-	video {
+	img,
+	video,
+	iframe {
 		border-radius: var(--corner-s);
 	}
 }
