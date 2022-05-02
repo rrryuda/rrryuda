@@ -14,16 +14,6 @@ header {
 		align-items: center;
 		height: calc(var(--nav) + 1px);
 
-		.east {
-			position: absolute;
-			right: var(--margin-s);
-		}
-
-		.west {
-			position: absolute;
-			left: var(--margin-s);
-		}
-
 		a {
 			position: absolute;
 			z-index: 99;
@@ -36,11 +26,11 @@ header {
 				font-size: 15px;
 				font-weight: 600;
 				line-height: 24px;
-				color: var(--color-fg);
+				color: var(--color-white);
 			}
 
 			svg {
-				fill: var(--color-fg);
+				fill: var(--color-white);
 			}
 
 			div {
@@ -57,6 +47,14 @@ header {
 				-moz-transition: all .2s ease;
 				-ms-transition: all .2s ease;
 				-o-transition: all .2s ease;
+			}
+
+			&.west {
+				left: var(--margin-s);
+			}
+
+			&.east {
+				right: var(--margin-s);
 			}
 
 			&:hover {
@@ -126,7 +124,6 @@ footer {
 	gap: var(--gap-m);
 	padding: calc(var(--float) / 2) var(--side) var(--float);
 	opacity: 0;
-	background: var(--color-bg);
 	// animation
 	animation: 2s ease 0s 1 normal forwards fadein;
 	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
@@ -173,7 +170,6 @@ main {
 		.content {
 			display: flex;
 			flex-direction: column;
-			align-items: flex-start;
 			gap: var(--gap-m);
 			max-width: var(--width-xxxs);
 			margin: 0 auto;
@@ -187,8 +183,6 @@ main {
 				opacity: 0;
 				border-radius: 50%;
 				background: var(--color-bg-box);
-				background-position: center;
-				background-size: cover;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -199,7 +193,6 @@ main {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				justify-content: center;
 				gap: var(--gap-s);
 				opacity: 0;
 				// animation
@@ -349,8 +342,6 @@ main {
 					height: 48px;
 					border-radius: 50%;
 					background: var(--color-bg-box);
-					background-position: center;
-					background-size: cover;
 				}
 
 				a {
@@ -566,8 +557,6 @@ main {
 					height: 48px;
 					border-radius: var(--corner-xs);
 					background: var(--color-bg-box);
-					background-position: center;
-					background-size: cover;
 
 					img {
 						border-radius: 0;
@@ -832,54 +821,6 @@ main {
 						background-image: url("../work/source/visual-h.jpg");
 					}
 				}
-			}
-		}
-	}
-}
-
-// image modal
-.modal {
-	cursor: zoom-in;
-	overflow: hidden;
-}
-
-.content-modal {
-	position: fixed;
-	z-index: 500;
-	display: none;
-	overflow: hidden;
-	touch-action: none;
-	top: 0;
-	left: 0;
-	height: 100%;
-	padding: var(--nav) var(--margin-m);
-	background: none;
-
-	.content-modal {
-		&-overlay {
-			position: absolute;
-			overflow: hidden;
-			top: 0;
-			left: 0;
-			height: 100%;
-			background: var(--color-bg);
-		}
-
-		&-image {
-			cursor: zoom-out;
-			display: flex;
-			overflow: hidden;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-			background: none;
-
-			img {
-				object-fit: contain;
-				display: block;
-				max-width: var(--width-l);
-				height: auto;
-				border-radius: 0;
 			}
 		}
 	}

@@ -205,6 +205,54 @@ div {
 	}
 }
 
+// image modal
+.modal {
+	cursor: zoom-in;
+	overflow: hidden;
+}
+
+.content-modal {
+	position: fixed;
+	z-index: 500;
+	display: none;
+	overflow: hidden;
+	touch-action: none;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: var(--nav) var(--margin-m);
+	background: none;
+
+	.content-modal {
+		&-overlay {
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background: var(--color-bg);
+		}
+
+		&-image {
+			cursor: zoom-out;
+			display: flex;
+			overflow: hidden;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			background: none;
+
+			img {
+				object-fit: contain;
+				display: block;
+				max-width: var(--width-l);
+				height: auto;
+				border-radius: 0;
+			}
+		}
+	}
+}
+
 // media query
 @media screen and (max-width: 768px) {
 
