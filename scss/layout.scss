@@ -75,9 +75,15 @@ header {
 				-o-transition: all .2s ease;
 
 				span {
+					color: var(--color-fg);
+
 					@media screen and (max-width: 544px) {
 						display: none;
 					}
+				}
+
+				svg {
+					fill: var(--color-fg);
 				}
 
 				&:hover {
@@ -877,6 +883,7 @@ main {
 				-webkit-line-clamp: 1;
 				-webkit-box-orient: vertical;
 				word-wrap: break-word;
+				color: var(--color-fg-subtle);
 			}
 
 			iframe {
@@ -920,7 +927,7 @@ main {
 					.info {
 						display: flex;
 						align-items: center;
-						padding: var(--spacer-s) var(--spacer-m);
+						padding: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
 						background: rgba(0, 0, 0, .5);
 
 						span {
@@ -935,7 +942,7 @@ main {
 
 						.state {
 							position: absolute;
-							right: var(--spacer-m);
+							right: calc(var(--spacer-m) - var(--spacer-xs));
 						}
 
 					}

@@ -2,16 +2,17 @@
 :root {
 	// color theme
 	--color-blue: rgba(60, 120, 235, 1);
+	--color-skyblue: rgb(100, 160, 235);
 	--color-white: rgba(255, 255, 255, 1);
 	--color-gray: rgba(125, 128, 135, 1);
 	--color-darkgray: rgba(80, 80, 86, 1);
 	--color-black: rgba(0, 0, 0, 1);
 	--color-overlay: rgba(0, 0, 0, .75);
 	--color-fg: rgba(255, 255, 255, 1);
-	--color-fg-muted: rgba(255, 255, 255, .6);
-	--color-fg-subtle: rgba(255, 255, 255, .4);
-	--color-fg-thin: rgba(255, 255, 255, .2);
-	--color-fg-box: rgba(255, 255, 255, .9);
+	--color-fg-muted: rgba(160, 166, 172, 1);
+	--color-fg-subtle: rgba(120, 124, 128, 1);
+	--color-fg-thin: rgba(70, 72, 74, 1);
+	--color-fg-box: rgba(240, 242, 245, 1);
 	--color-btn: rgba(224, 232, 244, .3);
 	--color-btn-hover: rgba(224, 232, 244, .2);
 	--color-outline: rgba(255, 255, 255, .2);
@@ -19,7 +20,7 @@
 	--color-bg-to: rgba(0, 0, 0, 0);
 	--color-bg-from: rgba(0, 0, 0, .6);
 	--color-bg-box: rgba(28, 32, 36, 1);
-	--color-bg-box-hover: rgba(44, 48, 52, 1);
+	--color-bg-box-hover: rgba(48, 52, 56, 1);
 	// spcaer
 	--spacer-xxs: .25rem;
 	--spacer-xs: .5rem;
