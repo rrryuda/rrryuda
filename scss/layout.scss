@@ -149,9 +149,10 @@ header {
 // footer
 footer {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
-	gap: var(--spacer-m);
+	justify-content: center;
+	gap: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
 	padding: calc(var(--float) / 2) var(--side) var(--float);
 	opacity: 0;
 	// animation
@@ -180,7 +181,7 @@ footer {
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: var(--spacer-s) var(--spacer-m);
+		gap: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
 	}
 }
 
