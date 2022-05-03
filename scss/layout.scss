@@ -234,7 +234,7 @@ main {
 				align-items: center;
 				justify-content: center;
 				gap: var(--spacer-m);
-				margin: var(--spacer-s) 0;
+				margin: var(--spacer-xs) 0;
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -284,7 +284,7 @@ main {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
-						padding: var(--spacer-s) var(--spacer-m);
+						padding: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
 						border-radius: var(--corner-m);
 						background: var(--color-bg-box);
 						// transition
@@ -391,8 +391,8 @@ main {
 					top: 0;
 					left: 0;
 					height: 100%;
-					padding: var(--spacer-m) var(--spacer-m) calc(var(--spacer-m) * 3);
-					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--spacer-m) * 3)), transparent calc(100% - (var(--spacer-m) * 2)));
+					padding: var(--spacer-m) var(--spacer-m) calc(var(--spacer-m) * 2);
+					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--spacer-m) * 4)), transparent calc(100% - (var(--spacer-m) * 1)));
 
 					.brow {
 						margin-bottom: var(--spacer-xs);
@@ -400,6 +400,7 @@ main {
 
 					@media screen and (max-width: 1024px) {
 						position: relative;
+						mask-image: none;
 					}
 				}
 
