@@ -194,7 +194,7 @@ main {
 		.content {
 			display: flex;
 			flex-direction: column;
-			gap: var(--spacer-m);
+			gap: calc(var(--spacer-m) - var(--spacer-xs));
 			max-width: var(--width-xxxs);
 			margin: 0 auto;
 
@@ -234,7 +234,7 @@ main {
 				align-items: center;
 				justify-content: center;
 				gap: var(--spacer-m);
-				margin: var(--spacer-xs) 0;
+				margin: var(--spacer-s) 0;
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -352,7 +352,7 @@ main {
 		.content {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: var(--spacer-m);
+			gap: calc(var(--spacer-m) - var(--spacer-xs));
 			max-width: var(--width-l);
 			margin: 0 auto;
 
@@ -665,7 +665,7 @@ main {
 		.content {
 			display: flex;
 			flex-direction: column;
-			gap: var(--spacer-m);
+			gap: calc(var(--spacer-m) - var(--spacer-xs));
 			max-width: var(--width-s);
 			margin: 0 auto;
 
@@ -850,8 +850,7 @@ main {
 				margin: 0 auto;
 
 				.link {
-					margin-top: var(--spacer-s);
-					margin-bottom: var(--spacer-s);
+					margin: var(--spacer-s) 0;
 				}
 			}
 
