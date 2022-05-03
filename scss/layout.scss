@@ -233,7 +233,7 @@ main {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				gap: var(--spacer-s);
+				gap: calc(var(--spacer-m) - var(--spacer-xs));
 				margin: var(--spacer-s) 0;
 				opacity: 0;
 				// animation
