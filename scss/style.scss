@@ -20,16 +20,11 @@
 	--color-bg-from: rgba(0, 0, 0, .6);
 	--color-bg-box: rgba(28, 32, 36, 1);
 	--color-bg-box-hover: rgba(44, 48, 52, 1);
-	// gap
-	--gap-xxs: .25rem;
-	--gap-xs: .5rem;
-	--gap-s: 1rem;
-	--gap-m: 1.5rem;
-	// margin
-	--margin-xxs: .25rem;
-	--margin-xs: .5rem;
-	--margin-s: 1rem;
-	--margin-m: 1.5rem;
+	// spcaer
+	--spacer-xxs: .25rem;
+	--spacer-xs: .5rem;
+	--spacer-s: 1rem;
+	--spacer-m: 1.5rem;
 	// spacing
 	--nav: 4rem;
 	--side: 4rem;
@@ -49,6 +44,25 @@
 	// ease
 	--ease: cubic-bezier(.075, .8, .165, 1);
 	--swing: cubic-bezier(.35, .4, .3, 1.6);
+
+	@media screen and (max-width: 1440px) {
+		--cover: 20rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		--side: 3rem;
+		--float: 4rem;
+		--cover: 16rem;
+	}
+
+	@media screen and (max-width: 544px) {
+		--side: 1.5rem;
+		--float: 3rem;
+	}
+
+	@media screen and (max-width: 428px) {
+		--float: 2.5rem;
+	}
 }
 
 // normalize
@@ -145,6 +159,14 @@ html {
 	scrollbar-width: none;
 	height: 100%;
 	background: var(--color-bg);
+
+	@media screen and (max-width: 1440px) {
+		font-size: 18px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+	}
 }
 
 body {
@@ -245,6 +267,11 @@ p {
 		font-weight: 500;
 		color: var(--color-fg);
 	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 15px;
+		line-height: 26px;
+	}
 }
 
 ul {
@@ -266,19 +293,24 @@ ul {
 		}
 
 		span {
-			margin-bottom: var(--margin-xxs);
+			margin-bottom: var(--spacer-xxs);
+		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 15px;
+			line-height: 26px;
 		}
 	}
 
 	&.checklist {
 		display: flex;
 		flex-direction: column;
-		gap: var(--gap-xxs);
+		gap: var(--spacer-xxs);
 		padding: 0;
 
 		li {
 			display: flex;
-			gap: var(--gap-xs);
+			gap: var(--spacer-xs);
 		}
 	}
 }
@@ -304,6 +336,11 @@ span {
 				opacity: .6;
 			}
 		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 18px;
+			line-height: 26px;
+		}
 	}
 
 	&.nail {
@@ -323,6 +360,11 @@ span {
 				opacity: .6;
 			}
 		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+			line-height: 26px;
+		}
 	}
 
 	&.brow {
@@ -330,6 +372,10 @@ span {
 		font-weight: 600;
 		line-height: 24px;
 		color: var(--color-fg-muted);
+
+		@media screen and (max-width: 768px) {
+			font-size: 15px;
+		}
 	}
 
 	&.lashes {
@@ -349,6 +395,10 @@ span {
 				opacity: .6;
 			}
 		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 15px;
+		}
 	}
 
 	&.tail {
@@ -358,89 +408,5 @@ span {
 		border: 1px solid var(--color-fg-subtle);
 		border-radius: 10px;
 		color: var(--color-fg-box);
-	}
-}
-
-// media query
-@media screen and (max-width: 1440px) {
-
-	// variables
-	:root {
-		// spacing
-		--cover: 20rem;
-	}
-
-	// document
-	html {
-		font-size: 18px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-
-	// variables
-	:root {
-		// spacing
-		--side: 3rem;
-		--float: 4rem;
-		--cover: 16rem;
-	}
-
-	// document
-	html {
-		font-size: 16px;
-	}
-
-	// typography
-	p {
-		font-size: 15px;
-		line-height: 26px;
-	}
-
-	ul {
-		li {
-			font-size: 15px;
-			line-height: 26px;
-		}
-	}
-
-	// span text
-	span {
-		&.label {
-			font-size: 18px;
-			line-height: 26px;
-		}
-
-		&.nail {
-			font-size: 16px;
-			line-height: 26px;
-		}
-
-		&.brow {
-			font-size: 15px;
-		}
-
-		&.lashes {
-			font-size: 15px;
-		}
-	}
-}
-
-@media screen and (max-width: 544px) {
-
-	// variables
-	:root {
-		// spacing
-		--side: 1.5rem;
-		--float: 3rem;
-	}
-}
-
-@media screen and (max-width: 428px) {
-
-	// variables
-	:root {
-		// spacing
-		--float: 2.5rem;
 	}
 }

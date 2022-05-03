@@ -33,25 +33,25 @@
 	&-xxs {
 		display: flex;
 		align-items: center;
-		gap: var(--gap-xxs);
+		gap: var(--spacer-xxs);
 	}
 
 	&-xs {
 		display: flex;
 		align-items: center;
-		gap: var(--gap-xs);
+		gap: var(--spacer-xs);
 	}
 
 	&-s {
 		display: flex;
 		align-items: center;
-		gap: var(--gap-s);
+		gap: var(--spacer-s);
 	}
 
 	&-m {
 		display: flex;
 		align-items: center;
-		gap: var(--gap-m);
+		gap: var(--spacer-m);
 	}
 }
 
@@ -61,28 +61,28 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: var(--gap-xxs);
+		gap: var(--spacer-xxs);
 	}
 
 	&-xs {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: var(--gap-xs);
+		gap: var(--spacer-xs);
 	}
 
 	&-s {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: var(--gap-s);
+		gap: var(--spacer-s);
 	}
 
 	&-m {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: var(--gap-m);
+		gap: var(--spacer-m);
 	}
 }
 
@@ -104,7 +104,7 @@ div {
 	z-index: 1;
 	display: flex;
 	align-items: center;
-	gap: var(--gap-xxs);
+	gap: var(--spacer-xxs);
 	color: var(--color-fg-muted);
 	// transition
 	transition: all .2s ease;
@@ -119,6 +119,10 @@ div {
 
 	&:hover {
 		opacity: .6;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 15px;
 	}
 }
 
@@ -137,7 +141,7 @@ div {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: var(--gap-xs);
+	gap: var(--spacer-xs);
 
 	li {
 		font-size: 13px;
@@ -163,7 +167,7 @@ div {
 		overflow: hidden;
 		display: none;
 		top: -64px;
-		right: var(--margin-s);
+		right: var(--spacer-s);
 		width: 48px;
 		height: 48px;
 		outline: none;
@@ -200,7 +204,7 @@ div {
 		position: absolute;
 		z-index: -1;
 		bottom: 0;
-		height: calc(var(--margin-m) * 4);
+		height: calc(var(--spacer-m) * 4);
 		background: linear-gradient(to top, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
 	}
 }
@@ -220,7 +224,7 @@ div {
 	top: 0;
 	left: 0;
 	height: 100%;
-	padding: var(--nav) var(--margin-m);
+	padding: var(--nav) var(--spacer-m);
 	background: none;
 
 	.content-modal {
@@ -250,14 +254,5 @@ div {
 				border-radius: 0;
 			}
 		}
-	}
-}
-
-// media query
-@media screen and (max-width: 768px) {
-
-	// button link
-	.link {
-		font-size: 15px;
 	}
 }

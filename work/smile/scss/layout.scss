@@ -2,24 +2,24 @@
 .graph-container {
 	display: flex;
 	flex-direction: column;
-	gap: var(--gap-m);
-	margin: var(--margin-s) 0;
+	gap: var(--spacer-m);
+	margin: var(--spacer-s) 0;
 
 	.item {
 		display: flex;
 		flex-direction: column;
-		gap: var(--gap-s);
+		gap: var(--spacer-s);
 
 		ul {
 			display: flex;
 			flex-direction: column;
-			gap: var(--gap-xxs);
+			gap: var(--spacer-xxs);
 			padding: 0;
 
 			.graph {
 				display: grid;
 				grid-template-columns: 60px 80px auto;
-				gap: var(--gap-m);
+				gap: var(--spacer-m);
 
 				span {
 					font-size: 16px;
@@ -32,7 +32,7 @@
 				}
 
 				.rate {
-					margin: var(--margin-xxs) 0;
+					margin: var(--spacer-xxs) 0;
 
 					div {
 						height: 100%;

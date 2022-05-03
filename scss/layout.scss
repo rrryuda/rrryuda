@@ -19,7 +19,7 @@ header {
 			z-index: 99;
 			display: flex;
 			align-items: center;
-			gap: var(--gap-xxs);
+			gap: var(--spacer-xxs);
 			padding: 4px 14px;
 
 			span {
@@ -50,11 +50,11 @@ header {
 			}
 
 			&.west {
-				left: var(--margin-s);
+				left: var(--spacer-s);
 			}
 
 			&.east {
-				right: var(--margin-s);
+				right: var(--spacer-s);
 			}
 
 			&:hover {
@@ -74,8 +74,20 @@ header {
 				-ms-transition: all .2s ease;
 				-o-transition: all .2s ease;
 
+				span {
+					@media screen and (max-width: 544px) {
+						display: none;
+					}
+				}
+
 				&:hover {
 					opacity: .6;
+				}
+			}
+
+			.east {
+				@media screen and (max-width: 544px) {
+					display: none;
 				}
 			}
 
@@ -96,6 +108,10 @@ header {
 					top: calc(50% - 12px);
 					left: calc(50% - 140px);
 					width: 280px;
+
+					@media screen and (max-width: 768px) {
+						font-size: 18px;
+					}
 				}
 
 				.progress {
@@ -112,6 +128,14 @@ header {
 					}
 				}
 			}
+
+			@media screen and (max-width: 544px) {
+				background: none;
+			}
+		}
+
+		@media screen and (max-width: 544px) {
+			background: linear-gradient(to bottom, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
 		}
 	}
 }
@@ -121,7 +145,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: var(--gap-m);
+	gap: var(--spacer-m);
 	padding: calc(var(--float) / 2) var(--side) var(--float);
 	opacity: 0;
 	// animation
@@ -133,7 +157,7 @@ footer {
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: var(--gap-s) var(--gap-m);
+		gap: var(--spacer-s) var(--spacer-m);
 
 		a {
 			font-size: 15px;
@@ -164,13 +188,13 @@ footer {
 // main - home
 main {
 	&.home {
-		padding: var(--float) var(--side) calc(var(--margin-m) * 4);
+		padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
 		margin-top: var(--nav);
 
 		.content {
 			display: flex;
 			flex-direction: column;
-			gap: var(--gap-m);
+			gap: var(--spacer-m);
 			max-width: var(--width-xxxs);
 			margin: 0 auto;
 
@@ -193,7 +217,7 @@ main {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				gap: var(--gap-s);
+				gap: var(--spacer-s);
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -201,7 +225,7 @@ main {
 
 				p {
 					color: var(--color-fg-muted);
-					margin: 0 var(--margin-s);
+					margin: 0 var(--spacer-s);
 				}
 			}
 
@@ -209,8 +233,8 @@ main {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				gap: var(--gap-m);
-				margin: var(--margin-s) 0;
+				gap: var(--spacer-m);
+				margin: var(--spacer-s) 0;
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -232,7 +256,7 @@ main {
 				div {
 					flex-shrink: 0;
 					width: 2px;
-					height: var(--gap-s);
+					height: var(--spacer-s);
 					background: var(--color-fg-subtle);
 				}
 			}
@@ -240,7 +264,7 @@ main {
 			.linker {
 				display: flex;
 				flex-direction: column;
-				gap: var(--gap-s);
+				gap: var(--spacer-s);
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -260,7 +284,7 @@ main {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
-						padding: var(--margin-s) var(--margin-m);
+						padding: var(--spacer-s) var(--spacer-m);
 						border-radius: var(--corner-m);
 						background: var(--color-bg-box);
 						// transition
@@ -300,6 +324,16 @@ main {
 						animation-delay: #{$i * 0.12}s;
 					}
 				}
+
+				@media screen and (max-width: 1024px) {
+
+					// animation delay
+					@for $i from 1 through 20 {
+						:nth-child(#{$i}n) {
+							animation-delay: #{$i * 0.15}s;
+						}
+					}
+				}
 			}
 
 			// animation delay
@@ -312,13 +346,13 @@ main {
 	}
 
 	&.work {
-		padding: var(--float) var(--side) calc(var(--margin-m) * 4);
+		padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
 		margin-top: var(--nav);
 
 		.content {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: var(--gap-m);
+			gap: var(--spacer-m);
 			max-width: var(--width-l);
 			margin: 0 auto;
 
@@ -353,23 +387,27 @@ main {
 					z-index: 1;
 					display: flex;
 					flex-direction: column;
-					gap: var(--gap-s);
+					gap: var(--spacer-s);
 					top: 0;
 					left: 0;
 					height: 100%;
-					padding: var(--margin-m) var(--margin-m) calc(var(--margin-m) * 3);
-					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--margin-m) * 3)), transparent calc(100% - (var(--margin-m) * 2)));
+					padding: var(--spacer-m) var(--spacer-m) calc(var(--spacer-m) * 3);
+					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--spacer-m) * 3)), transparent calc(100% - (var(--spacer-m) * 2)));
 
 					.brow {
-						margin-bottom: var(--margin-xs);
+						margin-bottom: var(--spacer-xs);
+					}
+
+					@media screen and (max-width: 1024px) {
+						position: relative;
 					}
 				}
 
 				.link {
 					position: absolute;
 					display: flex;
-					right: var(--margin-s);
-					bottom: var(--margin-s);
+					right: var(--spacer-s);
+					bottom: var(--spacer-s);
 				}
 
 				.info {
@@ -380,7 +418,7 @@ main {
 					left: -1px;
 					bottom: -1px;
 					width: calc(100% + 2px);
-					padding: var(--float) var(--margin-m) var(--margin-m);
+					padding: var(--float) var(--spacer-m) var(--spacer-m);
 					visibility: hidden;
 					opacity: 0;
 					color: var(--color-fg);
@@ -395,16 +433,16 @@ main {
 					h5 {
 						white-space: nowrap;
 						width: 100%;
-						mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
+						mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--spacer-s)), transparent 100%);
 
 						&.with-icon {
-							mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
+							mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--spacer-s) - 24px), transparent calc(100% - 24px));
 						}
 					}
 
 					.state {
 						position: absolute;
-						right: var(--margin-m);
+						right: var(--spacer-m);
 					}
 
 					@at-root {
@@ -445,6 +483,23 @@ main {
 							position: absolute;
 							left: 5px;
 							bottom: 1px;
+						}
+					}
+
+					@media screen and (max-width: 768px) {
+						padding-top: calc(25% - 24px);
+						visibility: visible;
+						opacity: 1;
+
+						@at-root {
+
+							// work status
+							.hook {
+								top: 0;
+								// transform
+								transform: rotateY(180deg);
+								-webkit-transform: rotateY(180deg);
+							}
 						}
 					}
 				}
@@ -492,6 +547,38 @@ main {
 							background-image: url("../work/source/visual.jpg");
 						}
 					}
+
+					@media screen and (max-width: 768px) {
+						padding: 25% 50%;
+
+						@at-root {
+
+							// work thumbnail
+							#smile {
+								background-image: url("../work/source/smile-h.jpg");
+							}
+
+							#tap {
+								background-image: url("../work/source/tap-h.jpg");
+							}
+
+							#map {
+								background-image: url("../work/source/map-h.jpg");
+							}
+
+							#c42 {
+								background-image: url("../work/source/42dot-h.jpg");
+							}
+
+							#neon {
+								background-image: url("../work/source/neon-h.jpg");
+							}
+
+							#visual {
+								background-image: url("../work/source/visual-h.jpg");
+							}
+						}
+					}
 				}
 
 				&:hover {
@@ -515,6 +602,18 @@ main {
 
 			.form {
 				background: var(--color-bg-box);
+
+				@media screen and (max-width: 1024px) {
+					grid-column: 1 / span 2;
+
+					.frame {
+						display: none;
+					}
+				}
+
+				@media screen and (max-width: 768px) {
+					grid-column: inherit;
+				}
 			}
 
 			// animation delay
@@ -523,17 +622,49 @@ main {
 					animation-delay: #{$i * 0.12}s;
 				}
 			}
+
+			@media screen and (max-width: 1280px) {
+				grid-template-columns: repeat(2, 1fr);
+				max-width: var(--width-m);
+			}
+
+			@media screen and (max-width: 1024px) {
+				max-width: var(--width-xs);
+
+				// animation delay
+				@for $i from 1 through 20 {
+					:nth-child(#{$i}n) {
+						animation-delay: #{$i * 0.15}s;
+					}
+				}
+			}
+
+			@media screen and (max-width: 768px) {
+				grid-template-columns: 100%;
+				max-width: var(--width-xxs);
+
+				// animation delay
+				@for $i from 1 through 20 {
+					:nth-child(#{$i}n) {
+						animation-delay: #{$i * 0.2}s;
+					}
+				}
+			}
+
+			@media screen and (max-width: 544px) {
+				gap: var(--spacer-s);
+			}
 		}
 	}
 
 	&.about {
-		padding: var(--float) var(--side) calc(var(--margin-m) * 4);
+		padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
 		margin-top: var(--nav);
 
 		.content {
 			display: flex;
 			flex-direction: column;
-			gap: var(--gap-m);
+			gap: var(--spacer-m);
 			max-width: var(--width-s);
 			margin: 0 auto;
 
@@ -541,8 +672,8 @@ main {
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
-				gap: var(--gap-s);
-				padding: var(--margin-m);
+				gap: var(--spacer-s);
+				padding: var(--spacer-m);
 				opacity: 0;
 				border-radius: var(--corner-m);
 				background: var(--color-bg-box);
@@ -569,9 +700,9 @@ main {
 					flex-shrink: 0;
 					flex-direction: column;
 					align-items: center;
-					gap: var(--gap-xs);
+					gap: var(--spacer-xs);
 					width: 48px;
-					height: calc(100% + var(--gap-xs));
+					height: calc(100% + var(--spacer-xs));
 
 					.node-dot {
 						display: flex;
@@ -586,6 +717,10 @@ main {
 							border-radius: 50%;
 							background: var(--color-fg-muted);
 						}
+
+						@media screen and (max-width: 768px) {
+							height: 26px;
+						}
 					}
 
 					.node-path {
@@ -599,14 +734,20 @@ main {
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start;
-					gap: var(--gap-xs);
-					padding-left: calc(var(--gap-s) + 48px);
+					gap: var(--spacer-xs);
+					padding-left: calc(var(--spacer-s) + 48px);
 
 					a {
 						svg {
 							fill: var(--color-fg-subtle);
 						}
 					}
+				}
+
+				@media screen and (max-width: 544px) {
+					padding: 0;
+					border-radius: 0;
+					background: none;
 				}
 			}
 
@@ -615,6 +756,18 @@ main {
 				:nth-child(#{$i}n) {
 					animation-delay: #{$i * 0.15}s;
 				}
+			}
+
+			@media screen and (max-width: 1024px) {
+				max-width: var(--width-xs);
+			}
+
+			@media screen and (max-width: 768px) {
+				max-width: var(--width-xxs);
+			}
+
+			@media screen and (max-width: 544px) {
+				gap: var(--float);
 			}
 		}
 	}
@@ -687,7 +840,7 @@ main {
 			display: flex;
 			flex-direction: column;
 			gap: var(--float);
-			padding: var(--float) var(--side) calc(var(--margin-m) * 4);
+			padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
 			margin-top: var(--cover);
 			background: var(--color-bg);
 
@@ -696,21 +849,25 @@ main {
 				margin: 0 auto;
 
 				.link {
-					margin-top: var(--gap-s);
-					margin-bottom: var(--gap-s);
+					margin-top: var(--spacer-s);
+					margin-bottom: var(--spacer-s);
 				}
 			}
 
 			.table {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				gap: var(--gap-s);
+				gap: var(--spacer-s);
 			}
 
 			.gallery {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				gap: var(--gap-s);
+				gap: var(--spacer-s);
+
+				@media screen and (max-width: 544px) {
+					grid-template-columns: 100%;
+				}
 			}
 
 			.lashes {
@@ -734,12 +891,12 @@ main {
 				.divider {
 					display: flex;
 					align-items: center;
-					gap: var(--gap-xxs);
+					gap: var(--spacer-xxs);
 					border-top: 1px solid var(--color-fg-thin);
 
 					span {
 						font-style: italic;
-						margin-top: var(--margin-xs);
+						margin-top: var(--spacer-xs);
 						color: var(--color-fg-subtle);
 					}
 				}
@@ -748,7 +905,7 @@ main {
 			.navigation {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
-				gap: var(--gap-s);
+				gap: var(--spacer-s);
 				background: var(--color-bg);
 				background-position: center;
 				background-size: cover;
@@ -763,22 +920,22 @@ main {
 					.info {
 						display: flex;
 						align-items: center;
-						padding: var(--margin-s) var(--margin-m);
+						padding: var(--spacer-s) var(--spacer-m);
 						background: rgba(0, 0, 0, .5);
 
 						span {
 							white-space: nowrap;
 							width: 100%;
-							mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s)), transparent 100%);
+							mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--spacer-s)), transparent 100%);
 
 							&.with-icon {
-								mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--margin-s) - 24px), transparent calc(100% - 24px));
+								mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--spacer-s) - 24px), transparent calc(100% - 24px));
 							}
 						}
 
 						.state {
 							position: absolute;
-							right: var(--margin-m);
+							right: var(--spacer-m);
 						}
 
 					}
@@ -821,238 +978,12 @@ main {
 						background-image: url("../work/source/visual-h.jpg");
 					}
 				}
-			}
-		}
-	}
-}
 
-// media query
-@media screen and (max-width: 1280px) {
-
-	// main - home
-	main {
-		&.work {
-			.content {
-				grid-template-columns: repeat(2, 1fr);
-				max-width: var(--width-m);
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 1024px) {
-
-	// main - home
-	main {
-		&.home {
-			.content {
-				.linker {
-
-					// animation delay
-					@for $i from 1 through 20 {
-						:nth-child(#{$i}n) {
-							animation-delay: #{$i * 0.15}s;
-						}
-					}
-				}
-			}
-		}
-
-		&.work {
-			.content {
-				max-width: var(--width-xs);
-
-				.item {
-					.intro {
-						position: relative;
-					}
-				}
-
-				.form {
-					grid-column: 1 / span 2;
-
-					.frame {
-						display: none;
-					}
-				}
-
-				// animation delay
-				@for $i from 1 through 20 {
-					:nth-child(#{$i}n) {
-						animation-delay: #{$i * 0.15}s;
-					}
-				}
-			}
-		}
-
-		&.about {
-			.content {
-				max-width: var(--width-xs);
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-
-	// header
-	header {
-		nav {
-			&.work {
-				.title {
-					span {
-						font-size: 18px;
-					}
-				}
-			}
-		}
-	}
-
-	// main - home
-	main {
-		&.work {
-			.content {
-				grid-template-columns: 100%;
-				max-width: var(--width-xxs);
-
-				.item {
-					.info {
-						padding-top: calc(25% - 24px);
-						visibility: visible;
-						opacity: 1;
-
-						@at-root {
-
-							// work status
-							.hook {
-								top: 0;
-								// transform
-								transform: rotateY(180deg);
-								-webkit-transform: rotateY(180deg);
-							}
-						}
-					}
-
-					.frame {
-						padding: 25% 50%;
-
-						@at-root {
-
-							// work thumbnail
-							#smile {
-								background-image: url("../work/source/smile-h.jpg");
-							}
-
-							#tap {
-								background-image: url("../work/source/tap-h.jpg");
-							}
-
-							#map {
-								background-image: url("../work/source/map-h.jpg");
-							}
-
-							#c42 {
-								background-image: url("../work/source/42dot-h.jpg");
-							}
-
-							#neon {
-								background-image: url("../work/source/neon-h.jpg");
-							}
-
-							#visual {
-								background-image: url("../work/source/visual-h.jpg");
-							}
-						}
-					}
-				}
-
-				.form {
-					grid-column: inherit;
-				}
-
-				// animation delay
-				@for $i from 1 through 20 {
-					:nth-child(#{$i}n) {
-						animation-delay: #{$i * 0.2}s;
-					}
-				}
-			}
-		}
-
-		&.about {
-			.content {
-				max-width: var(--width-xxs);
-
-				.item {
-					.node {
-						.node-dot {
-							height: 26px;
-						}
-					}
-				}
-			}
-		}
-
-		&.project {
-			.content {
-				.navigation {
+				@media screen and (max-width: 768px) {
 					grid-template-columns: repeat(2, 1fr);
 				}
-			}
-		}
-	}
-}
 
-@media screen and (max-width: 544px) {
-
-	// header
-	header {
-		nav {
-			background: linear-gradient(to bottom, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
-
-			&.work {
-				background: none;
-
-				a {
-					span {
-						display: none;
-					}
-				}
-
-				.east {
-					display: none;
-				}
-			}
-		}
-	}
-
-	// main - home
-	main {
-		&.work {
-			.content {
-				gap: var(--gap-s);
-			}
-		}
-
-		&.about {
-			.content {
-				gap: var(--float);
-
-				.item {
-					padding: 0;
-					border-radius: 0;
-					background: none;
-				}
-			}
-		}
-
-		&.project {
-			.content {
-				.gallery {
-					grid-template-columns: 100%;
-				}
-
-				.navigation {
+				@media screen and (max-width: 544px) {
 					grid-template-columns: 100%;
 				}
 			}
