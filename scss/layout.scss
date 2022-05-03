@@ -158,36 +158,29 @@ footer {
 	animation: 2s ease 0s 1 normal forwards fadein;
 	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
 
+	a {
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 20px;
+		color: var(--color-fg-subtle);
+		// transition
+		transition: all .2s ease;
+		-webkit-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		-o-transition: all .2s ease;
+
+		&:hover {
+			opacity: .6;
+		}
+	}
+
 	span {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 		gap: var(--spacer-s) var(--spacer-m);
-
-		a {
-			font-size: 15px;
-			font-weight: 500;
-			line-height: 20px;
-			color: var(--color-blue);
-			// transition
-			transition: all .2s ease;
-			-webkit-transition: all .2s ease;
-			-moz-transition: all .2s ease;
-			-ms-transition: all .2s ease;
-			-o-transition: all .2s ease;
-
-			&:hover {
-				opacity: .6;
-			}
-		}
-	}
-
-	.copyright {
-		font-size: 15px;
-		font-weight: 500;
-		line-height: 20px;
-		color: var(--color-fg-subtle);
 	}
 }
 
@@ -398,7 +391,7 @@ main {
 					left: 0;
 					height: 100%;
 					padding: var(--spacer-m) var(--spacer-m) calc(var(--spacer-m) * 2);
-					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--spacer-m) * 4)), transparent calc(100% - (var(--spacer-m) * 1)));
+					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--spacer-m) * 2)), transparent calc(100% - (var(--spacer-m) * 1)));
 
 					.brow {
 						margin-bottom: var(--spacer-xs);
