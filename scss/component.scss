@@ -176,7 +176,7 @@ div {
 		position: absolute;
 		z-index: -1;
 		bottom: 0;
-		height: calc(var(--spacer-m) * 4);
+		height: var(--bottom);
 		background: linear-gradient(to top, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
 	}
 }
@@ -196,7 +196,7 @@ div {
 	top: 0;
 	left: 0;
 	height: 100%;
-	padding: var(--nav) var(--spacer-m);
+	padding: var(--top) var(--side);
 	background: none;
 
 	.content-modal {

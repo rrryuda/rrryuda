@@ -12,7 +12,7 @@ header {
 	nav {
 		display: flex;
 		align-items: center;
-		height: calc(var(--nav) + 1px);
+		height: calc(var(--top) + 1px);
 
 		a {
 			position: absolute;
@@ -103,7 +103,7 @@ header {
 				display: none;
 				top: 0;
 				left: 0;
-				height: calc(var(--nav) + 1px);
+				height: calc(var(--top) + 1px);
 				background: var(--color-bg);
 
 				span {
@@ -152,12 +152,12 @@ footer {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	gap: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
-	padding: calc(var(--float) / 2) var(--side) var(--float);
+	gap: var(--spacer-s) var(--spacer-r);
+	padding: var(--spacer-m) var(--side) var(--bottom);
 	opacity: 0;
 	// animation
-	animation: 2s ease 0s 1 normal forwards fadein;
-	-webkit-animation: 2s ease 0s 1 normal forwards fadein;
+	animation: 1.4s var(--ease) 1.4s 1 normal forwards up;
+	-webkit-animation: 1.4s var(--ease) 1.4s 1 normal forwards up;
 
 	a {
 		font-size: 15px;
@@ -185,20 +185,24 @@ footer {
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
+		gap: var(--spacer-s) var(--spacer-r);
+	}
+
+	@media screen and (max-width: 544px) {
+		flex-direction: column;
 	}
 }
 
 // main - home
 main {
 	&.home {
-		padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
-		margin-top: var(--nav);
+		padding: var(--top) var(--side) var(--bottom);
+		margin-top: var(--top);
 
 		.content {
 			display: flex;
 			flex-direction: column;
-			gap: calc(var(--spacer-m) - var(--spacer-xs));
+			gap: var(--spacer-r);
 			max-width: var(--width-xxxs);
 			margin: 0 auto;
 
@@ -237,7 +241,7 @@ main {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				gap: calc(var(--spacer-m) - var(--spacer-xs));
+				gap: var(--spacer-r);
 				margin: var(--spacer-s) 0;
 				opacity: 0;
 				// animation
@@ -288,7 +292,7 @@ main {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
-						padding: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
+						padding: var(--spacer-s) var(--spacer-r);
 						border-radius: var(--corner-m);
 						background: var(--color-bg-box);
 						// transition
@@ -350,13 +354,13 @@ main {
 	}
 
 	&.work {
-		padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
-		margin-top: var(--nav);
+		padding: var(--top) var(--side) var(--bottom);
+		margin-top: var(--top);
 
 		.content {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: calc(var(--spacer-m) - var(--spacer-xs));
+			gap: var(--spacer-r);
 			max-width: var(--width-l);
 			margin: 0 auto;
 
@@ -395,8 +399,8 @@ main {
 					top: 0;
 					left: 0;
 					height: 100%;
-					padding: var(--spacer-m) var(--spacer-m) calc(var(--spacer-m) * 2);
-					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - (var(--spacer-m) * 2)), transparent calc(100% - (var(--spacer-m) * 1)));
+					padding: var(--spacer-m) var(--spacer-m) var(--spacer-l);
+					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--spacer-l)), transparent calc(100% - var(--spacer-m)));
 
 					.brow {
 						margin-bottom: var(--spacer-xs);
@@ -423,7 +427,7 @@ main {
 					left: -1px;
 					bottom: -1px;
 					width: calc(100% + 2px);
-					padding: var(--float) var(--spacer-m) var(--spacer-m);
+					padding: var(--between) var(--spacer-m) var(--spacer-m);
 					visibility: hidden;
 					opacity: 0;
 					color: var(--color-fg);
@@ -663,13 +667,13 @@ main {
 	}
 
 	&.about {
-		padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
-		margin-top: var(--nav);
+		padding: var(--top) var(--side) var(--bottom);
+		margin-top: var(--top);
 
 		.content {
 			display: flex;
 			flex-direction: column;
-			gap: calc(var(--spacer-m) - var(--spacer-xs));
+			gap: var(--spacer-r);
 			max-width: var(--width-s);
 			margin: 0 auto;
 
@@ -772,7 +776,7 @@ main {
 			}
 
 			@media screen and (max-width: 544px) {
-				gap: var(--float);
+				gap: var(--between);
 			}
 		}
 	}
@@ -844,8 +848,8 @@ main {
 			z-index: 9;
 			display: flex;
 			flex-direction: column;
-			gap: var(--float);
-			padding: var(--float) var(--side) calc(var(--spacer-m) * 4);
+			gap: var(--between);
+			padding: var(--top) var(--side) var(--bottom);
 			margin-top: var(--cover);
 			background: var(--color-bg);
 
@@ -925,7 +929,7 @@ main {
 					.info {
 						display: flex;
 						align-items: center;
-						padding: var(--spacer-s) calc(var(--spacer-m) - var(--spacer-xs));
+						padding: var(--spacer-s) var(--spacer-r);
 						background: rgba(0, 0, 0, .5);
 
 						span {
@@ -940,7 +944,7 @@ main {
 
 						.state {
 							position: absolute;
-							right: calc(var(--spacer-m) - var(--spacer-xs));
+							right: var(--spacer-r);
 						}
 
 					}

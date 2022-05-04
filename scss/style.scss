@@ -24,11 +24,14 @@
 	--spacer-xxs: .25rem;
 	--spacer-xs: .5rem;
 	--spacer-s: 1rem;
+	--spacer-r: 1.5rem;
 	--spacer-m: 2rem;
+	--spacer-l: 4rem;
 	// spacing
-	--nav: 4rem;
+	--top: 4rem;
 	--side: 4rem;
-	--float: 5rem;
+	--between: 5rem;
+	--bottom: 6rem;
 	--cover: 24rem;
 	// width
 	--width-xxxs: 400px;
@@ -51,17 +54,17 @@
 
 	@media screen and (max-width: 768px) {
 		--side: 3rem;
-		--float: 4rem;
+		--between: 4rem;
 		--cover: 16rem;
 	}
 
 	@media screen and (max-width: 544px) {
 		--side: 1.5rem;
-		--float: 3rem;
+		--between: 3rem;
 	}
 
 	@media screen and (max-width: 428px) {
-		--float: 2.5rem;
+		--between: 2.5rem;
 	}
 }
 
