@@ -187,10 +187,6 @@ footer {
 		justify-content: center;
 		gap: var(--spacer-s) var(--spacer-r);
 	}
-
-	@media screen and (max-width: 544px) {
-		flex-direction: column;
-	}
 }
 
 // main - home
