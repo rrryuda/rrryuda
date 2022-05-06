@@ -30,58 +30,45 @@
 
 // row
 .row {
-	&-xxs {
-		display: flex;
-		align-items: center;
+	display: flex;
+	align-items: center;
+
+	&.xxs {
 		gap: var(--spacer-xxs);
 	}
 
-	&-xs {
-		display: flex;
-		align-items: center;
+	&.xs {
 		gap: var(--spacer-xs);
 	}
 
-	&-s {
-		display: flex;
-		align-items: center;
+	&.s {
 		gap: var(--spacer-s);
 	}
 
-	&-m {
-		display: flex;
-		align-items: center;
+	&.m {
 		gap: var(--spacer-m);
 	}
 }
 
 // column
 .column {
-	&-xxs {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	&.xxs {
 		gap: var(--spacer-xxs);
 	}
 
-	&-xs {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+	&.xs {
 		gap: var(--spacer-xs);
 	}
 
-	&-s {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+	&.s {
 		gap: var(--spacer-s);
 	}
 
-	&-m {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+	&.m {
 		gap: var(--spacer-m);
 	}
 }
@@ -182,12 +169,14 @@ div {
 }
 
 // image modal
-.modal {
+.modal,
+.play {
 	cursor: zoom-in;
 	overflow: hidden;
 }
 
-.content-modal {
+.content-modal,
+.content-play {
 	position: fixed;
 	z-index: 500;
 	display: none;
@@ -199,32 +188,32 @@ div {
 	padding: var(--top) var(--side);
 	background: none;
 
-	.content-modal {
-		&-overlay {
-			position: absolute;
-			overflow: hidden;
-			top: 0;
-			left: 0;
-			height: 100%;
-			background: var(--color-bg);
-		}
+	.overlay {
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background: var(--color-bg);
+	}
 
-		&-image {
-			cursor: zoom-out;
-			display: flex;
-			overflow: hidden;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-			background: none;
+	.image,
+	.video {
+		cursor: zoom-out;
+		display: flex;
+		overflow: hidden;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		background: none;
 
-			img {
-				object-fit: contain;
-				display: block;
-				max-width: var(--width-l);
-				height: auto;
-				border-radius: 0;
-			}
+		img,
+		video {
+			object-fit: contain;
+			display: block;
+			max-width: var(--width-l);
+			height: auto;
+			border-radius: 0;
 		}
 	}
 }

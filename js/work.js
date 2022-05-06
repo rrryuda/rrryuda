@@ -1,15 +1,15 @@
-/* js */
-/* global */
+// js
+// global
 history.scrollRestoration = "manual"
 document.oncontextmenu = function () { return false; }
 
-/* page load */
+// page load
 window.onload = function () {
     $("body").removeClass("loading");
     $("body").addClass("loaded");
 };
 
-/* scroll indicator */
+// scroll indicator
 window.onscroll = function () { scrollFunction(), myFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -21,12 +21,12 @@ function scrollFunction() {
     }
 }
 
-/* scroll to top */
+// scroll to top
 function topFunction() {
     $("html,body").animate({ scrollTop: 0 }, 300);
 }
 
-/* progress bar */
+// progress bar
 function myFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -34,18 +34,18 @@ function myFunction() {
     document.getElementById("progressBar").style.width = scrolled + "%";
 }
 
-/* includeHTML */
+// includeHTML
 function includeHTML(callback) {
     var z, i, elmnt, file, xhr;
-    /* loop through a collection of all HTML elements: */
+    // loop through a collection of all HTML elements:
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
         elmnt = z[i];
-        /* search for elements with a certain atrribute: */
+        // search for elements with a certain atrribute:
         file = elmnt.getAttribute("include-html");
         //console.log(file);
         if (file) {
-            /* make an HTTP request using the attribute value as the file name: */
+            // make an HTTP request using the attribute value as the file name:
             xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4) {
@@ -55,14 +55,14 @@ function includeHTML(callback) {
                     if (this.status == 404) {
                         elmnt.innerHTML = "Page not found.";
                     }
-                    /* remove the attribute, and call this function once more: */
+                    // remove the attribute, and call this function once more:
                     elmnt.removeAttribute("include-html");
                     includeHTML(callback);
                 }
             };
             xhr.open("GET", file, true);
             xhr.send();
-            /* exit the function: */
+            // exit the function:
             return;
         }
     }
@@ -71,22 +71,34 @@ function includeHTML(callback) {
     }, 0);
 }
 
-/* jquery */
-/* cover */
+// jquery
+// cover
 $(document).ready(function () {
     $(window).scroll(function () {
         $('.glass').css("opacity", 0 + $(window).scrollTop() / 400)
     })
 })
 
-/* image modal */
+// image modal
 $(function () {
     $(".modal").click(function () {
         var $src = $(this).attr("src");
-        $(".content-modal").fadeIn(0);
-        $(".content-modal-image img").attr("src", $src);
+        $(".zoom .content-modal").fadeIn(0);
+        $(".zoom .content-modal .image img").attr("src", $src);
     });
-    $(".content-modal-image, .content-modal-overlay").click(function () {
-        $(".content-modal").fadeOut(0);
+    $(".zoom, .zoom img").click(function () {
+        $(".zoom .content-modal").fadeOut(0);
+    });
+});
+
+// video play
+$(function () {
+    $(".play").click(function () {
+        var $src = $(this).attr("src");
+        $(".zoom .content-play").fadeIn(0);
+        $(".zoom .content-play .video video").attr("src", $src);
+    });
+    $(".zoom, .zoom video").click(function () {
+        $(".zoom .content-play").fadeOut(0);
     });
 });

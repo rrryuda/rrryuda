@@ -1,15 +1,15 @@
-/* js */
-/* global */
+// js
+// global
 history.scrollRestoration = "manual"
 document.oncontextmenu = function () { return false; }
 
-/* page load */
+// page load
 window.onload = function () {
     $("body").removeClass("loading");
     $("body").addClass("loaded");
 };
 
-/* scroll indicator */
+// scroll indicator
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -19,23 +19,23 @@ function scrollFunction() {
     }
 }
 
-/* scroll to top */
+// scroll to top
 function topFunction() {
     $("html,body").animate({ scrollTop: 0 }, 300);
 }
 
-/* includeHTML */
+// includeHTML
 function includeHTML(callback) {
     var z, i, elmnt, file, xhr;
-    /* loop through a collection of all HTML elements: */
+    // loop through a collection of all HTML elements:
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
         elmnt = z[i];
-        /* search for elements with a certain atrribute: */
+        // search for elements with a certain atrribute:
         file = elmnt.getAttribute("include-html");
         //console.log(file);
         if (file) {
-            /* make an HTTP request using the attribute value as the file name: */
+            // make an HTTP request using the attribute value as the file name:
             xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4) {
@@ -45,14 +45,14 @@ function includeHTML(callback) {
                     if (this.status == 404) {
                         elmnt.innerHTML = "Page not found.";
                     }
-                    /* remove the attribute, and call this function once more: */
+                    // remove the attribute, and call this function once more:
                     elmnt.removeAttribute("include-html");
                     includeHTML(callback);
                 }
             };
             xhr.open("GET", file, true);
             xhr.send();
-            /* exit the function: */
+            // exit the function:
             return;
         }
     }
