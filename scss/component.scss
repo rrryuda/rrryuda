@@ -169,52 +169,54 @@ div {
 }
 
 // image modal
-.modal,
-.play {
+.modal {
 	cursor: zoom-in;
 	overflow: hidden;
 }
 
-.content-modal,
-.content-play {
-	position: fixed;
-	z-index: 500;
-	display: none;
-	overflow: hidden;
-	touch-action: none;
-	top: 0;
-	left: 0;
-	height: 100%;
-	padding: var(--top) var(--side);
-	background: none;
-
-	.overlay {
-		position: absolute;
+.zoom {
+	.content {
+		cursor: zoom-out;
+		position: fixed;
+		z-index: 500;
+		display: none;
 		overflow: hidden;
+		touch-action: none;
 		top: 0;
 		left: 0;
 		height: 100%;
-		background: var(--color-bg);
-	}
-
-	.image,
-	.video {
-		cursor: zoom-out;
-		display: flex;
-		overflow: hidden;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
+		padding: calc(var(--top) + var(--spacer-s)) var(--side) var(--side);
 		background: none;
 
-		img,
-		video {
-			object-fit: contain;
-			display: block;
-			z-index: 1;
-			max-width: var(--width-l);
-			height: auto;
-			border-radius: 0;
+		.overlay {
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background: var(--color-bg);
+		}
+
+		.image {
+			display: flex;
+			overflow: hidden;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			background: none;
+
+			img {
+				object-fit: contain;
+				display: block;
+				z-index: 1;
+				max-width: var(--width-l);
+				height: auto;
+				border-radius: 0;
+			}
+		}
+
+		@media screen and (max-height: 720px) {
+			padding: var(--top) var(--side) var(--side);
 		}
 	}
 }
