@@ -83,11 +83,11 @@ $(document).ready(function () {
 $(function () {
     $(".modal").click(function () {
         var $src = $(this).attr("src");
-        $(".zoom .content-modal").fadeIn(0);
+        $(".zoom .content-modal").fadeIn(100);
         $(".zoom .content-modal .image img").attr("src", $src);
     });
     $(".zoom, .zoom img").click(function () {
-        $(".zoom .content-modal").fadeOut(0);
+        $(".zoom .content-modal").fadeOut(100);
     });
 });
 
@@ -95,10 +95,10 @@ $(function () {
 $(function () {
     $(".play").click(function () {
         var $src = $(this).attr("src");
-        $(".zoom .content-play").fadeIn(0);
+        $(".zoom .content-play").fadeIn(100);
         $(".zoom .content-play .video video").attr("src", $src);
     });
     $(".zoom, .zoom video").click(function () {
-        $(".zoom .content-play").fadeOut(0);
+        $(".zoom .content-play").fadeOut(100);
     });
 });

@@ -211,6 +211,7 @@ div {
 		video {
 			object-fit: contain;
 			display: block;
+			z-index: 1;
 			max-width: var(--width-l);
 			height: auto;
 			border-radius: 0;
