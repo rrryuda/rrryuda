@@ -10,16 +10,11 @@ header {
 	-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards movein;
 
 	nav {
-		display: flex;
-		align-items: center;
 		height: calc(var(--top) + 1px);
 
 		a {
 			position: absolute;
 			z-index: 99;
-			display: flex;
-			align-items: center;
-			gap: var(--spacer-xxs);
 			padding: 4px 14px;
 
 			span {
@@ -148,11 +143,6 @@ header {
 
 // footer
 footer {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	gap: var(--spacer-s) var(--spacer-r);
 	padding: var(--spacer-m) var(--side) var(--bottom);
 	opacity: 0;
 	// animation
@@ -181,10 +171,6 @@ footer {
 	}
 
 	span {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
 		gap: var(--spacer-s) var(--spacer-r);
 	}
 }
@@ -196,9 +182,6 @@ main {
 		margin-top: var(--top);
 
 		.content {
-			display: flex;
-			flex-direction: column;
-			gap: var(--spacer-r);
 			max-width: var(--width-xxxs);
 			margin: 0 auto;
 
@@ -217,27 +200,19 @@ main {
 			}
 
 			.bio {
-				text-align: center;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				gap: var(--spacer-s);
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
 				p {
+					text-align: center;
 					color: var(--color-fg-muted);
 					margin: 0 var(--spacer-s);
 				}
 			}
 
 			.menu {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				gap: var(--spacer-r);
 				margin: var(--spacer-s) 0;
 				opacity: 0;
 				// animation
@@ -265,10 +240,7 @@ main {
 				}
 			}
 
-			.linker {
-				display: flex;
-				flex-direction: column;
-				gap: var(--spacer-s);
+			.links {
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
@@ -285,9 +257,6 @@ main {
 					-webkit-animation: 1.2s var(--ease) 0s 1 normal forwards swing;
 
 					a {
-						display: flex;
-						align-items: center;
-						justify-content: space-between;
 						padding: var(--spacer-s) var(--spacer-r);
 						border-radius: var(--corner-m);
 						background: var(--color-bg-box);
@@ -389,9 +358,6 @@ main {
 				.intro {
 					position: absolute;
 					z-index: 1;
-					display: flex;
-					flex-direction: column;
-					gap: var(--spacer-s);
 					top: 0;
 					left: 0;
 					height: 100%;
@@ -410,7 +376,6 @@ main {
 
 				.link {
 					position: absolute;
-					display: flex;
 					right: var(--spacer-s);
 					bottom: var(--spacer-s);
 				}
@@ -418,8 +383,6 @@ main {
 				.info {
 					position: absolute;
 					z-index: -1;
-					display: flex;
-					align-items: center;
 					left: -1px;
 					bottom: -1px;
 					width: calc(100% + 2px);
@@ -667,17 +630,10 @@ main {
 		margin-top: var(--top);
 
 		.content {
-			display: flex;
-			flex-direction: column;
-			gap: var(--spacer-s);
 			max-width: var(--width-s);
 			margin: 0 auto;
 
 			.item {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				gap: var(--spacer-s);
 				padding: var(--spacer-m);
 				opacity: 0;
 				border-radius: var(--corner-m);
@@ -709,7 +665,7 @@ main {
 					width: 48px;
 					height: calc(100% + var(--spacer-xs));
 
-					.node-dot {
+					.dot {
 						display: flex;
 						flex-shrink: 0;
 						align-items: center;
@@ -728,18 +684,14 @@ main {
 						}
 					}
 
-					.node-path {
+					.path {
 						width: 2px;
 						height: 100%;
 						background: var(--color-fg-thin);
 					}
 				}
 
-				.node-body {
-					display: flex;
-					flex-direction: column;
-					align-items: flex-start;
-					gap: var(--spacer-xs);
+				.index {
 					padding-left: calc(var(--spacer-s) + 48px);
 
 					a {
@@ -842,8 +794,6 @@ main {
 
 		.content {
 			z-index: 9;
-			display: flex;
-			flex-direction: column;
 			gap: var(--between);
 			padding: var(--top) var(--side) var(--bottom);
 			margin-top: var(--cover);
@@ -923,8 +873,6 @@ main {
 					background-size: 100%;
 
 					.info {
-						display: flex;
-						align-items: center;
 						padding: var(--spacer-s) var(--spacer-r);
 						background: rgba(0, 0, 0, .5);
 
