@@ -376,6 +376,7 @@ main {
 
 				.link {
 					position: absolute;
+					display: flex;
 					right: var(--spacer-s);
 					bottom: var(--spacer-s);
 				}
