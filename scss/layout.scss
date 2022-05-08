@@ -351,10 +351,6 @@ main {
 					background: var(--color-bg-box);
 				}
 
-				a {
-					display: block;
-				}
-
 				.intro {
 					position: absolute;
 					z-index: 1;
@@ -376,7 +372,6 @@ main {
 
 				.link {
 					position: absolute;
-					display: flex;
 					right: var(--spacer-s);
 					bottom: var(--spacer-s);
 				}
