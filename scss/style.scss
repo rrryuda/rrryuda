@@ -74,6 +74,7 @@
 	--ease: cubic-bezier(.075, .8, .165, 1);
 	--swing: cubic-bezier(.35, .4, .3, 1.6);
 
+	// media
 	@media screen and (max-width: 1440px) {
 		--cover: 20rem;
 	}
@@ -192,7 +193,39 @@ html {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 	height: 100%;
+	color: var(--color-fg);
+	background: var(--color-bg);
 
+	&#main {
+
+		// theme
+		@media (prefers-color-scheme: light) {
+			background: rgba(242, 243, 246, 1);
+		}
+
+		@media (prefers-color-scheme: dark) {
+			background: var(--color-bg);
+		}
+	}
+
+	&#about {
+
+		// theme
+		@media (prefers-color-scheme: light) {
+			background: rgba(242, 243, 246, 1);
+
+			// media
+			@media screen and (max-width: 544px) {
+				background: var(--color-bg);
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			background: var(--color-bg);
+		}
+	}
+
+	// media
 	@media screen and (max-width: 1440px) {
 		font-size: 18px;
 	}
@@ -204,8 +237,6 @@ html {
 
 body {
 	height: 100%;
-	color: var(--color-fg);
-	background: var(--color-bg);
 
 	@at-root {
 		::selection {
@@ -250,35 +281,6 @@ body {
 			-ms-animation: none !important;
 			-o-animation: none !important;
 		}
-	}
-}
-
-#main {
-
-	// theme
-	@media (prefers-color-scheme: light) {
-		background: rgba(242, 243, 246, 1);
-	}
-
-	@media (prefers-color-scheme: dark) {
-		background: var(--color-bg);
-	}
-}
-
-#about {
-
-	// theme
-	@media (prefers-color-scheme: light) {
-		background: rgba(242, 243, 246, 1);
-
-		// media
-		@media screen and (max-width: 544px) {
-			background: var(--color-bg);
-		}
-	}
-
-	@media (prefers-color-scheme: dark) {
-		background: var(--color-bg);
 	}
 }
 
@@ -337,6 +339,7 @@ p {
 		color: var(--color-fg);
 	}
 
+	// media
 	@media screen and (max-width: 768px) {
 		font-size: 15px;
 		line-height: 26px;
@@ -373,6 +376,7 @@ ul {
 			margin-bottom: var(--spacer-xxs);
 		}
 
+		// media
 		@media screen and (max-width: 768px) {
 			font-size: 15px;
 			line-height: 26px;
@@ -433,6 +437,7 @@ span {
 			}
 		}
 
+		// media
 		@media screen and (max-width: 768px) {
 			font-size: 18px;
 			line-height: 26px;
@@ -457,6 +462,7 @@ span {
 			}
 		}
 
+		// media
 		@media screen and (max-width: 768px) {
 			font-size: 16px;
 			line-height: 26px;
@@ -469,6 +475,7 @@ span {
 		line-height: 24px;
 		color: var(--color-fg-muted);
 
+		// media
 		@media screen and (max-width: 768px) {
 			font-size: 15px;
 		}
@@ -492,6 +499,7 @@ span {
 			}
 		}
 
+		// media
 		@media screen and (max-width: 768px) {
 			font-size: 15px;
 		}
