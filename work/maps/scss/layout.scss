@@ -47,6 +47,10 @@
 
 		&:hover {
 			background: var(--color-bg-box);
+
+			@media (prefers-color-scheme: light) {
+				filter: drop-shadow(0 0 1rem rgba(236, 240, 244, 1));
+			}
 		}
 	}
 }

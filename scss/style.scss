@@ -1,25 +1,51 @@
 // variables
 :root {
+
 	// color theme
-	--color-blue: rgba(60, 120, 235, 1);
-	--color-white: rgba(255, 255, 255, 1);
-	--color-gray: rgba(125, 128, 135, 1);
-	--color-darkgray: rgba(80, 80, 86, 1);
-	--color-black: rgba(0, 0, 0, 1);
-	--color-overlay: rgba(0, 0, 0, .75);
-	--color-fg: rgba(255, 255, 255, 1);
-	--color-fg-muted: rgba(160, 166, 172, 1);
-	--color-fg-subtle: rgba(120, 124, 128, 1);
-	--color-fg-thin: rgba(70, 72, 74, 1);
-	--color-fg-box: rgba(240, 242, 245, 1);
-	--color-btn: rgba(224, 232, 244, .3);
-	--color-btn-hover: rgba(224, 232, 244, .2);
-	--color-outline: rgba(255, 255, 255, .2);
-	--color-bg: rgba(0, 0, 0, 1);
-	--color-bg-to: rgba(0, 0, 0, 0);
-	--color-bg-from: rgba(0, 0, 0, .6);
-	--color-bg-box: rgba(28, 32, 36, 1);
-	--color-bg-box-hover: rgba(48, 52, 56, 1);
+	@media (prefers-color-scheme: light) {
+		--color-blue: rgba(60, 120, 235, 1);
+		--color-white: rgba(255, 255, 255, 1);
+		--color-gray: rgba(125, 128, 135, 1);
+		--color-darkgray: rgba(80, 80, 86, 1);
+		--color-black: rgba(0, 0, 0, 1);
+		--color-overlay: rgba(0, 0, 0, .75);
+		--color-fg: rgba(48, 52, 56, 1);
+		--color-fg-muted: rgba(124, 130, 136, 1);
+		--color-fg-subtle: rgba(162, 168, 172, 1);
+		--color-fg-thin: rgba(212, 216, 220, 1);
+		--color-fg-box: rgba(114, 118, 122, 1);
+		--color-btn: rgba(36, 44, 52, .4);
+		--color-btn-hover: rgba(36, 44, 52, .6);
+		--color-outline: rgba(255, 255, 255, 0);
+		--color-bg: rgba(251, 251, 252, 1);
+		--color-bg-to: rgba(251, 251, 252, 0);
+		--color-bg-from: rgba(251, 251, 252, .6);
+		--color-bg-box: rgba(255, 255, 255, 1);
+		--color-bg-box-hover: rgba(255, 255, 255, 1);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		--color-blue: rgba(60, 120, 235, 1);
+		--color-white: rgba(255, 255, 255, 1);
+		--color-gray: rgba(125, 128, 135, 1);
+		--color-darkgray: rgba(80, 80, 86, 1);
+		--color-black: rgba(0, 0, 0, 1);
+		--color-overlay: rgba(0, 0, 0, .75);
+		--color-fg: rgba(255, 255, 255, 1);
+		--color-fg-muted: rgba(160, 166, 172, 1);
+		--color-fg-subtle: rgba(120, 124, 128, 1);
+		--color-fg-thin: rgba(80, 82, 84, 1);
+		--color-fg-box: rgba(232, 232, 236, 1);
+		--color-btn: rgba(224, 232, 244, .3);
+		--color-btn-hover: rgba(224, 232, 244, .2);
+		--color-outline: rgba(255, 255, 255, .2);
+		--color-bg: rgba(0, 0, 0, 1);
+		--color-bg-to: rgba(0, 0, 0, 0);
+		--color-bg-from: rgba(0, 0, 0, .6);
+		--color-bg-box: rgba(28, 32, 36, 1);
+		--color-bg-box-hover: rgba(48, 52, 56, 1);
+	}
+
 	// spcaer
 	--spacer-xxs: .25rem;
 	--spacer-xs: .5rem;
@@ -265,9 +291,17 @@ h6 {
 
 p {
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 28px;
 	color: var(--color-fg-box);
+
+	// theme
+	@media (prefers-color-scheme: light) {
+		font-weight: 500;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		font-weight: 400;
+	}
 
 	strong,
 	b {
@@ -291,9 +325,17 @@ ul {
 
 	li {
 		font-size: 16px;
-		font-weight: 400;
 		line-height: 28px;
 		color: var(--color-fg-box);
+
+		// theme
+		@media (prefers-color-scheme: light) {
+			font-weight: 500;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			font-weight: 400;
+		}
 
 		* {
 			display: block;
