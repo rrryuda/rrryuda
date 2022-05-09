@@ -17,9 +17,9 @@
 		--color-btn: rgba(36, 44, 52, .4);
 		--color-btn-hover: rgba(36, 44, 52, .6);
 		--color-outline: rgba(255, 255, 255, 0);
-		--color-bg: rgba(251, 251, 252, 1);
-		--color-bg-to: rgba(251, 251, 252, 0);
-		--color-bg-from: rgba(251, 251, 252, .6);
+		--color-bg: rgba(255, 255, 255, 1);
+		--color-bg-to: rgba(255, 255, 255, 0);
+		--color-bg-from: rgba(255, 255, 255, .6);
 		--color-bg-box: rgba(255, 255, 255, 1);
 		--color-bg-box-hover: rgba(255, 255, 255, 1);
 	}
@@ -251,6 +251,35 @@ body {
 			-ms-animation: none !important;
 			-o-animation: none !important;
 		}
+	}
+}
+
+#main {
+
+	// theme
+	@media (prefers-color-scheme: light) {
+		background: rgba(242, 243, 246, 1);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background: var(--color-bg);
+	}
+}
+
+#about {
+
+	// theme
+	@media (prefers-color-scheme: light) {
+		background: rgba(242, 243, 246, 1);
+
+		// media
+		@media screen and (max-width: 544px) {
+			background: var(--color-bg);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background: var(--color-bg);
 	}
 }
 
