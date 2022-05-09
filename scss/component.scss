@@ -115,7 +115,15 @@ div {
 	-o-transition: all .2s ease;
 
 	svg {
-		fill: var(--color-fg-subtle);
+
+		// theme
+		@media (prefers-color-scheme: light) {
+			fill: var(--color-fg-thin);
+		}
+
+		@media (prefers-color-scheme: dark) {
+			fill: var(--color-fg-subtle);
+		}
 	}
 
 	&:hover {
