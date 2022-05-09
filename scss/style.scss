@@ -404,25 +404,42 @@ ol {
 		gap: var(--spacer-xs);
 
 		li {
-			font-size: 13px;
-			font-weight: 500;
+			font-size: 12px;
+			font-weight: 600;
 			line-height: 16px;
+			letter-spacing: -.01em;
 			padding: 4px 12px;
-			border: 1px solid var(--color-fg-subtle);
 			border-radius: 12px;
 			color: var(--color-fg-box);
+
+			// theme
+			@media (prefers-color-scheme: light) {
+				background: rgba(48, 52, 56, .08);
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background: rgba(255, 255, 255, .2);
+			}
 		}
 	}
 }
 
 // span text
 span {
-	font-weight: 500;
-
 	&.label {
 		font-size: 20px;
 		line-height: 28px;
 		color: var(--color-fg);
+
+		// theme
+		@media (prefers-color-scheme: light) {
+			font-weight: 600;
+			letter-spacing: -.01em;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			font-weight: 500;
+		}
 
 		a {
 			// transition
@@ -517,10 +534,9 @@ span {
 
 	&.tail {
 		font-size: 12px;
-		line-height: 14px;
-		padding: 2px 8px;
+		padding: 2px 6px;
 		border: 1px solid var(--color-fg-subtle);
-		border-radius: 10px;
+		border-radius: 9px;
 		color: var(--color-fg-box);
 	}
 }
