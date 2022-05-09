@@ -272,6 +272,15 @@ main {
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
+				// theme
+				@media (prefers-color-scheme: light) {
+					filter: drop-shadow(0 0 2rem rgba(232, 232, 234, 1));
+				}
+
+				@media (prefers-color-scheme: dark) {
+					filter: none;
+				}
+
 				.item {
 					opacity: 0;
 
@@ -357,6 +366,15 @@ main {
 			gap: var(--spacer-r);
 			max-width: var(--width-l);
 			margin: 0 auto;
+
+			// theme
+			@media (prefers-color-scheme: light) {
+				filter: drop-shadow(0 0 2rem rgba(232, 232, 234, 1));
+			}
+
+			@media (prefers-color-scheme: dark) {
+				filter: none;
+			}
 
 			.item {
 				overflow: hidden;
@@ -677,6 +695,15 @@ main {
 			max-width: var(--width-s);
 			margin: 0 auto;
 
+			// theme
+			@media (prefers-color-scheme: light) {
+				filter: drop-shadow(0 0 2rem rgba(232, 232, 234, 1));
+			}
+
+			@media (prefers-color-scheme: dark) {
+				filter: none;
+			}
+
 			.item {
 				padding: var(--spacer-m);
 				opacity: 0;
@@ -768,6 +795,7 @@ main {
 			// media
 			@media screen and (max-width: 544px) {
 				gap: var(--between);
+				filter: none;
 			}
 		}
 	}
