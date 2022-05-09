@@ -896,6 +896,12 @@ main {
 				}
 			}
 
+			iframe {
+				position: absolute;
+				top: 0;
+				height: 100%;
+			}
+
 			.lashes {
 				display: -webkit-box;
 				overflow: hidden;
@@ -906,10 +912,13 @@ main {
 				color: var(--color-fg-subtle);
 			}
 
-			iframe {
+			.dim {
 				position: absolute;
-				top: 0;
-				height: 100%;
+				z-index: 1;
+				bottom: 0;
+				height: 50%;
+				border-radius: var(--corner-s);
+				background: linear-gradient(to top, rgba(0, 0, 0, .12) 0%, rgba(0, 0, 0, 0) 100%);
 			}
 
 			@at-root {
