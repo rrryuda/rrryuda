@@ -1,7 +1,7 @@
 # Seunghyun Yoo
 
 Seunghyun is a UX / Visual designer who creates from the point of user experience view and shines the products with fine components. 
-Currently working as a Designer at <a href="https://www.teamblind.com/kr/" target="_blank">Gmarket Global</a>.
+Currently working as a Designer at <a href="https://www.teamblind.com/kr/" target="_blank">Teamblind</a>.
 
 <a href="https://seunghyun.design" target="_blank">View on web</a>
 
