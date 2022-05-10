@@ -1,13 +1,14 @@
 # Seunghyun Yoo
 
 Seunghyun is a UX / Visual designer who creates from the point of user experience view and shines the products with fine components. 
-Currently working as a UX Designer at <a href="https://www.gmarket.co.kr/" target="_blank">Gmarket Global</a>.
+Currently working as a Designer at <a href="https://www.teamblind.com/kr/" target="_blank">Gmarket Global</a>.
 
 <a href="https://seunghyun.design" target="_blank">View on web</a>
 
 ### Experience
 <ul style="padding-left: 20px">
-    <li><strong>UX Designer</strong><br>Gmarket &#183; 2021. 7 - Present</li>
+    <li><strong>Designer</strong><br>Teamblind &#183; 2022. 5 - Present</li>
+    <li><strong>UX Designer</strong><br>Gmarket &#183; 2021. 7 - 2022. 5</li>
     <li><strong>UI Designer</strong><br>42dot &#183; 2019. 11 - 2021. 7</li>
     <li><strong>GUI Designer</strong><br>Hyundai-Mnsoft &#183; 2018. 5 - 2019. 11</li>
 </ul>
@@ -20,7 +21,7 @@ Currently working as a UX Designer at <a href="https://www.gmarket.co.kr/" targe
     <li>Rapid Prototyping</li>
     <li>UX Research</li>
     <li>Motion Graphics</li>
-    <li>HTML5/CSS3</li>
+    <li>HTML5/CSS3/SCSS</li>
     <li>Low 3D Modeling</li>
 </ul>
 
