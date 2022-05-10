@@ -57,6 +57,10 @@
 	align-items: flex-start;
 	gap: var(--spacer-s);
 
+	&.x {
+		gap: 0;
+	}
+
 	&.xxs {
 		gap: var(--spacer-xxs);
 	}
