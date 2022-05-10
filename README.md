@@ -5,6 +5,8 @@ Currently working as a Designer at <a href="https://www.teamblind.com/kr/" targe
 
 <a href="https://seunghyun.design" target="_blank">View on web</a>
 
+![main](https://user-images.githubusercontent.com/83178344/167593639-6ef5a0b6-6f8f-4889-97a1-c5b4d2fc0a6e.png)
+
 ### Experience
 <ul style="padding-left: 20px">
     <li><strong>Designer</strong><br>Teamblind &#183; 2022. 5 - Present</li>
