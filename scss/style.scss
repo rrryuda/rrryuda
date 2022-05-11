@@ -101,6 +101,8 @@ main,
 section,
 article,
 div,
+figure,
+figcaption,
 span,
 h1,
 h2,
@@ -131,6 +133,7 @@ main,
 section,
 article,
 div,
+figure,
 img,
 video,
 iframe {
@@ -401,6 +404,25 @@ ol {
 				background: rgba(255, 255, 255, .2);
 			}
 		}
+	}
+}
+
+// figure
+figcaption {
+	font-size: 16px;
+	line-height: 20px;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	display: -webkit-box;
+	overflow: hidden;
+	margin-top: var(--spacer-xs);
+	color: var(--color-fg-subtle);
+
+	// media
+	@media screen and (max-width: 768px) {
+		font-size: 15px;
 	}
 }
 

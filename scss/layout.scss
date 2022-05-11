@@ -902,16 +902,6 @@ main {
 				height: 100%;
 			}
 
-			.lashes {
-				display: -webkit-box;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				-webkit-line-clamp: 1;
-				-webkit-box-orient: vertical;
-				word-wrap: break-word;
-				color: var(--color-fg-subtle);
-			}
-
 			.dim {
 				position: absolute;
 				z-index: 1;
