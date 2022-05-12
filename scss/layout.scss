@@ -828,6 +828,7 @@ main {
 			}
 
 			.dim {
+				pointer-events: none;
 				position: absolute;
 				top: 0;
 				height: 100%;
@@ -903,6 +904,7 @@ main {
 			}
 
 			.dim {
+				pointer-events: none;
 				position: absolute;
 				z-index: 1;
 				bottom: 0;
