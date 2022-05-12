@@ -694,6 +694,10 @@ main {
 		.content {
 			max-width: var(--width-s);
 			margin: 0 auto;
+			opacity: 0;
+			// animation
+			animation: 1.4s var(--ease) 0s 1 normal forwards up;
+			-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
 			// theme
 			@media (prefers-color-scheme: light) {
@@ -702,6 +706,25 @@ main {
 
 			@media (prefers-color-scheme: dark) {
 				filter: none;
+			}
+
+			&:nth-child(2) {
+				margin-top: var(--spacer-m);
+
+				// media
+				@media screen and (max-width: 544px) {
+					margin-top: var(--between);
+				}
+			}
+
+			.brow {
+				margin-left: var(--spacer-s);
+
+				// media
+				@media screen and (max-width: 544px) {
+					height: 0;
+					margin-left: 0;
+				}
 			}
 
 			.item {
@@ -796,6 +819,13 @@ main {
 			@media screen and (max-width: 544px) {
 				gap: var(--between);
 				filter: none;
+			}
+		}
+
+		// animation delay
+		@for $i from 1 through 20 {
+			:nth-child(#{$i}n) {
+				animation-delay: #{$i * 0.15}s;
 			}
 		}
 	}

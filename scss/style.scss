@@ -3,7 +3,7 @@
 
 	// color theme
 	@media (prefers-color-scheme: light) {
-		--color-blue: rgba(32, 110, 255, 1);
+		--color-blue: rgba(65, 135, 255, 1);
 		--color-white: rgba(255, 255, 255, 1);
 		--color-black: rgba(0, 0, 0, 1);
 		--color-overlay: rgba(0, 0, 0, .75);
@@ -23,7 +23,7 @@
 	}
 
 	@media (prefers-color-scheme: dark) {
-		--color-blue: rgba(60, 120, 245, 1);
+		--color-blue: rgba(75, 120, 235, 1);
 		--color-white: rgba(255, 255, 255, 1);
 		--color-black: rgba(0, 0, 0, 1);
 		--color-overlay: rgba(0, 0, 0, .75);
