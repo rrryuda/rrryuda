@@ -9,6 +9,30 @@ window.onload = function () {
     $("body").addClass("loaded");
 };
 
+// includeHTML
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                    if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                    elmnt.removeAttribute("include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            return;
+        }
+    }
+}
+
 // scroll indicator
 window.onscroll = function () { scrollFunction(), myFunction() };
 function scrollFunction() {
@@ -32,43 +56,6 @@ function myFunction() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("progressBar").style.width = scrolled + "%";
-}
-
-// includeHTML
-function includeHTML(callback) {
-    var z, i, elmnt, file, xhr;
-    // loop through a collection of all HTML elements:
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        // search for elements with a certain atrribute:
-        file = elmnt.getAttribute("include-html");
-        //console.log(file);
-        if (file) {
-            // make an HTTP request using the attribute value as the file name:
-            xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function () {
-                if (this.readyState == 4) {
-                    if (this.status == 200) {
-                        elmnt.innerHTML = this.responseText;
-                    }
-                    if (this.status == 404) {
-                        elmnt.innerHTML = "Page not found.";
-                    }
-                    // remove the attribute, and call this function once more:
-                    elmnt.removeAttribute("include-html");
-                    includeHTML(callback);
-                }
-            };
-            xhr.open("GET", file, true);
-            xhr.send();
-            // exit the function:
-            return;
-        }
-    }
-    setTimeout(function () {
-        //callback();
-    }, 0);
 }
 
 // jquery
