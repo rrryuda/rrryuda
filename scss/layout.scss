@@ -208,6 +208,9 @@ main {
 		margin-top: var(--top);
 
 		.content {
+			display: flex;
+			flex-direction: column;
+			gap: var(--spacer-r);
 			max-width: var(--width-xxxs);
 			margin: 0 auto;
 
@@ -315,7 +318,6 @@ main {
 						-webkit-line-clamp: 1;
 						-webkit-box-orient: vertical;
 						word-wrap: break-word;
-						color: var(--color-fg);
 					}
 
 					&:hover {
@@ -434,7 +436,6 @@ main {
 					padding: var(--between) var(--spacer-m) var(--spacer-m);
 					visibility: hidden;
 					opacity: 0;
-					color: var(--color-fg);
 					// transition
 					transition: all .4s ease;
 					-webkit-transition: all .4s ease;
@@ -692,6 +693,9 @@ main {
 		margin-top: var(--top);
 
 		.content {
+			display: flex;
+			flex-direction: column;
+			gap: var(--spacer-s);
 			max-width: var(--width-s);
 			margin: 0 auto;
 			opacity: 0;
@@ -709,7 +713,7 @@ main {
 			}
 
 			&:nth-child(2) {
-				margin-top: var(--spacer-m);
+				margin-top: var(--spacer-r);
 
 				// media
 				@media screen and (max-width: 544px) {
@@ -722,7 +726,6 @@ main {
 
 				// media
 				@media screen and (max-width: 544px) {
-					height: 0;
 					margin-left: 0;
 				}
 			}
@@ -817,7 +820,7 @@ main {
 
 			// media
 			@media screen and (max-width: 544px) {
-				gap: var(--between);
+				gap: var(--spacer-m);
 				filter: none;
 			}
 		}
@@ -895,7 +898,9 @@ main {
 		}
 
 		.content {
+			display: flex;
 			z-index: 9;
+			flex-direction: column;
 			gap: var(--between);
 			padding: var(--top) var(--side) var(--bottom);
 			margin-top: var(--cover);

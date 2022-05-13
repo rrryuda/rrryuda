@@ -52,7 +52,7 @@
 	// spacing
 	--top: 4rem;
 	--side: 4rem;
-	--between: 5rem;
+	--between: 4rem;
 	--bottom: 6rem;
 	--cover: 24rem;
 	// width
@@ -77,17 +77,12 @@
 
 	@media screen and (max-width: 768px) {
 		--side: 3rem;
-		--between: 4rem;
+		--between: 3rem;
 		--cover: 16rem;
 	}
 
 	@media screen and (max-width: 544px) {
 		--side: 1.5rem;
-		--between: 3rem;
-	}
-
-	@media screen and (max-width: 428px) {
-		--between: 2.5rem;
 	}
 }
 
@@ -176,7 +171,7 @@ a {
 html {
 	font-family: 'Inter', 'Noto Sans KR', sans-serif;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 400;
 	word-break: keep-all;
 	font-display: fallback;
 	-webkit-font-display: fallback;
@@ -320,7 +315,6 @@ h6 {
 
 p {
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 28px;
 	color: var(--color-fg-box);
 
@@ -347,7 +341,6 @@ ul {
 
 	li {
 		font-size: 16px;
-		font-weight: 400;
 		line-height: 28px;
 		color: var(--color-fg-box);
 
@@ -388,7 +381,7 @@ ol {
 
 		li {
 			font-size: 12px;
-			font-weight: 600;
+			font-weight: 500;
 			line-height: 16px;
 			letter-spacing: -.01em;
 			padding: 4px 12px;
@@ -410,6 +403,7 @@ ol {
 // figure
 figcaption {
 	font-size: 16px;
+	font-weight: 500;
 	line-height: 20px;
 	text-overflow: ellipsis;
 	-webkit-line-clamp: 1;
@@ -428,10 +422,11 @@ figcaption {
 
 // span text
 span {
+	font-weight: 500;
+
 	&.label {
 		font-size: 20px;
 		line-height: 28px;
-		color: var(--color-fg);
 
 		a {
 			// transition
@@ -456,7 +451,6 @@ span {
 	&.nail {
 		font-size: 18px;
 		line-height: 28px;
-		color: var(--color-fg);
 
 		a {
 			// transition
@@ -480,7 +474,6 @@ span {
 
 	&.brow {
 		font-size: 16px;
-		font-weight: 600;
 		line-height: 24px;
 		color: var(--color-fg-muted);
 
@@ -516,7 +509,6 @@ span {
 
 	&.badge {
 		font-size: 14px;
-		font-weight: 600;
 		line-height: 16px;
 		padding: 4px 12px;
 		border: 1px solid var(--color-blue);
