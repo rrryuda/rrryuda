@@ -87,8 +87,6 @@
 }
 
 // normalize
-html,
-body,
 header,
 nav,
 footer,
@@ -119,20 +117,21 @@ iframe {
 	box-sizing: border-box;
 }
 
-html,
-body,
 header,
 nav,
 footer,
-main,
-section,
-article,
-div,
-figure,
-img,
-video,
-iframe {
+main {
 	width: 100%;
+
+	section,
+	article,
+	div,
+	figure,
+	img,
+	video,
+	iframe {
+		width: 100%;
+	}
 }
 
 svg {

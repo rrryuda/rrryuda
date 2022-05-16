@@ -242,13 +242,14 @@ main {
 			}
 
 			.menu {
-				margin: var(--spacer-s) 0;
+				margin: var(--spacer-xs) 0;
 				opacity: 0;
 				// animation
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
 				a {
+					padding: var(--spacer-xs);
 					// transition
 					transition: all .2s ease;
 					-webkit-transition: all .2s ease;
