@@ -163,8 +163,8 @@ footer {
 	padding: var(--spacer-m) var(--side) var(--bottom);
 	opacity: 0;
 	// animation
-	animation: 1.4s var(--ease) 1.4s 1 normal forwards up;
-	-webkit-animation: 1.4s var(--ease) 1.4s 1 normal forwards up;
+	animation: 1.4s var(--ease) 1s 1 normal forwards up;
+	-webkit-animation: 1.4s var(--ease) 1s 1 normal forwards up;
 
 	a {
 		font-size: 15px;
