@@ -234,6 +234,10 @@ main {
 				animation: 1.4s var(--ease) 0s 1 normal forwards up;
 				-webkit-animation: 1.4s var(--ease) 0s 1 normal forwards up;
 
+				h6 {
+					font-weight: 600;
+				}
+
 				p {
 					text-align: center;
 					color: var(--color-fg-muted);
