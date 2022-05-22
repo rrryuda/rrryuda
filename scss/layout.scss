@@ -642,7 +642,6 @@ main {
 					}
 				}
 
-				// media
 				@media screen and (max-width: 768px) {
 					grid-column: inherit;
 				}
@@ -661,7 +660,6 @@ main {
 				max-width: var(--width-m);
 			}
 
-			// media
 			@media screen and (max-width: 1024px) {
 				max-width: var(--width-xs);
 
@@ -673,7 +671,6 @@ main {
 				}
 			}
 
-			// media
 			@media screen and (max-width: 768px) {
 				grid-template-columns: 100%;
 				max-width: var(--width-xxs);
@@ -686,7 +683,6 @@ main {
 				}
 			}
 
-			// media
 			@media screen and (max-width: 544px) {
 				gap: var(--spacer-s);
 			}
@@ -818,12 +814,10 @@ main {
 				max-width: var(--width-xs);
 			}
 
-			// media
 			@media screen and (max-width: 768px) {
 				max-width: var(--width-xxs);
 			}
 
-			// media
 			@media screen and (max-width: 544px) {
 				gap: var(--spacer-m);
 				filter: none;
@@ -1051,7 +1045,6 @@ main {
 					grid-template-columns: repeat(2, 1fr);
 				}
 
-				// media
 				@media screen and (max-width: 544px) {
 					grid-template-columns: 100%;
 				}
