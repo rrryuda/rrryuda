@@ -9,7 +9,7 @@ Currently working as a Designer at <a href="https://www.teamblind.com/kr/" targe
 
 ### Experience
 <ul style="padding-left: 20px">
-    <li><strong>Designer</strong><br>Teamblind &#183; 2022. 5 - Present</li>
+    <li><strong>Product Designer</strong><br>Teamblind &#183; 2022. 5 - Present</li>
     <li><strong>UX Designer</strong><br>Gmarket &#183; 2021. 7 - 2022. 5</li>
     <li><strong>UI Designer</strong><br>42dot &#183; 2019. 11 - 2021. 7</li>
     <li><strong>GUI Designer</strong><br>Hyundai-Mnsoft &#183; 2018. 5 - 2019. 11</li>
@@ -17,7 +17,7 @@ Currently working as a Designer at <a href="https://www.teamblind.com/kr/" targe
 
 ### Skills
 <ul>
-    <li>Visual UI Design</li>
+    <li>UX Visual Design</li>
     <li>Design System</li>
     <li>Micro Interactions</li>
     <li>Rapid Prototyping</li>
