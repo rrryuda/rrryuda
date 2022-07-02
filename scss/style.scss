@@ -51,7 +51,7 @@
 	--spacer-l: 4rem;
 	// spacing
 	--top: 4rem;
-	--side: 4rem;
+	--side: 2rem;
 	--between: 4rem;
 	--bottom: 6rem;
 	--cover: 24rem;
@@ -61,7 +61,7 @@
 	--width-xs: 624px;
 	--width-s: 720px;
 	--width-m: 960px;
-	--width-l: 1440px;
+	--width-l: 1360px;
 	// border radius
 	--corner-xs: .25rem;
 	--corner-s: .5rem;
@@ -76,7 +76,6 @@
 	}
 
 	@media screen and (max-width: 768px) {
-		--side: 3rem;
 		--between: 3rem;
 		--cover: 16rem;
 	}
