@@ -415,10 +415,6 @@ main {
 					padding: var(--spacer-m) var(--spacer-m) var(--spacer-l);
 					mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) calc(100% - var(--spacer-l)), transparent calc(100% - var(--spacer-m)));
 
-					.brow {
-						margin-bottom: var(--spacer-xs);
-					}
-
 					// media
 					@media screen and (max-width: 1024px) {
 						position: relative;
