@@ -1,7 +1,7 @@
-# Seung-Hyun Yoo
+# Yoo Seung-Hyun
 Seung-Hyun is an experienced product designer based in Seoul. <a href="https://www.teamblind.com/kr/" target="_blank">@Blind</a>
 
-<a href="https://seung-hyun.me" target="_blank">View on web</a>
+<a href="https://seunghyun-showcase.vercel.app/" target="_blank">View on web</a>
 
 ## Experience
 <ul>
@@ -24,7 +24,6 @@ Seung-Hyun is an experienced product designer based in Seoul. <a href="https://w
 ## Software
 <ul>
     <li>Figma</li>
-    <li>Protopie</li>
     <li>After Effects</li>
     <li>Lottie Framework</li>
     <li>Illustrator & Photoshop</li>
